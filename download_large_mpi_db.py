@@ -19,5 +19,6 @@ for code in common.CODES:
         tf.keras.utils.get_file(
             fname=filename,
             origin=url,
-            extract=True
+            extract=True,
+            cache_subdir='large-mpi-db'
         )
