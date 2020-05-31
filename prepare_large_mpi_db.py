@@ -44,3 +44,5 @@ for image_path in image_paths:
     os.makedirs(dirs, exist_ok=True)
 
     cv2.imwrite(save_path, face)
+    print(f'{image_path} -> {save_path}')
+    faces.clear()

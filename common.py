@@ -5,6 +5,7 @@ import cv2
 import imutils
 import mtcnn
 import sklearn
+import dlib
 
 # Los codigos de identificación de los 10 videos
 CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
@@ -20,16 +21,28 @@ def extract_face(image, padding=0):
     :param image: Una imagen en la cual se puede o no detectar rostros.
     :return: Una lista de imagenes con los rostros recortados de la imagen dada.
     """
-    detector = mtcnn.MTCNN()
-    detected_faces = detector.detect_faces(image)
     faces = []
+    # detector = mtcnn.MTCNN()
+    # detected_faces = detector.detect_faces(image)
+    # for detected_face in detected_faces:
+    #     x1, y1, width, height = detected_face['box']
+    #
+    #     x1, y1 = x1 - padding, y1 - padding
+    #     x2, y2 = x1 + width + 2 * padding, y1 + height + 2 * padding
+    #
+    #     faces.append(image[y1:y2, x1:x2])
+
+    detector = dlib.get_frontal_face_detector()
+    detected_faces = detector(image)
     for detected_face in detected_faces:
-        x1, y1, width, height = detected_face['box']
+        left = detected_face.left() - padding
+        top = detected_face.top() - padding
+        right = detected_face.right() + 2 * padding
+        bottom =  detected_face.bottom() + 2 * padding
 
-        x1, y1 = x1 - padding, y1 - padding
-        x2, y2 = x1 + width + 2 * padding, y1 + height + 2 * padding
+        faces.append(image[top:bottom, left:right])
 
-        faces.append(image[y1:y2, x1:x2])
+    detected_faces.clear()
 
     return faces
 
