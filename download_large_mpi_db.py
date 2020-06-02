@@ -1,7 +1,5 @@
 # Este script descarga la base de datos "large MPI Facial Expression Database".
-# Por defecto estos archivos se descargan y descomprimen en "~/.keras/datasets"
-# La función get_file de Keras sólo descarga el archivo si este no se encuentra
-# en el cache.
+# Por defecto, estos archivos se descargan y descomprimen en "~/.keras/large-mpi-db"
 
 import common
 import tensorflow as tf

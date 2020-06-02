@@ -1,11 +1,10 @@
 import os
 import pathlib
-import tensorflow as tf
+
 import cv2
-import imutils
-import mtcnn
-import sklearn
 import dlib
+import imutils.paths
+import numpy as np
 
 # Los codigos de identificación de los 10 videos
 CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
@@ -13,6 +12,61 @@ HOME = str(pathlib.Path.home())
 MPI_LARGE_DB_PATH = f'{HOME}/.keras/large-mpi-db'
 TRAIN_DATA_PATH = f'{HOME}/.keras/datasets/cec-train'
 TEST_DATA_PATH = f'{HOME}/.keras/datasets/cec-test'
+SEED_VALUE = 436
+LABELS = {
+    0: 'agree_considered',
+    1: 'agree_continue',
+    2: 'agree_pure',
+    3: 'agree_reluctant',
+    4: 'aha-light_bulb_moment',
+    5: 'annoyed_bothered',
+    6: 'annoyed_rolling-eyes',
+    7: 'arrogant',
+    8: 'bored',
+    9: 'compassion',
+    10: 'confused',
+    11: 'contempt',
+    12: 'I_did_not_hear',
+    13: 'disagree_considered',
+    14: 'disagree_pure',
+    15: 'disagree_reluctant',
+    16: 'disbelief',
+    17: 'disgust',
+    18: 'treudoof_bambi-eyes',
+    19: 'I_dont_care',
+    20: 'I_dont_know',
+    21: 'I_dont_understand',
+    22: 'embarrassment',
+    23: 'fear_oops',
+    24: 'fear_terror',
+    25: 'happy_achievement',
+    26: 'happy_laughing',
+    27: 'happy_satiated',
+    28: 'happy_schadenfreude',
+    29: 'imagine_negative',
+    30: 'imagine_positive',
+    31: 'impressed',
+    32: 'insecurity',
+    33: 'not_convinced',
+    34: 'pain_felt',
+    35: 'pain_seen',
+    36: 'sad',
+    37: 'smiling_yeah-right',
+    38: 'smiling_encouraging',
+    39: 'smiling_endearment',
+    40: 'smiling_flirting',
+    41: 'smiling_triumphant',
+    42: 'smiling_sad-nostalgia',
+    43: 'smiling_sardonic',
+    44: 'smiling_uncertain',
+    45: 'thinking_considering',
+    46: 'thinking_problem-solving',
+    47: 'remember_negative',
+    48: 'remember_positive',
+    49: 'tired',
+    50: 'smiling_winning',
+}
+
 
 def extract_face(image, padding=0):
     """
@@ -38,7 +92,7 @@ def extract_face(image, padding=0):
         left = detected_face.left() - padding
         top = detected_face.top() - padding
         right = detected_face.right() + 2 * padding
-        bottom =  detected_face.bottom() + 2 * padding
+        bottom = detected_face.bottom() + 2 * padding
 
         faces.append(image[top:bottom, left:right])
 
@@ -47,43 +101,47 @@ def extract_face(image, padding=0):
     return faces
 
 
-def load_data():
+def load_train_data(resize_shape=(224, 224)):
     labels = []
     data = []
 
-    # codes = common.CODES[0:-2]
+    reversed_labels = {v: k for k, v in LABELS.items()}
 
-    image_paths = imutils.paths.list_images(HOME)
+    image_paths = imutils.paths.list_images(TRAIN_DATA_PATH)
     for image_path in image_paths:
         x = image_path.split(os.path.sep)
-        label, file_name = x[-2], x[-1]
 
-        # code_found = False
-        # for code in codes:
-        #     code_found |= code in file_name
-        # if not code_found:
-        #     continue
+        label = x[-2]
+        labels.append(reversed_labels[label])
 
-        # Cargar la siguiente imagen.
         image = cv2.imread(image_path)
+        image = cv2.resize(image, resize_shape)
+        data.append(image)
 
-        # Extraer el rostro dejando una margen de 50 píxeles para dar espacio al
-        # movimiento de la cabeza de algunos videos.
-        faces = extract_face(image, 50)
+        if len(data) == 10000:
+            break
 
-        if len(faces) == 0:
-            print(f'No face detected: {image_path}')
-            continue
+    return np.array(data), np.array(labels)
 
-        # El rostro se convierte a escala de grises para disminuir la posibilidad
-        # que el extractor de características aprenda del color, el cual no es
-        # relevante en la detección de la expresión facial.
-        face = cv2.cvtColor(faces[0], cv2.COLOR_RGB2GRAY)
-        face = cv2.resize(face, (224, 224))
 
-        data.append(face)
-        labels.append(label)
+def load_test_data(resize_shape=(224, 224)):
+    labels = []
+    data = []
 
-    labels = tf.keras.utils.to_categorical(labels)
+    reversed_labels = {v: k for k, v in LABELS.items()}
 
-    return data, labels
+    image_paths = imutils.paths.list_images(TEST_DATA_PATH)
+    for image_path in image_paths:
+        x = image_path.split(os.path.sep)
+
+        label = x[-2]
+        labels.append(reversed_labels[label])
+
+        image = cv2.imread(image_path)
+        image = cv2.resize(image, resize_shape)
+        data.append(image)
+
+        if len(data) == 2000:
+            break
+
+    return np.array(data), np.array(labels)
