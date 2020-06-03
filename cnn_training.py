@@ -23,19 +23,22 @@ train_augmentation = tf.keras.preprocessing.image.ImageDataGenerator(
     fill_mode="nearest"
 )
 
-resnet_model = tf.keras.applications.ResNet50(include_top=False,
-                                              input_tensor=tf.keras.layers.Input(shape=(224, 224, 3)))
-for layer in resnet_model.layers:
+pre_trained_model = tf.keras.applications.ResNet50(
+    include_top=False,
+    input_tensor=tf.keras.layers.Input(shape=(224, 224, 3))
+)
+
+for layer in pre_trained_model.layers:
     layer.trainable = False
 
-new_top = resnet_model.output
+new_top = pre_trained_model.output
 new_top = tf.keras.layers.AveragePooling2D(pool_size=(7, 7))(new_top)
 new_top = tf.keras.layers.Flatten()(new_top)
 new_top = tf.keras.layers.Dense(512, activation='relu')(new_top)
 new_top = tf.keras.layers.Dropout(0.5)(new_top)
 new_top = tf.keras.layers.Dense(len(train_labels[0]), activation='softmax')(new_top)
 
-model = tf.keras.models.Model(inputs=resnet_model.input, outputs=new_top)
+model = tf.keras.models.Model(inputs=pre_trained_model.input, outputs=new_top)
 model.compile(
     loss='categorical_crossentropy',
     optimizer='adam',
@@ -57,3 +60,5 @@ history = model.fit(
 )
 
 model.save('models/ResNet50')
+
+

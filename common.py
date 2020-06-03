@@ -6,6 +6,8 @@ import dlib
 import imutils.paths
 import numpy as np
 
+import matplotlib.pyplot as plt
+
 # Los codigos de identificación de los 10 videos
 CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
 HOME = str(pathlib.Path.home())
@@ -145,3 +147,33 @@ def load_test_data(resize_shape=(224, 224)):
             break
 
     return np.array(data), np.array(labels)
+
+
+def plot_acc(history, title="Model Accuracy"):
+    """Imprime una gráfica mostrando la accuracy por epoch obtenida en un entrenamiento"""
+    plt.plot(history.history['accuracy'])
+    plt.plot(history.history['val_accuracy'])
+    plt.title(title)
+    plt.ylabel('Accuracy')
+    plt.xlabel('Epoch')
+    plt.legend(['Train', 'Val'], loc='upper left')
+    plt.grid(True)
+
+
+def plot_loss(history, title="Model Loss"):
+    """Imprime una gráfica mostrando la pérdida por epoch obtenida en un entrenamiento"""
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.title(title)
+    plt.ylabel('Loss')
+    plt.xlabel('Epoch')
+    plt.legend(['Train', 'Val'], loc='upper right')
+    plt.grid(True)
+
+def plot_acc_loss(history):
+  plt.figure(figsize=(15,5))
+  plt.subplot(1, 2, 1)
+  plot_acc(history)
+  plt.subplot(1, 2, 2)
+  plot_loss(history)
+  plt.show()
