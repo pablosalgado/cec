@@ -120,9 +120,6 @@ def load_train_data(resize_shape=(224, 224)):
         image = cv2.resize(image, resize_shape)
         data.append(image)
 
-        if len(data) == 10000:
-            break
-
     return np.array(data), np.array(labels)
 
 
@@ -142,9 +139,6 @@ def load_test_data(resize_shape=(224, 224)):
         image = cv2.imread(image_path)
         image = cv2.resize(image, resize_shape)
         data.append(image)
-
-        if len(data) == 2000:
-            break
 
     return np.array(data), np.array(labels)
 
