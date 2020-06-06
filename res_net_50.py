@@ -2,17 +2,17 @@ import tensorflow as tf
 
 import common
 
-train_augmentation = tf.keras.preprocessing.image.ImageDataGenerator(
+train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
     rotation_range=30,
     zoom_range=0.15,
     width_shift_range=0.2,
     height_shift_range=0.2,
     shear_range=0.15,
     horizontal_flip=True,
-    fill_mode="nearest"
+    rescale=1./255
 )
 
-validation_generator = tf.keras.preprocessing.image.ImageDataGenerator()
+validation_idg = tf.keras.preprocessing.image.ImageDataGenerator()
 
 pre_trained_model = tf.keras.applications.ResNet50(
     include_top=False,
@@ -37,20 +37,28 @@ model.compile(
 )
 
 history = model.fit(
-    train_augmentation.flow_from_directory(
+    train_idg.flow_from_directory(
         common.TRAIN_DATA_PATH,
         target_size=(224, 224),
         batch_size=32,
-        class_mode='categorical'
+        class_mode='categorical',
+        shuffle=True,
+        seed=common.SEED_VALUE,
+        # save_to_dir='./data/train'
     ),
     epochs=50,
-    validation_data=validation_generator.flow_from_directory(
+    validation_data=validation_idg.flow_from_directory(
         common.TEST_DATA_PATH,
         target_size=(224, 224),
         batch_size=32,
-        class_mode='categorical'
+        class_mode='categorical',
+        shuffle=True,
+        seed=common.SEED_VALUE,
+        # save_to_dir='./data/test'
     )
 )
+
+common.plot_acc_loss(history, 'models/ResNet50/plot.png')
 
 model.save('models/ResNet50')
 

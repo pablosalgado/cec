@@ -164,10 +164,11 @@ def plot_loss(history, title="Model Loss"):
     plt.legend(['Train', 'Val'], loc='upper right')
     plt.grid(True)
 
-def plot_acc_loss(history):
-  plt.figure(figsize=(15,5))
-  plt.subplot(1, 2, 1)
-  plot_acc(history)
-  plt.subplot(1, 2, 2)
-  plot_loss(history)
-  plt.show()
+
+def plot_acc_loss(history, path):
+    plt.figure(figsize=(15, 5))
+    plt.subplot(1, 2, 1)
+    plot_acc(history)
+    plt.subplot(1, 2, 2)
+    plot_loss(history)
+    plt.savefig(path)
