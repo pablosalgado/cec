@@ -43,7 +43,7 @@ history = model.fit(
         batch_size=32,
         class_mode='categorical'
     ),
-    epochs=2,
+    epochs=50,
     validation_data=validation_generator.flow_from_directory(
         common.TEST_DATA_PATH,
         target_size=(224, 224),
