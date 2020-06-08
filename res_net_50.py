@@ -58,8 +58,6 @@ history = model.fit(
     )
 )
 
-common.plot_acc_loss(history, 'models/ResNet50/plot.png')
+model.save('models/1/ResNet50')
 
-model.save('models/ResNet50')
-
-
+common.plot_acc_loss(history, 'models/1/ResNet50/plot.png')
