@@ -10,11 +10,17 @@ import matplotlib.pyplot as plt
 
 # Los codigos de identificación de los 10 videos
 CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
+
 HOME = str(pathlib.Path.home())
+
 MPI_LARGE_DB_PATH = f'{HOME}/.keras/large-mpi-db'
+
 TRAIN_DATA_PATH = f'{HOME}/.keras/datasets/cec-train'
 TEST_DATA_PATH = f'{HOME}/.keras/datasets/cec-test'
+ALL_DATA_PATH = f'{HOME}/.keras/datasets/cec-data'
+
 SEED_VALUE = 436
+
 LABELS = {
     0: 'agree_considered',
     1: 'agree_continue',
@@ -146,22 +152,33 @@ def load_test_data(resize_shape=(224, 224)):
 def plot_acc(history, title="Model Accuracy"):
     """Imprime una gráfica mostrando la accuracy por epoch obtenida en un entrenamiento"""
     plt.plot(history.history['accuracy'])
-    plt.plot(history.history['val_accuracy'])
+
+    if history.history.get('val_accuracy'):
+        plt.plot(history.history['val_accuracy'])
+        plt.legend(['Train', 'Val'], loc='upper left')
+    else:
+        plt.legend(['Train'], loc='upper left')
+
     plt.title(title)
     plt.ylabel('Accuracy')
     plt.xlabel('Epoch')
-    plt.legend(['Train', 'Val'], loc='upper left')
+
     plt.grid(True)
 
 
 def plot_loss(history, title="Model Loss"):
     """Imprime una gráfica mostrando la pérdida por epoch obtenida en un entrenamiento"""
     plt.plot(history.history['loss'])
-    plt.plot(history.history['val_loss'])
+
+    if history.history.get('val_accuracy'):
+        plt.plot(history.history['val_loss'])
+        plt.legend(['Train', 'Val'], loc='upper right')
+    else:
+        plt.legend(['Train'], loc='upper right')
+
     plt.title(title)
     plt.ylabel('Loss')
     plt.xlabel('Epoch')
-    plt.legend(['Train', 'Val'], loc='upper right')
     plt.grid(True)
 
 
