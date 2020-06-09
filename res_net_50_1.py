@@ -44,6 +44,7 @@ history = model.fit(
         class_mode='categorical',
         shuffle=True,
         seed=common.SEED_VALUE,
+        # classes=['agree_pure']
         # save_to_dir='./data/train'
     ),
     epochs=50,
@@ -54,6 +55,7 @@ history = model.fit(
         class_mode='categorical',
         shuffle=True,
         seed=common.SEED_VALUE,
+        # classes=['agree_pure']
         # save_to_dir='./data/test'
     )
 )
