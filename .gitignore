@@ -129,9 +129,12 @@ dmypy.json
 .pyre/
 
 .idea/
-/models/1/ResNet50/
-/models/1/ResNet50.tar.gz
-/models/1/DenseNet201/
+
+/models/1/DenseNet201
 /models/1/DenseNet201.tar.gz
-/models/2/ResNet50/
+/models/1/ResNet50
+/models/1/ResNet50.tar.gz
+/models/1/ResNet152
+/models/1/ResNet152.tar.gz
+/models/2/ResNet50
 /models/2/ResNet50.tar.gz
