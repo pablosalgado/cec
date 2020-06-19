@@ -8,15 +8,23 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-# Los codigos de identificación de los 10 videos
+# The Large MPI DB were recorded with 10 actors and actresses. These are their
+# codes.
 CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
 
+# User home.
 HOME = str(pathlib.Path.home())
 
+# Directory to download the MPI DB
 MPI_LARGE_DB_PATH = f'{HOME}/.keras/large-mpi-db'
 
+# Directory for training set.
 TRAIN_DATA_PATH = f'{HOME}/.keras/datasets/cec-train'
+
+# Directory for testing set.
 TEST_DATA_PATH = f'{HOME}/.keras/datasets/cec-test'
+
+# Directory for all preprocessed images.
 ALL_DATA_PATH = f'{HOME}/.keras/datasets/cec-data'
 
 SEED_VALUE = 436
