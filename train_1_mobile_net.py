@@ -1,3 +1,10 @@
+# -----------------------------------------------------------------------------
+# Trains a model based on MobileNet.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+
 import tensorflow as tf
 
 from utils.keras import generators
@@ -49,8 +56,7 @@ def build_model():
 
 
 def train():
-    model = build_model()
-
+    # Configure callbacks
     checkpoint_path = 'models/1/MobileNet/ckpts/cp-{epoch:04d}.ckpt'
 
     callbacks = [
@@ -59,6 +65,12 @@ def train():
         )
     ]
 
+    # Download data
+    common.download_training_data()
+    common.download_validation_data()
+
+    # Build and compile the model
+    model = build_model()
     model.compile(
         optimizer=tf.keras.optimizers.Adam(),
         loss=tf.keras.losses.sparse_categorical_crossentropy,
@@ -91,7 +103,7 @@ def train():
             # save_to_dir='./data/train'
         ),
         validation_data=validation_idg.flow_from_directory(
-            common.TEST_DATA_PATH,
+            common.VALIDATION_DATA_PATH,
             target_size=(224, 224),
             batch_size=32,
             class_mode='sparse',

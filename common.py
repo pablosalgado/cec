@@ -1,5 +1,12 @@
-import pathlib
+# -----------------------------------------------------------------------------
+# Common routines, constants and functions used in this project.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
 
+import pathlib
+import tensorflow as tf
 import dlib
 import matplotlib.pyplot as plt
 
@@ -14,6 +21,9 @@ TRAIN_DATA_PATH = f'{HOME}/.keras/datasets/cec-train'
 
 # Directory for testing set.
 TEST_DATA_PATH = f'{HOME}/.keras/datasets/cec-test'
+
+# Directory for validation set.
+VALIDATION_DATA_PATH = f'{HOME}/.keras/datasets/cec-validation'
 
 # Directory for all preprocessed images.
 ALL_DATA_PATH = f'{HOME}/.keras/datasets/cec-data'
@@ -155,3 +165,27 @@ def plot_acc_loss(history, path):
     plt.subplot(1, 2, 2)
     plot_loss(history)
     plt.savefig(path)
+
+
+def download_training_data():
+    tf.keras.utils.get_file(
+        fname='cec-train.tar.gz',
+        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz',
+        extract=True
+    )
+
+
+def download_test_data():
+    tf.keras.utils.get_file(
+        fname='cec-test.tar.gz',
+        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz',
+        extract=True
+    )
+
+
+def download_validation_data():
+    tf.keras.utils.get_file(
+        fname='cec-validation.tar.gz',
+        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-validation.tar.gz',
+        extract=True
+    )

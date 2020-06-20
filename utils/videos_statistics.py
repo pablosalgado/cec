@@ -1,3 +1,10 @@
+# -----------------------------------------------------------------------------
+# Calculates some statistics from "Large MPI Facial Expression Database".
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+
 import os
 
 import imutils.paths

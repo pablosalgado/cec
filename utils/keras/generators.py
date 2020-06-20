@@ -1,3 +1,12 @@
+# -----------------------------------------------------------------------------
+# Data generators suitable for use with TimeDistributed layers.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+# Source code taken and adapted from:
+# https://github.com/kivijoshi/TimeDistributedImageDataGenerator
+
 import sys
 
 import tensorflow as tf

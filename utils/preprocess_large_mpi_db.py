@@ -1,43 +1,26 @@
 # -----------------------------------------------------------------------------
 # Preprocess Large MPI Facial Expression Database.
 #
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
 # The MPI DB is provided as frame pictures instead of videos. Each picture is
 # a 768x576 RBG image. This scripts extracts the face, resizes it to 224x224,
 # converts it to grayscale and saves the final result.
 #
-# Additionally, a train set and test set are created. 8 actors and actresses
-# are selected for the train set and the remaining 2 are selected for testing
-# set.
-#
-# Two directories are created in "~/.keras/datasets": "cec-train" and "ce-test"
-# 51 directories for each class are created and the preprocessed image is saved
-# in them:
-#
-# ~/.keras/datasets/
-#   cec-test/
-#     agree_considered/
-#       juhm_agree_considered_001.png
-#       juhm_agree_considered_002.png
-#       juhm_agree_considered_003.png
-#     agree_continue/
-#       juhm_agree_continue_001.png
-#       juhm_agree_continue_002.png
-#       juhm_agree_continue_003.png
-#   cec-train/
-#     agree_considered/
-#       cawm_agree_considered_001.png
-#       cawm_agree_considered_002.png
-#       cawm_agree_considered_003.png
-#     agree_continue/
-#       cawm_agree_considered_001.png
-#       cawm_agree_considered_002.png
-#       cawm_agree_considered_003.png
+# Additionally, a train, test and validation sets are created. Eight actors and
+# actresses were selected for the train set, the remaining two were selected
+# for testing and validations sets.
 #
 # The train data are available at:
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz
+#
+# The validation data are available at:
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz
 #
 # The test data are available at:
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-validation.tar.gz
+#
 
 import os
 
@@ -63,8 +46,9 @@ for k, v in common.LABELS.items():
             )
         )
 
+        replace = len(filtered_images_paths) < 64
         filtered_images_ix = np.sort(
-            np.random.default_rng().choice(len(filtered_images_paths), size=64, replace=False)
+            np.random.default_rng().choice(len(filtered_images_paths), size=64, replace=replace)
         )
 
         for i, ix in enumerate(filtered_images_ix, start=1):
@@ -83,24 +67,9 @@ for k, v in common.LABELS.items():
             else:
                 path_parts[-3] = 'cec-validation'
 
-            # Do until a face is detected.
-            faces = []
-            new_ix = ix - 1
-            direction = -1
-            while len(faces) == 0:
-                # Load MPI image.
-                image = cv2.imread(image_path)
-                faces = common.extract_face(image, 50)
-
-                if new_ix < 0:
-                    new_ix = ix + 1
-                    direction = 1
-                elif new_ix > len(filtered_images_paths) - 1:
-                    new_ix = ix - 1
-                    direction = -1
-
-                image_path = filtered_images_paths[new_ix]
-                new_ix += direction
+            # Load MPI image.
+            image = cv2.imread(image_path)
+            faces = common.extract_face(image, 50)
 
             # To gray scale and resize.
             face = cv2.cvtColor(faces[0], cv2.COLOR_RGB2GRAY)
