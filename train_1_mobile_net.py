@@ -10,7 +10,7 @@ def build_model():
         include_top=False,
         input_shape=(224, 224, 3)
     )
-    pre_model.summary()
+    # pre_model.summary()
     # pre_model = tf.keras.applications.ResNet152(
     #     include_top=False,
     #     input_tensor=tf.keras.layers.Input(shape=(224, 224, 3))
@@ -38,6 +38,7 @@ def build_model():
     # Process 50 frames, each of 224x244 RGB
     rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(5, 224, 224, 3)))
     # rnn_model.add(tf.keras.layers.TimeDistributed(tf.keras.layers.Flatten()))
+    # rnn_model.add(cnn_model)
 
     # Build the classification layer.
     rnn_model.add(tf.keras.layers.LSTM(64))
@@ -49,7 +50,7 @@ def build_model():
     rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.Dense(128, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
-    rnn_model.add(tf.keras.layers.Dense(1, activation='softmax'))
+    rnn_model.add(tf.keras.layers.Dense(51, activation='softmax'))
 
     return rnn_model
 
@@ -67,8 +68,9 @@ def train():
 
     model.compile(
         optimizer=tf.keras.optimizers.Adam(),
-        loss=tf.keras.losses.categorical_crossentropy,
-        metrics=[tf.keras.metrics.Accuracy()]
+        loss=tf.keras.losses.sparse_categorical_crossentropy,
+        # metrics=[tf.keras.metrics.Accuracy()]
+        metrics=['accuracy']
     )
 
     train_idg = TimeDistributedImageDataGenerator(
@@ -80,7 +82,7 @@ def train():
         horizontal_flip=True,
         rescale=1. / 255,
         validation_split=0.2,
-        time_steps=5
+        time_steps=5,
     )
 
     # train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
@@ -101,10 +103,10 @@ def train():
             common.TRAIN_DATA_PATH,
             target_size=(224, 224),
             batch_size=32,
-            class_mode='categorical',
+            class_mode='sparse',
             shuffle=True,
             seed=common.SEED_VALUE,
-            classes=['agree_pure']
+            # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/train'
         ),
         # validation_data=validation_idg.flow_from_directory(
