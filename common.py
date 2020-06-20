@@ -1,21 +1,12 @@
-import os
 import pathlib
 
-import cv2
 import dlib
-import imutils.paths
-import numpy as np
-
 import matplotlib.pyplot as plt
-
-# The Large MPI DB were recorded with 10 actors and actresses. These are their
-# codes.
-CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
 
 # User home.
 HOME = str(pathlib.Path.home())
 
-# Directory to download the MPI DB
+# Directory to download the Large MPI DB
 MPI_LARGE_DB_PATH = f'{HOME}/.keras/large-mpi-db'
 
 # Directory for training set.
@@ -31,6 +22,11 @@ SEED_VALUE = 436
 
 EPOCHS = 50
 
+# The Large MPI DB were recorded with 10 actors and actresses. These are their
+# codes.
+CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
+
+# The class names or categories for each facial expression.
 LABELS = {
     0: 'agree_considered',
     1: 'agree_continue',
@@ -117,46 +113,6 @@ def extract_face(image, padding=0):
     detected_faces.clear()
 
     return faces
-
-
-def load_train_data(resize_shape=(224, 224)):
-    labels = []
-    data = []
-
-    reversed_labels = {v: k for k, v in LABELS.items()}
-
-    image_paths = imutils.paths.list_images(TRAIN_DATA_PATH)
-    for image_path in image_paths:
-        x = image_path.split(os.path.sep)
-
-        label = x[-2]
-        labels.append(reversed_labels[label])
-
-        image = cv2.imread(image_path)
-        image = cv2.resize(image, resize_shape)
-        data.append(image)
-
-    return np.array(data), np.array(labels)
-
-
-def load_test_data(resize_shape=(224, 224)):
-    labels = []
-    data = []
-
-    reversed_labels = {v: k for k, v in LABELS.items()}
-
-    image_paths = imutils.paths.list_images(TEST_DATA_PATH)
-    for image_path in image_paths:
-        x = image_path.split(os.path.sep)
-
-        label = x[-2]
-        labels.append(reversed_labels[label])
-
-        image = cv2.imread(image_path)
-        image = cv2.resize(image, resize_shape)
-        data.append(image)
-
-    return np.array(data), np.array(labels)
 
 
 def plot_acc(history, title="Model Accuracy"):
