@@ -29,6 +29,8 @@ ALL_DATA_PATH = f'{HOME}/.keras/datasets/cec-data'
 
 SEED_VALUE = 436
 
+EPOCHS = 50
+
 LABELS = {
     0: 'agree_considered',
     1: 'agree_continue',
