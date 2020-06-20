@@ -28,6 +28,14 @@ df = df.sort_values(by='seq')
 print('Shortest videos:')
 print(df.head())
 print()
-print(f"Longest video: {df['seq'].max()}")
-print(f"Shortest video: {df['seq'].min()}")
+
+print(f"Longest video: {df['seq'].max()} frames.")
+print(df.iloc[df['seq'].argmax()])
+print()
+
+print(f"Shortest video: {df['seq'].min()} frames.")
+print(df.iloc[df['seq'].argmin()])
+print()
+
 print(f"Mean frames: {df['seq'].mean()}")
+print(f"STD frames: {df['seq'].std()}")

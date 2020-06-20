@@ -1,6 +1,6 @@
 import tensorflow as tf
-from TimeDistributedImageDataGenerator.TimeDistributedImageDataGenerator import TimeDistributedImageDataGenerator
 
+from utils.keras import generators
 import common
 
 
@@ -10,11 +10,6 @@ def build_model():
         include_top=False,
         input_shape=(224, 224, 3)
     )
-    # pre_model.summary()
-    # pre_model = tf.keras.applications.ResNet152(
-    #     include_top=False,
-    #     input_tensor=tf.keras.layers.Input(shape=(224, 224, 3))
-    # )
 
     # Allow to retrain the last convolutional layer.
     trainable = 3
@@ -35,10 +30,8 @@ def build_model():
     # Now build the RNN model.
     rnn_model = tf.keras.models.Sequential()
 
-    # Process 50 frames, each of 224x244 RGB
-    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(5, 224, 224, 3)))
-    # rnn_model.add(tf.keras.layers.TimeDistributed(tf.keras.layers.Flatten()))
-    # rnn_model.add(cnn_model)
+    # Process 64 frames, each of 224x244x3
+    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(64, 224, 224, 3)))
 
     # Build the classification layer.
     rnn_model.add(tf.keras.layers.LSTM(64))
@@ -69,11 +62,10 @@ def train():
     model.compile(
         optimizer=tf.keras.optimizers.Adam(),
         loss=tf.keras.losses.sparse_categorical_crossentropy,
-        # metrics=[tf.keras.metrics.Accuracy()]
         metrics=['accuracy']
     )
 
-    train_idg = TimeDistributedImageDataGenerator(
+    train_idg = generators.TimeDistributedImageDataGenerator(
         rotation_range=30,
         zoom_range=0.15,
         width_shift_range=0.2,
@@ -81,22 +73,12 @@ def train():
         shear_range=0.15,
         horizontal_flip=True,
         rescale=1. / 255,
-        validation_split=0.2,
-        time_steps=5,
+        time_steps=64,
     )
 
-    # train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
-    #     rotation_range=30,
-    #     zoom_range=0.15,
-    #     width_shift_range=0.2,
-    #     height_shift_range=0.2,
-    #     shear_range=0.15,
-    #     horizontal_flip=True,
-    #     rescale=1. / 255,
-    #     validation_split = 0.2,
-    # )
-
-    validation_idg = tf.keras.preprocessing.image.ImageDataGenerator()
+    validation_idg = generators.TimeDistributedImageDataGenerator(
+        time_steps=64,
+    )
 
     history = model.fit(
         train_idg.flow_from_directory(
@@ -104,21 +86,19 @@ def train():
             target_size=(224, 224),
             batch_size=32,
             class_mode='sparse',
-            shuffle=True,
-            seed=common.SEED_VALUE,
+            shuffle=False,
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/train'
         ),
-        # validation_data=validation_idg.flow_from_directory(
-        #     common.TEST_DATA_PATH,
-        #     target_size=(224, 224),
-        #     batch_size=50,
-        #     class_mode='categorical',
-        #     shuffle=True,
-        #     seed=common.SEED_VALUE,
-        #     classes=['agree_pure']
-        #     # save_to_dir='./data/test'
-        # ),
+        validation_data=validation_idg.flow_from_directory(
+            common.TEST_DATA_PATH,
+            target_size=(224, 224),
+            batch_size=32,
+            class_mode='sparse',
+            shuffle=False,
+            # classes=['agree_pure', 'agree_considered'],
+            # save_to_dir='./data/test'
+        ),
         callbacks=callbacks,
         epochs=common.EPOCHS,
     )
