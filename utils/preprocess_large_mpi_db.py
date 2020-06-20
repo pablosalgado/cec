@@ -46,11 +46,9 @@ import imutils.paths
 import common
 import numpy as np
 
-# The first 8 actors and actresses are used to build the training set.
-train_codes = common.CODES[0:8]
-
-# The last 2 are used to build the test set.
-test_codes = common.CODES[8:]
+train_codes = common.CODES[2:10]
+test_codes = common.CODES[1:2]
+validation_codes = common.CODES[0:1]
 
 # Collect paths for all PNGs in the MPI directory.
 images_paths = sorted(imutils.paths.list_images(common.MPI_LARGE_DB_PATH))
@@ -76,16 +74,14 @@ for k, v in common.LABELS.items():
             path_parts = image_path.split(os.path.sep)
             filename = path_parts[-1]
 
-            # Actor/actress code is taken from first four letters of the file name:
-            # juhm_agree_considered_001.png -> juhm
-            # code = filename[0:4]
-
             # Decide if the preprocessed image is going to training or testing sets.
             path_parts.insert(-3, 'datasets')
             if code in train_codes:
                 path_parts[-3] = 'cec-train'
-            else:
+            elif code in test_codes:
                 path_parts[-3] = 'cec-test'
+            else:
+                path_parts[-3] = 'cec-validation'
 
             # Do until a face is detected.
             faces = []
@@ -94,7 +90,7 @@ for k, v in common.LABELS.items():
             while len(faces) == 0:
                 # Load MPI image.
                 image = cv2.imread(image_path)
-                faces = common.extract_face(image)
+                faces = common.extract_face(image, 50)
 
                 if new_ix < 0:
                     new_ix = ix + 1
