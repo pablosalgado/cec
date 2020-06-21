@@ -190,6 +190,8 @@ def split_data(time_steps=8) -> None:
     :param time_steps: Sequence step. By default 8 steps.
     :return: None
     """
+    download_data()
+
     train_codes = CODES[2:10]
     test_codes = CODES[1:2]
     validation_codes = CODES[0:1]
