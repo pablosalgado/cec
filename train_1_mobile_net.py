@@ -5,10 +5,36 @@
 # contact: pabloasalgado@gmail.com
 #
 
+import os
+
 import tensorflow as tf
 
-from utils.keras import generators
 import common
+from utils.keras import generators
+
+# Parameters
+TIME_STEPS = 8
+EPOCHS = 3
+MDL_PATH = 'models/1/MobileNet'
+
+os.makedirs(MDL_PATH, exist_ok=True)
+
+CKP_PATH = MDL_PATH + '/ckpts/cp-{epoch:04d}.ckpt'
+LOG_PATH = MDL_PATH + '/training.csv'
+PLT_PATH = MDL_PATH + '/plot.png'
+SVD_PATH = MDL_PATH + '/model'
+
+# Configure callbacks
+CALLBACKS = [
+    tf.keras.callbacks.ModelCheckpoint(
+        filepath=CKP_PATH,
+        save_weights_only=True,
+        verbose=1
+    ),
+    tf.keras.callbacks.CSVLogger(
+        filename=LOG_PATH
+    )
+]
 
 
 def build_model():
@@ -18,12 +44,9 @@ def build_model():
         input_shape=(224, 224, 3)
     )
 
-    # Allow to retrain the last convolutional layer.
-    trainable = 3
-    for layer in pre_model.layers[:-trainable]:
+    # Freezes all layers.
+    for layer in pre_model.layers:
         layer.trainable = False
-    for layer in pre_model.layers[-trainable:]:
-        layer.trainable = True
 
     # Build the new CNN adding a layer to flatten the convolution as required
     # to 1D for the RNN,
@@ -37,59 +60,53 @@ def build_model():
     # Now build the RNN model.
     rnn_model = tf.keras.models.Sequential()
 
-    # Process 64 frames, each of 224x244x3
-    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(64, 224, 224, 3)))
+    # Process n frames, each of 224x244x3
+    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 224, 224, 3)))
 
     # Build the classification layer.
-    rnn_model.add(tf.keras.layers.LSTM(64))
+    rnn_model.add(tf.keras.layers.LSTM(4))
     rnn_model.add(tf.keras.layers.Dense(1024, activation='relu'))
-    rnn_model.add(tf.keras.layers.Dropout(0.5))
-    rnn_model.add(tf.keras.layers.Dense(512, activation='relu'))
-    rnn_model.add(tf.keras.layers.Dropout(0.5))
-    rnn_model.add(tf.keras.layers.Dense(256, activation='relu'))
-    rnn_model.add(tf.keras.layers.Dropout(0.5))
-    rnn_model.add(tf.keras.layers.Dense(128, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.Dense(51, activation='softmax'))
 
-    return rnn_model
-
-
-def train():
-    # Configure callbacks
-    checkpoint_path = 'models/1/MobileNet/ckpts/cp-{epoch:04d}.ckpt'
-
-    callbacks = [
-        tf.keras.callbacks.ModelCheckpoint(
-            filepath=checkpoint_path
-        )
-    ]
-
-    # Download data
-    common.download_training_data()
-    common.download_validation_data()
-
-    # Build and compile the model
-    model = build_model()
-    model.compile(
+    rnn_model.compile(
         optimizer=tf.keras.optimizers.Adam(),
         loss=tf.keras.losses.sparse_categorical_crossentropy,
         metrics=['accuracy']
     )
 
+    return rnn_model
+
+
+def train():
+    # Download and split data.
+    common.split_data(TIME_STEPS)
+
+    # Build and compile the model.
+    model = build_model()
+
+    # model.save_weights(CKP_PATH.format(epoch=0))
+
+    # Load last checkpoint if any.
+    # model.load_weights(
+    #     tf.train.latest_checkpoint(
+    #         os.path.dirname(CKP_PATH)
+    #     )
+    # )
+
     train_idg = generators.TimeDistributedImageDataGenerator(
-        rotation_range=30,
-        zoom_range=0.15,
-        width_shift_range=0.2,
-        height_shift_range=0.2,
-        shear_range=0.15,
-        horizontal_flip=True,
-        rescale=1. / 255,
-        time_steps=64,
+        # rotation_range=30,
+        # zoom_range=0.15,
+        # width_shift_range=0.2,
+        # height_shift_range=0.2,
+        # shear_range=0.15,
+        # horizontal_flip=True,
+        # rescale=1. / 255,
+        time_steps=TIME_STEPS,
     )
 
     validation_idg = generators.TimeDistributedImageDataGenerator(
-        time_steps=64,
+        time_steps=TIME_STEPS,
     )
 
     history = model.fit(
@@ -111,13 +128,13 @@ def train():
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/test'
         ),
-        callbacks=callbacks,
-        epochs=common.EPOCHS,
+        callbacks=CALLBACKS,
+        epochs=EPOCHS,
     )
 
-    model.save('models/1/MobileNet/model/ResNet152')
+    model.save(SVD_PATH)
 
-    common.plot_acc_loss(history, 'models/1/MobileNet/model/plot.png')
+    common.plot_acc_loss(history, PLT_PATH)
 
 
 if __name__ == '__main__':

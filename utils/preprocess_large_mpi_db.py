@@ -12,26 +12,15 @@
 # actresses were selected for the train set, the remaining two were selected
 # for testing and validations sets.
 #
-# The train data are available at:
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz
-#
-# The validation data are available at:
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz
-#
-# The test data are available at:
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-validation.tar.gz
-#
+# This data is available at:
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data.tar.gz
 
 import os
 
 import cv2
 import imutils.paths
-import common
-import numpy as np
 
-train_codes = common.CODES[2:10]
-test_codes = common.CODES[1:2]
-validation_codes = common.CODES[0:1]
+import common
 
 # Collect paths for all PNGs in the MPI directory.
 image_paths = imutils.paths.list_images(common.MPI_LARGE_DB_PATH)
@@ -57,7 +46,7 @@ for image_path in image_paths:
     # Load MPI image.
     image = cv2.imread(image_path)
 
-    # Extract the face if posible.
+    # Extract the face if possible.
     faces = common.extract_face(image, 50)
 
     # If no face found log the picture path and continue.

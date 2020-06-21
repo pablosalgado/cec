@@ -4,11 +4,16 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-
+import os
 import pathlib
-import tensorflow as tf
+
+import cv2
 import dlib
+import imutils
+import imutils.paths
 import matplotlib.pyplot as plt
+import numpy as np
+import tensorflow as tf
 
 # User home.
 HOME = str(pathlib.Path.home())
@@ -29,8 +34,6 @@ VALIDATION_DATA_PATH = f'{HOME}/.keras/datasets/cec-validation'
 ALL_DATA_PATH = f'{HOME}/.keras/datasets/cec-data'
 
 SEED_VALUE = 436
-
-EPOCHS = 50
 
 # The Large MPI DB were recorded with 10 actors and actresses. These are their
 # codes.
@@ -167,25 +170,83 @@ def plot_acc_loss(history, path):
     plt.savefig(path)
 
 
-def download_training_data():
+def download_data():
     tf.keras.utils.get_file(
-        fname='cec-train.tar.gz',
-        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz',
+        fname='cec-data.tar.gz',
+        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data.tar.gz',
         extract=True
     )
 
 
-def download_test_data():
-    tf.keras.utils.get_file(
-        fname='cec-test.tar.gz',
-        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz',
-        extract=True
-    )
+def split_data(time_steps=8) -> None:
+    """
+    Splits large MPI DB images in three sets: training, validation and testing.
+    Since RNN needs a sequence, this function randomly selects n frames from DB
+    to create a sequence with the given time steps.
 
+    Files are created in ~/.keras/datasets/cec-train, ~/.keras/datasets/cec-test
+    ~/.keras/datasets/cec-validation
 
-def download_validation_data():
-    tf.keras.utils.get_file(
-        fname='cec-validation.tar.gz',
-        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-validation.tar.gz',
-        extract=True
-    )
+    :param time_steps: Sequence step. By default 8 steps.
+    :return: None
+    """
+    train_codes = CODES[2:10]
+    test_codes = CODES[1:2]
+    validation_codes = CODES[0:1]
+
+    for image_path in imutils.paths.list_images(TEST_DATA_PATH):
+        os.remove(image_path)
+    for image_path in imutils.paths.list_images(TRAIN_DATA_PATH):
+        os.remove(image_path)
+    for image_path in imutils.paths.list_images(VALIDATION_DATA_PATH):
+        os.remove(image_path)
+
+        # Collect paths for all PNGs in the MPI directory.
+    images_paths = sorted(imutils.paths.list_images(ALL_DATA_PATH))
+
+    for k, v in LABELS.items():
+        for code in CODES:
+            filtered_images_paths = list(
+                filter(
+                    lambda image_path: image_path.split(os.path.sep)[-1].startswith(code)
+                                       and image_path.split(os.path.sep)[-2] == v,
+                    images_paths
+                )
+            )
+
+            replace = len(filtered_images_paths) < time_steps
+            filtered_images_ix = np.sort(
+                np.random.default_rng().choice(
+                    len(filtered_images_paths),
+                    size=time_steps,
+                    replace=replace
+                )
+            )
+
+            for i, ix in enumerate(filtered_images_ix, start=1):
+                image_path = filtered_images_paths[ix]
+
+                # Get path parts. Last part is the file name, rest are name
+                # directories.
+                path_parts = image_path.split(os.path.sep)
+
+                # Decide if the preprocessed image is going to training, testing
+                # validation sets.
+                if code in train_codes:
+                    path_parts[-3] = 'cec-train'
+                elif code in test_codes:
+                    path_parts[-3] = 'cec-test'
+                elif code in validation_codes:
+                    path_parts[-3] = 'cec-validation'
+                else:
+                    continue
+
+                dirs = os.path.sep.join(path_parts[:-1])
+                os.makedirs(dirs, exist_ok=True)
+
+                # Save the preprocessed image.
+                image = cv2.imread(image_path)
+                path_parts[-1] = f'{code}_{v}_{i:03d}.png'
+                save_path = os.path.sep.join(path_parts)
+                cv2.imwrite(save_path, image)
+                # print(f'{image_path} -> {save_path}')
