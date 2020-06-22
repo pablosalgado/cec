@@ -13,8 +13,8 @@ import common
 from utils.keras import generators
 
 # Parameters
-TIME_STEPS = 8
-EPOCHS = 3
+TIME_STEPS = 16
+EPOCHS = 50
 MDL_PATH = 'models/1/ResNet152'
 
 os.makedirs(MDL_PATH, exist_ok=True)
@@ -64,7 +64,7 @@ def build_model():
     rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 224, 224, 3)))
 
     # Build the classification layer.
-    rnn_model.add(tf.keras.layers.LSTM(4))
+    rnn_model.add(tf.keras.layers.LSTM(64))
     rnn_model.add(tf.keras.layers.Dense(1024, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.Dense(51, activation='softmax'))
