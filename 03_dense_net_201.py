@@ -1,6 +1,26 @@
+# -----------------------------------------------------------------------------
+# Trains a model based on DenseNet201.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/03/DenseNet201.tar.gz
+
 import tensorflow as tf
 
 import common
+
+tf.keras.utils.get_file(
+    fname='cec-train.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz',
+    extract=True
+)
+
+tf.keras.utils.get_file(
+    fname='cec-test.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz',
+    extract=True
+)
 
 train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
     rotation_range=30,
@@ -61,6 +81,6 @@ history = model.fit(
     )
 )
 
-model.save('models/1/DenseNet201')
+model.save('models/03/DenseNet201')
 
-common.plot_acc_loss(history, 'models/1/DenseNet201/plot.png')
+common.plot_acc_loss(history, 'models/03/DenseNet201/plot.png')
