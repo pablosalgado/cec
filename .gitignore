@@ -136,5 +136,5 @@ dmypy.json
 /models/02/ResNet50.tar.gz
 /models/03/DenseNet201
 /models/03/DenseNet201.tar.gz
-/models/1/ResNet152
-/models/1/ResNet152.tar.gz
+/models/04/ResNet152
+/models/04/ResNet152.tar.gz
