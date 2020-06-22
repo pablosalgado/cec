@@ -16,7 +16,7 @@ import generators
 # Parameters
 TIME_STEPS = 16
 EPOCHS = 50
-MDL_PATH = '/content/drive/My Drive/models/05/MobileNet'
+MDL_PATH = 'models/05/MobileNet'
 
 os.makedirs(MDL_PATH, exist_ok=True)
 
@@ -34,6 +34,10 @@ CALLBACKS = [
     ),
     tf.keras.callbacks.CSVLogger(
         filename=LOG_PATH
+    ),
+    tf.keras.callbacks.EarlyStopping(
+        monitor='loss',
+        patience=2
     )
 ]
 
@@ -45,12 +49,14 @@ def build_model():
         input_shape=(224, 224, 3)
     )
 
-    # Freezes all layers.
-    for layer in pre_model.layers:
+    pre_model.summary()
+
+    # Allows to retrain the last convolutional layer.
+    for layer in pre_model.layers[:-3]:
         layer.trainable = False
 
     # Build the new CNN adding a layer to flatten the convolution as required
-    # to 1D for the RNN,
+    # to 1D for the RNN.
     cnn_model = tf.keras.models.Sequential(
         [
             pre_model,
@@ -96,13 +102,13 @@ def train():
     # )
 
     train_idg = generators.TimeDistributedImageDataGenerator(
-        # rotation_range=30,
-        # zoom_range=0.15,
-        # width_shift_range=0.2,
-        # height_shift_range=0.2,
-        # shear_range=0.15,
-        # horizontal_flip=True,
-        # rescale=1. / 255,
+        rotation_range=30,
+        zoom_range=0.15,
+        width_shift_range=0.2,
+        height_shift_range=0.2,
+        shear_range=0.15,
+        horizontal_flip=True,
+        rescale=1. / 255,
         time_steps=TIME_STEPS,
     )
 
