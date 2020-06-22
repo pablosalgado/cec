@@ -10,6 +10,18 @@ import tensorflow as tf
 
 import common
 
+tf.keras.utils.get_file(
+    fname='cec-train.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz',
+    extract=True
+)
+
+tf.keras.utils.get_file(
+    fname='cec-test.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz',
+    extract=True
+)
+
 train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
     rotation_range=30,
     zoom_range=0.15,

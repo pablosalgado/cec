@@ -1,10 +1,18 @@
+# -----------------------------------------------------------------------------
+# Trains a model based on ResNet50.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/02/ResNet50.tar.gz
+
 import tensorflow as tf
 
 import common
 
 tf.keras.utils.get_file(
-    fname='cec-data.tar',
-    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data.tar',
+    fname='cec-data.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data.tar.gz',
     extract=True
 )
 
@@ -56,6 +64,6 @@ history = model.fit(
     epochs=50
 )
 
-model.save('models/2/ResNet50')
+model.save('models/02/ResNet50')
 
-common.plot_acc_loss(history, 'models/2/ResNet50/plot.png')
+common.plot_acc_loss(history, 'models/02/ResNet50/plot.png')
