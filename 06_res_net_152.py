@@ -100,13 +100,13 @@ def train():
     # )
 
     train_idg = generators.TimeDistributedImageDataGenerator(
-        # rotation_range=30,
-        # zoom_range=0.15,
-        # width_shift_range=0.2,
-        # height_shift_range=0.2,
-        # shear_range=0.15,
-        # horizontal_flip=True,
-        # rescale=1. / 255,
+        rotation_range=30,
+        zoom_range=0.15,
+        width_shift_range=0.2,
+        height_shift_range=0.2,
+        shear_range=0.15,
+        horizontal_flip=True,
+        rescale=1. / 255,
         time_steps=TIME_STEPS,
     )
 
