@@ -4,6 +4,7 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/06/ResNet152.tar.gz
 
 import os
 
@@ -15,7 +16,7 @@ import generators
 # Parameters
 TIME_STEPS = 16
 EPOCHS = 50
-MDL_PATH = 'models/1/ResNet152'
+MDL_PATH = 'models/06/ResNet152'
 
 os.makedirs(MDL_PATH, exist_ok=True)
 

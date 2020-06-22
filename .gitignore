@@ -140,3 +140,5 @@ dmypy.json
 /models/04/ResNet152.tar.gz
 /models/05/MobileNet
 /models/05/MobileNet.tar.gz
+/models/06/ResNet152
+/models/06/ResNet152.tar.gz
