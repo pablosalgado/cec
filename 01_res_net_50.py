@@ -1,3 +1,11 @@
+# -----------------------------------------------------------------------------
+# Trains a model based on ResNet50.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/01/ResNet50.tar.gz
+
 import tensorflow as tf
 
 import common
@@ -60,6 +68,6 @@ history = model.fit(
     )
 )
 
-model.save('models/1/ResNet50')
+model.save('models/01/ResNet50')
 
-common.plot_acc_loss(history, 'models/1/ResNet50/plot.png')
+common.plot_acc_loss(history, 'models/01/ResNet50/plot.png')
