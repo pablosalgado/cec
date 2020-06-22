@@ -34,23 +34,27 @@ CALLBACKS = [
     ),
     tf.keras.callbacks.CSVLogger(
         filename=LOG_PATH
+    ),
+    tf.keras.callbacks.EarlyStopping(
+        monitor='loss',
+        patience=2
     )
 ]
 
 
 def build_model():
-    # Load MobileNet model excluding top.
+    # Load ResNet152 model excluding top.
     pre_model = tf.keras.applications.ResNet152(
         include_top=False,
         input_shape=(224, 224, 3)
     )
 
-    # Freezes all layers.
-    for layer in pre_model.layers:
+    # Allows to retrain last convolutional layer.
+    for layer in pre_model.layers[:-4]:
         layer.trainable = False
 
     # Build the new CNN adding a layer to flatten the convolution as required
-    # to 1D for the RNN,
+    # to 1D for the RNN.
     cnn_model = tf.keras.models.Sequential(
         [
             pre_model,
