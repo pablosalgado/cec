@@ -1,6 +1,20 @@
+# -----------------------------------------------------------------------------
+# Trains a model based on ResNet50.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/02/ResNet50.tar.gz
+
 import tensorflow as tf
 
 import common
+
+tf.keras.utils.get_file(
+    fname='cec-data.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data.tar.gz',
+    extract=True
+)
 
 train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
     rotation_range=30,
@@ -14,12 +28,11 @@ train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
 
 validation_idg = tf.keras.preprocessing.image.ImageDataGenerator()
 
-pre_trained_model = tf.keras.applications.DenseNet201(
+pre_trained_model = tf.keras.applications.ResNet50(
     include_top=False,
     input_tensor=tf.keras.layers.Input(shape=(224, 224, 3))
 )
 
-# 709 layers with top
 for layer in pre_trained_model.layers:
     layer.trainable = False
 
@@ -39,7 +52,7 @@ model.compile(
 
 history = model.fit(
     train_idg.flow_from_directory(
-        common.TRAIN_DATA_PATH,
+        common.ALL_DATA_PATH,
         target_size=(224, 224),
         batch_size=32,
         class_mode='categorical',
@@ -48,19 +61,9 @@ history = model.fit(
         # classes=['agree_pure']
         # save_to_dir='./data/train'
     ),
-    epochs=50,
-    validation_data=validation_idg.flow_from_directory(
-        common.TEST_DATA_PATH,
-        target_size=(224, 224),
-        batch_size=32,
-        class_mode='categorical',
-        shuffle=True,
-        seed=common.SEED_VALUE,
-        # classes=['agree_pure']
-        # save_to_dir='./data/test'
-    )
+    epochs=50
 )
 
-model.save('models/1/DenseNet201')
+model.save('models/02/ResNet50')
 
-common.plot_acc_loss(history, 'models/1/DenseNet201/plot.png')
+common.plot_acc_loss(history, 'models/02/ResNet50/plot.png')

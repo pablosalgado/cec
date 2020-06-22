@@ -1,6 +1,26 @@
+# -----------------------------------------------------------------------------
+# Trains a model based on DenseNet201.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/03/DenseNet201.tar.gz
+
 import tensorflow as tf
 
 import common
+
+tf.keras.utils.get_file(
+    fname='cec-train.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz',
+    extract=True
+)
+
+tf.keras.utils.get_file(
+    fname='cec-test.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz',
+    extract=True
+)
 
 train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
     rotation_range=30,
@@ -14,11 +34,12 @@ train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
 
 validation_idg = tf.keras.preprocessing.image.ImageDataGenerator()
 
-pre_trained_model = tf.keras.applications.ResNet50(
+pre_trained_model = tf.keras.applications.DenseNet201(
     include_top=False,
     input_tensor=tf.keras.layers.Input(shape=(224, 224, 3))
 )
 
+# 709 layers with top
 for layer in pre_trained_model.layers:
     layer.trainable = False
 
@@ -60,6 +81,6 @@ history = model.fit(
     )
 )
 
-model.save('models/1/ResNet50')
+model.save('models/03/DenseNet201')
 
-common.plot_acc_loss(history, 'models/1/ResNet50/plot.png')
+common.plot_acc_loss(history, 'models/03/DenseNet201/plot.png')

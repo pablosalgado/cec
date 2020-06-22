@@ -10,7 +10,7 @@ import os
 import tensorflow as tf
 
 import common
-from utils.keras import generators
+import generators
 
 # Parameters
 TIME_STEPS = 16

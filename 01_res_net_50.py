@@ -1,10 +1,24 @@
+# -----------------------------------------------------------------------------
+# Trains a model based on ResNet50.
+#
+# author: Pablo Salgado
+# contact: pabloasalgado@gmail.com
+#
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/01/ResNet50.tar.gz
+
 import tensorflow as tf
 
 import common
 
 tf.keras.utils.get_file(
-    fname='cec-data.tar',
-    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data.tar',
+    fname='cec-train.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz',
+    extract=True
+)
+
+tf.keras.utils.get_file(
+    fname='cec-test.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz',
     extract=True
 )
 
@@ -44,7 +58,7 @@ model.compile(
 
 history = model.fit(
     train_idg.flow_from_directory(
-        common.ALL_DATA_PATH,
+        common.TRAIN_DATA_PATH,
         target_size=(224, 224),
         batch_size=32,
         class_mode='categorical',
@@ -53,9 +67,19 @@ history = model.fit(
         # classes=['agree_pure']
         # save_to_dir='./data/train'
     ),
-    epochs=50
+    epochs=50,
+    validation_data=validation_idg.flow_from_directory(
+        common.TEST_DATA_PATH,
+        target_size=(224, 224),
+        batch_size=32,
+        class_mode='categorical',
+        shuffle=True,
+        seed=common.SEED_VALUE,
+        # classes=['agree_pure']
+        # save_to_dir='./data/test'
+    )
 )
 
-model.save('models/2/ResNet50')
+model.save('models/01/ResNet50')
 
-common.plot_acc_loss(history, 'models/2/ResNet50/plot.png')
+common.plot_acc_loss(history, 'models/01/ResNet50/plot.png')
