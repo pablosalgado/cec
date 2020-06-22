@@ -49,8 +49,6 @@ def build_model():
         input_shape=(224, 224, 3)
     )
 
-    pre_model.summary()
-
     # Allows to retrain the last convolutional layer.
     for layer in pre_model.layers[:-3]:
         layer.trainable = False
