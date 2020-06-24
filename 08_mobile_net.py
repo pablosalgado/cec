@@ -14,8 +14,8 @@ import common
 import generators
 
 # Parameters
-BATCH_SIZE = 16
-TIME_STEPS = 128
+BATCH_SIZE = 32
+TIME_STEPS = 64
 EPOCHS = 50
 MDL_PATH = 'models/08/MobileNet'
 
@@ -47,7 +47,7 @@ def build_model():
     # Load MobileNet model excluding top.
     pre_model = tf.keras.applications.mobilenet.MobileNet(
         include_top=False,
-        input_shape=(224, 224, 3)
+        input_shape=(48, 48, 3)
     )
 
     # Allows to retrain the last convolutional layer.
@@ -67,7 +67,7 @@ def build_model():
     rnn_model = tf.keras.models.Sequential()
 
     # Process n frames, each of 224x244x3
-    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 224, 224, 3)))
+    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 48, 48, 3)))
 
     # Build the classification layer.
     rnn_model.add(tf.keras.layers.LSTM(64))
@@ -118,19 +118,21 @@ def train():
     history = model.fit(
         train_idg.flow_from_directory(
             common.TRAIN_DATA_PATH,
-            target_size=(224, 224),
+            target_size=(48, 48),
             batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
+            color_mode='rgb'
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/train'
         ),
         validation_data=validation_idg.flow_from_directory(
             common.VALIDATION_DATA_PATH,
-            target_size=(224, 224),
+            target_size=(48, 48),
             batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
+            color_mode='rgb'
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/test'
         ),
