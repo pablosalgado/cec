@@ -182,7 +182,7 @@ def download_data():
 
 def download_data_48x48():
     tf.keras.utils.get_file(
-        fname='cec-data.tar.gz',
+        fname='cec-data-48x48.tar.gz',
         origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data-48x48.tar.gz',
         extract=True
     )
