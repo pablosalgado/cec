@@ -17,7 +17,7 @@ import generators
 BATCH_SIZE = 16
 TIME_STEPS = 64
 EPOCHS = 50
-MDL_PATH = '/content/drive/My Drive/models/09/MobileNet'
+MDL_PATH = 'models/09/MobileNet'
 
 os.makedirs(MDL_PATH, exist_ok=True)
 
