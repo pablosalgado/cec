@@ -15,7 +15,7 @@ import generators
 
 # Parameters
 BATCH_SIZE = 8
-TIME_STEPS = 128
+TIME_STEPS = 64
 EPOCHS = 50
 MDL_PATH = 'models/10/MobileNet'
 
