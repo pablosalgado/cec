@@ -4,8 +4,8 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# This DB is huge about 30GB. Even one file is available for download, this
-# script, instead, downloads 130 compressed files.
+# This DB is huge about 30GB. Even one file is available for download, but
+# this script instead downloads 130 compressed files.
 #
 # Each file is downloaded and decompressed in "~/.keras/large-mpi-db"
 # Once all files are downloaded and decompressed, 51 directories are created,
