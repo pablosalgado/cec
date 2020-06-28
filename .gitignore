@@ -150,4 +150,8 @@ dmypy.json
 /models/09/MobileNet.tar.gz
 /models/10/MobileNet
 /models/10/MobileNet.tar.gz
+/models/11/MobileNet
+/models/11/MobileNet.tar.gz
+
 /utils/models.csv
+/data/

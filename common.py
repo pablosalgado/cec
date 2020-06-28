@@ -186,7 +186,7 @@ def download_data_48x48():
     )
 
 
-def split_data(time_steps=8) -> None:
+def split_data(time_steps=8, strategy=1) -> None:
     """
     Splits large MPI DB images in three sets: training, validation and testing.
     Since RNN needs a sequence, this function randomly selects n frames from DB
@@ -195,14 +195,22 @@ def split_data(time_steps=8) -> None:
     Files are created in ~/.keras/datasets/cec-train, ~/.keras/datasets/cec-test
     ~/.keras/datasets/cec-validation
 
+    :param strategy: If 1 uses a split 80%, 10%, 10% for training, validation
+    and testing. If 2 uses a split of 50%, 40%, 10% for training, validation and
+    testing.
     :param time_steps: Sequence step. By default 8 steps.
     :return: None
     """
     download_data()
 
-    train_codes = CODES[2:10]
-    test_codes = CODES[1:2]
-    validation_codes = CODES[0:1]
+    if strategy == 1:
+        train_codes = CODES[2:10]
+        test_codes = CODES[1:2]
+        validation_codes = CODES[0:1]
+    else:
+        train_codes = CODES[5:10]
+        test_codes = CODES[0:1]
+        validation_codes = CODES[1:5]
 
     for image_path in imutils.paths.list_images(TEST_DATA_PATH):
         os.remove(image_path)

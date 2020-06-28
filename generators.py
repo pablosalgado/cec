@@ -6,7 +6,7 @@
 #
 # Source code taken and adapted from:
 # https://github.com/kivijoshi/TimeDistributedImageDataGenerator
-
+import os
 import sys
 
 import tensorflow as tf

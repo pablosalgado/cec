@@ -66,7 +66,7 @@ def build_model():
     # Now build the RNN model.
     rnn_model = tf.keras.models.Sequential()
 
-    # Process n frames, each of 224x244x3
+    # Process n frames, each of 48x48x3
     rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 48, 48, 3)))
 
     # Build the classification layer.
@@ -122,7 +122,7 @@ def train():
             batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
-            color_mode='rgb'
+            color_mode='rgb',
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/train'
         ),
@@ -132,7 +132,7 @@ def train():
             batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
-            color_mode='rgb'
+            color_mode='rgb',
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/test'
         ),
