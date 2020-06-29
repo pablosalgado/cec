@@ -8,11 +8,11 @@ class History:
 
 history = History()
 
-df = pd.read_csv('../models/09/MobileNet/training.csv')
+df = pd.read_csv('./models/10/MobileNet/training.csv')
 df = df[['accuracy', 'loss', 'val_accuracy', 'val_loss']]
 d = df.to_dict()
 
 for x in d:
     history.history[x] = [v for k,v in d[x].items()]
 
-common.plot_acc_loss(history, '../models/09/plot.png')
+common.plot_acc_loss(history, './models/10/MobileNet/plot.png')
