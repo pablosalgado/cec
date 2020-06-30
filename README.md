@@ -1,2 +1,2 @@
 # Conversational emotion classifier
-Sistema cognitivo artificial para clasificación de expresiones faciales emocionales humanas para el apoyo cognitivo a personas con trastorno del espectro del autismo.
+An attempt to create an artificial cognitive system to classify conversational facial expressions as a software to support people with a disorded of the autism spectrum.
