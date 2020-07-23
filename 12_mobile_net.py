@@ -4,7 +4,7 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/10/MobileNet.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/12/MobileNet.tar.gz
 
 import os
 
@@ -128,13 +128,10 @@ def train():
         target_shape=(224, 224),
         nb_channel=3,
         transformation=data_aug,
-        use_frame_cache=True
+        use_frame_cache=False
     )
 
     validation_idg = train_idg.get_validation_generator()
-
-    import keras_video.utils
-    keras_video.utils.show_sample(train_idg)
 
     history = model.fit(
         train_idg,
