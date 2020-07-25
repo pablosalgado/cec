@@ -108,7 +108,7 @@ def extract_face(image, padding=0):
     :return: Una lista de imagenes con los rostros recortados de la imagen dada.
     """
     faces = []
-    
+
     # detector = mtcnn.MTCNN()
     # detected_faces = detector.detect_faces(image)
     # for detected_face in detected_faces:
@@ -274,6 +274,7 @@ def split_data(time_steps=8, strategy=1) -> None:
                 save_path = os.path.sep.join(path_parts)
                 cv2.imwrite(save_path, image)
                 # print(f'{image_path} -> {save_path}')
+
 
 def split_data_48x48(time_steps=8) -> None:
     """

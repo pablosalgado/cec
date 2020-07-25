@@ -1,0 +1,565 @@
+#!/bash/sh
+
+mkdir ~/.keras/datasets/cec-videos-224x224
+mkdir ~/.keras/datasets/cec-videos-224x224/agree_considered
+mkdir ~/.keras/datasets/cec-videos-224x224/agree_continue
+mkdir ~/.keras/datasets/cec-videos-224x224/agree_pure
+mkdir ~/.keras/datasets/cec-videos-224x224/agree_reluctant
+mkdir ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment
+mkdir ~/.keras/datasets/cec-videos-224x224/annoyed_bothered
+mkdir ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes
+mkdir ~/.keras/datasets/cec-videos-224x224/arrogant
+mkdir ~/.keras/datasets/cec-videos-224x224/bored
+mkdir ~/.keras/datasets/cec-videos-224x224/compassion
+mkdir ~/.keras/datasets/cec-videos-224x224/confused
+mkdir ~/.keras/datasets/cec-videos-224x224/contempt
+mkdir ~/.keras/datasets/cec-videos-224x224/disagree_considered
+mkdir ~/.keras/datasets/cec-videos-224x224/disagree_pure
+mkdir ~/.keras/datasets/cec-videos-224x224/disagree_reluctant
+mkdir ~/.keras/datasets/cec-videos-224x224/disbelief
+mkdir ~/.keras/datasets/cec-videos-224x224/disgust
+mkdir ~/.keras/datasets/cec-videos-224x224/embarrassment
+mkdir ~/.keras/datasets/cec-videos-224x224/fear_oops
+mkdir ~/.keras/datasets/cec-videos-224x224/fear_terror
+mkdir ~/.keras/datasets/cec-videos-224x224/happy_achievement
+mkdir ~/.keras/datasets/cec-videos-224x224/happy_laughing
+mkdir ~/.keras/datasets/cec-videos-224x224/happy_satiated
+mkdir ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude
+mkdir ~/.keras/datasets/cec-videos-224x224/I_did_not_hear
+mkdir ~/.keras/datasets/cec-videos-224x224/I_dont_care
+mkdir ~/.keras/datasets/cec-videos-224x224/I_dont_know
+mkdir ~/.keras/datasets/cec-videos-224x224/I_dont_understand
+mkdir ~/.keras/datasets/cec-videos-224x224/imagine_negative
+mkdir ~/.keras/datasets/cec-videos-224x224/imagine_positive
+mkdir ~/.keras/datasets/cec-videos-224x224/impressed
+mkdir ~/.keras/datasets/cec-videos-224x224/insecurity
+mkdir ~/.keras/datasets/cec-videos-224x224/not_convinced
+mkdir ~/.keras/datasets/cec-videos-224x224/pain_felt
+mkdir ~/.keras/datasets/cec-videos-224x224/pain_seen
+mkdir ~/.keras/datasets/cec-videos-224x224/remember_negative
+mkdir ~/.keras/datasets/cec-videos-224x224/remember_positive
+mkdir ~/.keras/datasets/cec-videos-224x224/sad
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_encouraging
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_endearment
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_flirting
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_sardonic
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_triumphant
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_uncertain
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_winning
+mkdir ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right
+mkdir ~/.keras/datasets/cec-videos-224x224/thinking_considering
+mkdir ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving
+mkdir ~/.keras/datasets/cec-videos-224x224/tired
+mkdir ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes
+
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/islf_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/islf_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/kabf_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/kabf_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/lekf_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/lekf_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/milf_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/milf_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/silf_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/silf_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/cawm_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/cawm_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/chsm_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/chsm_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/jakm_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/jakm_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/juhm_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/juhm_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_considered/mamm_agree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_considered/mamm_agree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/islf_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/islf_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/kabf_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/kabf_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/lekf_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/lekf_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/milf_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/milf_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/silf_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/silf_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/cawm_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/cawm_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/chsm_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/chsm_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/jakm_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/jakm_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/juhm_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/juhm_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_continue/mamm_agree_continue_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_continue/mamm_agree_continue.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/islf_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/islf_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/kabf_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/kabf_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/lekf_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/lekf_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/milf_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/milf_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/silf_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/silf_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/cawm_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/cawm_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/chsm_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/chsm_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/jakm_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/jakm_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/juhm_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/juhm_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_pure/mamm_agree_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_pure/mamm_agree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/islf_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/islf_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/kabf_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/kabf_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/lekf_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/lekf_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/milf_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/milf_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/silf_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/silf_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/cawm_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/cawm_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/chsm_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/chsm_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/jakm_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/jakm_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/juhm_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/juhm_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/agree_reluctant/mamm_agree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/agree_reluctant/mamm_agree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/islf_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/islf_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/kabf_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/kabf_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/lekf_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/lekf_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/milf_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/milf_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/silf_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/silf_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/cawm_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/cawm_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/chsm_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/chsm_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/jakm_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/jakm_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/juhm_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/juhm_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/aha-light_bulb_moment/mamm_aha_%03d.png ~/.keras/datasets/cec-videos-224x224/aha-light_bulb_moment/mamm_aha-light_bulb_moment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/islf_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/islf_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/kabf_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/kabf_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/lekf_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/lekf_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/milf_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/milf_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/silf_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/silf_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/cawm_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/cawm_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/chsm_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/chsm_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/jakm_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/jakm_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/juhm_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/juhm_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_bothered/mamm_annoyed_bothered_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_bothered/mamm_annoyed_bothered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/islf_annoyed-eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/islf_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/kabf_annoyed_eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/kabf_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/lekf_annoyed_eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/lekf_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/milf_annoyed-eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/milf_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/silf_annoyed-eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/silf_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/cawm_annoyed-eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/cawm_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/chsm_annoyed-eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/chsm_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/jakm_annoyed-eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/jakm_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/juhm_annoyed_eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/juhm_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/annoyed_rolling-eyes/mamm_annoyed-eyeroll_%03d.png ~/.keras/datasets/cec-videos-224x224/annoyed_rolling-eyes/mamm_annoyed_rolling-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/islf_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/islf_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/kabf_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/kabf_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/lekf_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/lekf_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/milf_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/milf_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/silf_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/silf_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/cawm_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/cawm_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/chsm_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/chsm_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/jakm_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/jakm_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/juhm_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/juhm_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/arrogant/mamm_arrogant_%03d.png ~/.keras/datasets/cec-videos-224x224/arrogant/mamm_arrogant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/islf_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/islf_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/kabf_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/kabf_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/lekf_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/lekf_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/milf_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/milf_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/silf_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/silf_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/cawm_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/cawm_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/chsm_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/chsm_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/jakm_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/jakm_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/juhm_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/juhm_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/bored/mamm_bored_%03d.png ~/.keras/datasets/cec-videos-224x224/bored/mamm_bored.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/islf_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/islf_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/kabf_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/kabf_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/lekf_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/lekf_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/milf_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/milf_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/silf_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/silf_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/cawm_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/cawm_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/chsm_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/chsm_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/jakm_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/jakm_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/juhm_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/juhm_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/compassion/mamm_compassion_%03d.png ~/.keras/datasets/cec-videos-224x224/compassion/mamm_compassion.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/islf_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/islf_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/kabf_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/kabf_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/lekf_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/lekf_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/milf_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/milf_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/silf_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/silf_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/cawm_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/cawm_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/chsm_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/chsm_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/jakm_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/jakm_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/juhm_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/juhm_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/confused/mamm_confused_%03d.png ~/.keras/datasets/cec-videos-224x224/confused/mamm_confused.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/islf_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/islf_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/kabf_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/kabf_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/lekf_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/lekf_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/milf_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/milf_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/silf_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/silf_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/cawm_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/cawm_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/chsm_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/chsm_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/jakm_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/jakm_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/juhm_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/juhm_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/contempt/mamm_contempt_%03d.png ~/.keras/datasets/cec-videos-224x224/contempt/mamm_contempt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/islf_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/islf_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/kabf_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/kabf_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/lekf_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/lekf_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/milf_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/milf_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/silf_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/silf_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/cawm_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/cawm_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/chsm_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/chsm_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/jakm_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/jakm_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/juhm_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/juhm_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_considered/mamm_disagree_considered_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_considered/mamm_disagree_considered.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/islf_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/islf_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/kabf_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/kabf_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/lekf_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/lekf_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/milf_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/milf_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/silf_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/silf_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/cawm_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/cawm_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/chsm_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/chsm_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/jakm_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/jakm_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/juhm_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/juhm_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_pure/mamm_disagree_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_pure/mamm_disagree_pure.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/islf_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/islf_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/kabf_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/kabf_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/lekf_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/lekf_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/milf_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/milf_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/silf_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/silf_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/cawm_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/cawm_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/chsm_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/chsm_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/jakm_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/jakm_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/juhm_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/juhm_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disagree_reluctant/mamm_disagree_reluctant_%03d.png ~/.keras/datasets/cec-videos-224x224/disagree_reluctant/mamm_disagree_reluctant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/islf_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/islf_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/kabf_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/kabf_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/lekf_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/lekf_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/milf_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/milf_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/silf_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/silf_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/cawm_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/cawm_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/chsm_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/chsm_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/jakm_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/jakm_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/juhm_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/juhm_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disbelief/mamm_disbelief_%03d.png ~/.keras/datasets/cec-videos-224x224/disbelief/mamm_disbelief.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/islf_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/islf_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/kabf_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/kabf_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/lekf_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/lekf_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/milf_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/milf_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/silf_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/silf_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/cawm_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/cawm_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/chsm_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/chsm_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/jakm_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/jakm_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/juhm_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/juhm_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/disgust/mamm_disgust_%03d.png ~/.keras/datasets/cec-videos-224x224/disgust/mamm_disgust.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/islf_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/islf_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/kabf_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/kabf_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/lekf_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/lekf_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/milf_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/milf_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/silf_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/silf_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/cawm_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/cawm_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/chsm_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/chsm_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/jakm_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/jakm_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/juhm_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/juhm_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/embarrassment/mamm_embarrassment_%03d.png ~/.keras/datasets/cec-videos-224x224/embarrassment/mamm_embarrassment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/islf_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/islf_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/kabf_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/kabf_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/lekf_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/lekf_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/milf_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/milf_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/silf_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/silf_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/cawm_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/cawm_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/chsm_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/chsm_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/jakm_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/jakm_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/juhm_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/juhm_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_oops/mamm_fear_oops_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_oops/mamm_fear_oops.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/islf_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/islf_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/kabf_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/kabf_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/lekf_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/lekf_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/milf_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/milf_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/silf_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/silf_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/cawm_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/cawm_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/chsm_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/chsm_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/jakm_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/jakm_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/juhm_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/juhm_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/fear_terror/mamm_fear_terror_%03d.png ~/.keras/datasets/cec-videos-224x224/fear_terror/mamm_fear_terror.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/islf_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/islf_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/kabf_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/kabf_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/lekf_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/lekf_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/milf_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/milf_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/silf_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/silf_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/cawm_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/cawm_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/chsm_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/chsm_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/jakm_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/jakm_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/juhm_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/juhm_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_achievement/mamm_happy_achievement_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_achievement/mamm_happy_achievement.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/islf_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/islf_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/kabf_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/kabf_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/lekf_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/lekf_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/milf_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/milf_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/silf_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/silf_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/cawm_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/cawm_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/chsm_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/chsm_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/jakm_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/jakm_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/juhm_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/juhm_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_laughing/mamm_happy_laughing_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_laughing/mamm_happy_laughing.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/islf_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/islf_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/kabf_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/kabf_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/lekf_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/lekf_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/milf_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/milf_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/silf_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/silf_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/cawm_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/cawm_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/chsm_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/chsm_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/jakm_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/jakm_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/juhm_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/juhm_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_satiated/mamm_happy_satiated_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_satiated/mamm_happy_satiated.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/islf_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/islf_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/kabf_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/kabf_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/lekf_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/lekf_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/milf_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/milf_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/silf_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/silf_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/cawm_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/cawm_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/chsm_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/chsm_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/jakm_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/jakm_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/juhm_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/juhm_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/happy_schadenfreude/mamm_schadenfreude_%03d.png ~/.keras/datasets/cec-videos-224x224/happy_schadenfreude/mamm_happy_schadenfreude.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/islf_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/islf_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/kabf_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/kabf_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/lekf_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/lekf_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/milf_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/milf_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/silf_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/silf_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/cawm_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/cawm_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/chsm_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/chsm_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/jakm_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/jakm_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/juhm_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/juhm_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_did_not_hear/mamm_dont_hear_%03d.png ~/.keras/datasets/cec-videos-224x224/I_did_not_hear/mamm_I_did_not_hear.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/islf_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/islf_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/kabf_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/kabf_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/lekf_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/lekf_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/milf_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/milf_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/silf_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/silf_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/cawm_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/cawm_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/chsm_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/chsm_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/jakm_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/jakm_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/juhm_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/juhm_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_care/mamm_dont_care_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_care/mamm_I_dont_care.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/islf_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/islf_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/kabf_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/kabf_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/lekf_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/lekf_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/milf_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/milf_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/silf_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/silf_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/cawm_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/cawm_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/chsm_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/chsm_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/jakm_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/jakm_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/juhm_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/juhm_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_know/mamm_dont_know_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_know/mamm_I_dont_know.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/islf_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/islf_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/kabf_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/kabf_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/lekf_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/lekf_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/milf_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/milf_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/silf_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/silf_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/cawm_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/cawm_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/chsm_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/chsm_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/jakm_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/jakm_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/juhm_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/juhm_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/I_dont_understand/mamm_dont_understand_%03d.png ~/.keras/datasets/cec-videos-224x224/I_dont_understand/mamm_I_dont_understand.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/islf_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/islf_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/kabf_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/kabf_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/lekf_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/lekf_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/milf_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/milf_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/silf_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/silf_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/cawm_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/cawm_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/chsm_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/chsm_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/jakm_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/jakm_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/juhm_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/juhm_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_negative/mamm_imagine-negative_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_negative/mamm_imagine_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/islf_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/islf_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/kabf_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/kabf_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/lekf_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/lekf_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/milf_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/milf_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/silf_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/silf_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/cawm_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/cawm_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/chsm_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/chsm_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/jakm_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/jakm_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/juhm_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/juhm_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/imagine_positive/mamm_imagine-positive_%03d.png ~/.keras/datasets/cec-videos-224x224/imagine_positive/mamm_imagine_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/islf_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/islf_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/kabf_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/kabf_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/lekf_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/lekf_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/milf_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/milf_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/silf_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/silf_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/cawm_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/cawm_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/chsm_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/chsm_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/jakm_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/jakm_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/juhm_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/juhm_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/impressed/mamm_impressed_%03d.png ~/.keras/datasets/cec-videos-224x224/impressed/mamm_impressed.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/islf_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/islf_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/kabf_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/kabf_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/lekf_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/lekf_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/milf_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/milf_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/silf_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/silf_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/cawm_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/cawm_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/chsm_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/chsm_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/jakm_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/jakm_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/juhm_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/juhm_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/insecurity/mamm_insecurity_%03d.png ~/.keras/datasets/cec-videos-224x224/insecurity/mamm_insecurity.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/islf_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/islf_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/kabf_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/kabf_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/lekf_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/lekf_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/milf_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/milf_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/silf_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/silf_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/cawm_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/cawm_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/chsm_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/chsm_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/jakm_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/jakm_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/juhm_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/juhm_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/not_convinced/mamm_not_convinced_%03d.png ~/.keras/datasets/cec-videos-224x224/not_convinced/mamm_not_convinced.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/islf_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/islf_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/kabf_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/kabf_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/lekf_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/lekf_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/milf_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/milf_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/silf_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/silf_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/cawm_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/cawm_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/chsm_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/chsm_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/jakm_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/jakm_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/juhm_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/juhm_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_felt/mamm_pain_felt_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_felt/mamm_pain_felt.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/islf_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/islf_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/kabf_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/kabf_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/lekf_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/lekf_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/milf_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/milf_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/silf_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/silf_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/cawm_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/cawm_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/chsm_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/chsm_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/jakm_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/jakm_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/juhm_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/juhm_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/pain_seen/mamm_pain_seen_%03d.png ~/.keras/datasets/cec-videos-224x224/pain_seen/mamm_pain_seen.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/islf_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/islf_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/kabf_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/kabf_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/lekf_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/lekf_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/milf_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/milf_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/silf_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/silf_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/cawm_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/cawm_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/chsm_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/chsm_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/jakm_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/jakm_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/juhm_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/juhm_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_negative/mamm_remember_negative_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_negative/mamm_remember_negative.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/islf_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/islf_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/kabf_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/kabf_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/lekf_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/lekf_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/milf_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/milf_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/silf_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/silf_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/cawm_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/cawm_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/chsm_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/chsm_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/jakm_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/jakm_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/juhm_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/juhm_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/remember_positive/mamm_remember_positive_%03d.png ~/.keras/datasets/cec-videos-224x224/remember_positive/mamm_remember_positive.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/islf_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/islf_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/kabf_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/kabf_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/lekf_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/lekf_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/milf_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/milf_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/silf_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/silf_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/cawm_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/cawm_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/chsm_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/chsm_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/jakm_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/jakm_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/juhm_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/juhm_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/sad/mamm_sad_%03d.png ~/.keras/datasets/cec-videos-224x224/sad/mamm_sad.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/islf_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/islf_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/kabf_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/kabf_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/lekf_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/lekf_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/milf_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/milf_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/silf_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/silf_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/cawm_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/cawm_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/chsm_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/chsm_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/jakm_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/jakm_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/juhm_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/juhm_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_encouraging/mamm_smiling_encouraging_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_encouraging/mamm_smiling_encouraging.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/islf_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/islf_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/kabf_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/kabf_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/lekf_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/lekf_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/milf_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/milf_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/silf_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/silf_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/cawm_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/cawm_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/chsm_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/chsm_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/jakm_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/jakm_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/juhm_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/juhm_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_endearment/mamm_smiling_endearment_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_endearment/mamm_smiling_endearment.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/islf_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/islf_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/kabf_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/kabf_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/lekf_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/lekf_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/milf_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/milf_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/silf_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/silf_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/cawm_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/cawm_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/chsm_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/chsm_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/jakm_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/jakm_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/juhm_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/juhm_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_flirting/mamm_smiling_flirting_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_flirting/mamm_smiling_flirting.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/islf_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/islf_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/kabf_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/kabf_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/lekf_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/lekf_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/milf_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/milf_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/silf_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/silf_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/cawm_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/cawm_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/chsm_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/chsm_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/jakm_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/jakm_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/juhm_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/juhm_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sad-nostalgia/mamm_smiling_sad-nostalgia_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sad-nostalgia/mamm_smiling_sad-nostalgia.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/islf_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/islf_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/kabf_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/kabf_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/lekf_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/lekf_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/milf_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/milf_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/silf_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/silf_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/cawm_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/cawm_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/chsm_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/chsm_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/jakm_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/jakm_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/juhm_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/juhm_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_sardonic/mamm_smiling_sardonic_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_sardonic/mamm_smiling_sardonic.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/islf_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/islf_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/kabf_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/kabf_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/lekf_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/lekf_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/milf_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/milf_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/silf_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/silf_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/cawm_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/cawm_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/chsm_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/chsm_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/jakm_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/jakm_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/juhm_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/juhm_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_triumphant/mamm_smiling_triumphant_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_triumphant/mamm_smiling_triumphant.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/islf_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/islf_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/kabf_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/kabf_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/lekf_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/lekf_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/milf_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/milf_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/silf_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/silf_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/cawm_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/cawm_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/chsm_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/chsm_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/jakm_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/jakm_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/juhm_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/juhm_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_uncertain/mamm_smiling_uncertain_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_uncertain/mamm_smiling_uncertain.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/islf_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/islf_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/kabf_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/kabf_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/lekf_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/lekf_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/milf_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/milf_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/silf_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/silf_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/cawm_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/cawm_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/chsm_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/chsm_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/jakm_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/jakm_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/juhm_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/juhm_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_winning/mamm_smiling_winning_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_winning/mamm_smiling_winning.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/islf_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/islf_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/kabf_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/kabf_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/lekf_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/lekf_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/milf_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/milf_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/silf_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/silf_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/cawm_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/cawm_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/chsm_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/chsm_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/jakm_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/jakm_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/juhm_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/juhm_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/smiling_yeah-right/mamm_smiling_yeah-right_%03d.png ~/.keras/datasets/cec-videos-224x224/smiling_yeah-right/mamm_smiling_yeah-right.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/islf_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/islf_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/kabf_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/kabf_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/lekf_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/lekf_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/milf_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/milf_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/silf_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/silf_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/cawm_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/cawm_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/chsm_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/chsm_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/jakm_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/jakm_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/juhm_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/juhm_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_considering/mamm_considering_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_considering/mamm_thinking_considering.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/islf_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/islf_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/kabf_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/kabf_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/lekf_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/lekf_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/milf_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/milf_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/silf_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/silf_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/cawm_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/cawm_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/chsm_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/chsm_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/jakm_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/jakm_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/juhm_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/juhm_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/thinking_problem-solving/mamm_problem-solving_%03d.png ~/.keras/datasets/cec-videos-224x224/thinking_problem-solving/mamm_thinking_problem-solving.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/islf_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/islf_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/kabf_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/kabf_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/lekf_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/lekf_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/milf_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/milf_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/silf_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/silf_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/cawm_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/cawm_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/chsm_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/chsm_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/jakm_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/jakm_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/juhm_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/juhm_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/tired/mamm_tired_%03d.png ~/.keras/datasets/cec-videos-224x224/tired/mamm_tired.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/islf_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/islf_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/kabf_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/kabf_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/lekf_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/lekf_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/milf_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/milf_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/silf_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/silf_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/cawm_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/cawm_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/chsm_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/chsm_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/jakm_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/jakm_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/juhm_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/juhm_treudoof_bambi-eyes.avi
+ffmpeg -y -i ~/.keras/datasets/cec-data/treudoof_bambi-eyes/mamm_treudoof_%03d.png ~/.keras/datasets/cec-videos-224x224/treudoof_bambi-eyes/mamm_treudoof_bambi-eyes.avi
