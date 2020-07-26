@@ -4,7 +4,7 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/trial01.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/trial02.tar.gz
 
 import os
 
@@ -15,49 +15,20 @@ import common
 
 # Parameters
 TRIAL = '02'
-BATCH_SIZE = 32
-TIME_STEPS = 25
-EPOCHS = 500
+BATCH_SIZE = [2, 4, 8, 16, 32]
+TIME_STEPS = [6, 12, 24]
+EPOCHS = 1000
 
-MDL_PATH = f'models/trial{TRIAL}'
-CKP_PATH = MDL_PATH + '/ckpts/cp-{epoch:04d}.ckpt'
-LOG_PATH = MDL_PATH + '/training.csv'
-PLT_PATH = MDL_PATH + '/plot.png'
-SVD_PATH = MDL_PATH + '/model'
-
-os.makedirs(MDL_PATH, exist_ok=True)
-
-# Configure callbacks
-CALLBACKS = [
-    tf.keras.callbacks.ModelCheckpoint(
-        filepath=CKP_PATH,
-        monitor='val_accuracy',
-        mode='max',
-        save_best_only=True,
-        verbose=1,
-    ),
-    tf.keras.callbacks.EarlyStopping(
-        monitor='val_loss',
-        mode='min',
-        verbose=1,
-        patience=int(EPOCHS * .1)
-    ),
-    tf.keras.callbacks.CSVLogger(
-        filename=LOG_PATH
-    ),
-    tf.keras.callbacks.TensorBoard(
-        log_dir=MDL_PATH,
-        histogram_freq=1
-    ),
-    tf.keras.callbacks.ReduceLROnPlateau(
-        verbose=1
-    ),
-]
+TRL_PATH = f'models/trial-{TRIAL}'
+CLASSES = ['bored', 'confused', 'contempt']
 
 
-def build_model():
+def build_model(time_steps, nout):
     # Load MobileNetV2 model excluding top.
-    cnn_model = tf.keras.applications.mobilenet_v2.MobileNetV2(include_top=False)
+    cnn_model = tf.keras.applications.mobilenet_v2.MobileNetV2(
+        include_top=False,
+        input_shape=(224, 224, 3)
+    )
 
     # Allows to retrain all layers.
     for layer in cnn_model.layers:
@@ -75,7 +46,7 @@ def build_model():
     # Now build the RNN model.
     rnn_model = tf.keras.models.Sequential()
 
-    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 224, 224, 3)))
+    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(time_steps, 224, 224, 3)))
 
     # Build the classification layer.
     rnn_model.add(tf.keras.layers.LSTM(64))
@@ -87,7 +58,7 @@ def build_model():
     rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.Dense(64, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
-    rnn_model.add(tf.keras.layers.Dense(3, activation='softmax'))
+    rnn_model.add(tf.keras.layers.Dense(nout, activation='softmax'))
 
     rnn_model.compile(
         optimizer=tf.keras.optimizers.Adam(),
@@ -105,43 +76,73 @@ def train():
         extract=True
     )
 
-    # Build and compile the model.
-    model = build_model()
+    for batch_size in BATCH_SIZE:
+        for time_steps in TIME_STEPS:
+            path = TRL_PATH + f'/{batch_size}/{time_steps}'
+            os.makedirs(path, exist_ok=True)
 
-    data_aug = tf.keras.preprocessing.image.ImageDataGenerator(
-        zoom_range=.1,
-        horizontal_flip=True,
-        rotation_range=8,
-        width_shift_range=.2,
-        height_shift_range=.2,
-        preprocessing_function=tf.keras.applications.mobilenet_v2.preprocess_input
-    )
+            # Build and compile the model.
+            model = build_model(time_steps, len(CLASSES))
 
-    train_idg = SlidingFrameGenerator(
-        classes=['bored', 'confused', 'contempt'],
-        glob_pattern=common.VIDEOS_PATH,
-        nb_frames=TIME_STEPS,
-        split_val=.2,
-        shuffle=True,
-        batch_size=BATCH_SIZE,
-        target_shape=(224, 224),
-        nb_channel=3,
-        transformation=data_aug,
-        use_frame_cache=False
-    )
+            data_aug = tf.keras.preprocessing.image.ImageDataGenerator(
+                zoom_range=.1,
+                horizontal_flip=True,
+                rotation_range=8,
+                width_shift_range=.2,
+                height_shift_range=.2,
+                preprocessing_function=tf.keras.applications.mobilenet_v2.preprocess_input
+            )
 
-    validation_idg = train_idg.get_validation_generator()
+            train_idg = SlidingFrameGenerator(
+                classes=CLASSES,
+                glob_pattern=common.VIDEOS_PATH,
+                nb_frames=time_steps,
+                split_val=.2,
+                shuffle=True,
+                batch_size=batch_size,
+                target_shape=(224, 224),
+                nb_channel=3,
+                transformation=data_aug,
+                use_frame_cache=False
+            )
 
-    history = model.fit(
-        train_idg,
-        validation_data=validation_idg,
-        callbacks=CALLBACKS,
-        epochs=EPOCHS,
-    )
+            validation_idg = train_idg.get_validation_generator()
 
-    model.save(SVD_PATH)
+            # Configure callbacks
+            callbacks = [
+                tf.keras.callbacks.ModelCheckpoint(
+                    filepath=path + '/model',
+                    monitor='val_accuracy',
+                    mode='max',
+                    save_best_only=True,
+                    verbose=1,
+                ),
+                tf.keras.callbacks.EarlyStopping(
+                    monitor='val_loss',
+                    mode='min',
+                    verbose=1,
+                    patience=int(EPOCHS * .01)
+                ),
+                tf.keras.callbacks.CSVLogger(
+                    filename=path + '/log.csv'
+                ),
+                tf.keras.callbacks.TensorBoard(
+                    log_dir=path + '/tb',
+                    histogram_freq=1
+                ),
+                tf.keras.callbacks.ReduceLROnPlateau(
+                    verbose=1
+                ),
+            ]
 
-    common.plot_acc_loss(history, PLT_PATH)
+            history = model.fit(
+                train_idg,
+                validation_data=validation_idg,
+                callbacks=callbacks,
+                epochs=EPOCHS,
+            )
+
+            common.plot_acc_loss(history, path + '/plot.png')
 
 
 if __name__ == '__main__':
