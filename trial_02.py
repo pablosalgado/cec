@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Trains a model based on MobileNetV2.
+# Trains a model based on VGG19.
 #
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
@@ -24,16 +24,16 @@ CLASSES = ['bored', 'confused', 'contempt']
 
 
 def build_model(time_steps, nout):
-    # Load MobileNetV2 model excluding top.
-    cnn_model = tf.keras.applications.mobilenet_v2.MobileNetV2(
+    # Load VGG19 model excluding top.
+    cnn_model = tf.keras.applications.vgg19.VGG19(
         include_top=False,
         input_shape=(224, 224, 3),
-        weights=None
+        weights='imagenet'
     )
 
-    # Allows to retrain all layers.
-    for layer in cnn_model.layers:
-        layer.trainable = True
+    # Allows to retrain the last convolutional layer.
+    for layer in cnn_model.layers[:-2]:
+        layer.trainable = False
 
     # Build the new CNN adding a layer to flatten the convolution as required
     # for the RNN.
@@ -91,7 +91,7 @@ def train():
                 rotation_range=8,
                 width_shift_range=.2,
                 height_shift_range=.2,
-                preprocessing_function=tf.keras.applications.mobilenet_v2.preprocess_input
+                preprocessing_function=tf.keras.applications.vgg19.preprocess_input
             )
 
             train_idg = SlidingFrameGenerator(
