@@ -9,15 +9,15 @@
 import os
 
 import tensorflow as tf
-from keras_video import SlidingFrameGenerator
+from keras_video.sliding import SlidingFrameGenerator
 
 import common
 
 # Parameters
 TRIAL = '01'
-BATCH_SIZE = 8
-TIME_STEPS = 12
-EPOCHS = 50
+BATCH_SIZE = 32
+TIME_STEPS = 25
+EPOCHS = 500
 
 MDL_PATH = f'models/trial{TRIAL}'
 CKP_PATH = MDL_PATH + '/ckpts/cp-{epoch:04d}.ckpt'
@@ -31,19 +31,27 @@ os.makedirs(MDL_PATH, exist_ok=True)
 CALLBACKS = [
     tf.keras.callbacks.ModelCheckpoint(
         filepath=CKP_PATH,
-        verbose=1
+        monitor='val_accuracy',
+        mode='max',
+        save_best_only=True,
+        verbose=1,
+    ),
+    tf.keras.callbacks.EarlyStopping(
+        monitor='val_loss',
+        mode='min',
+        verbose=1,
+        patience=int(EPOCHS * .1)
     ),
     tf.keras.callbacks.CSVLogger(
         filename=LOG_PATH
     ),
-    tf.keras.callbacks.EarlyStopping(
-        monitor='val_loss',
-        patience=2
-    ),
     tf.keras.callbacks.TensorBoard(
         log_dir=MDL_PATH,
         histogram_freq=1
-    )
+    ),
+    tf.keras.callbacks.ReduceLROnPlateau(
+        verbose=1
+    ),
 ]
 
 
