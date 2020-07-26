@@ -27,7 +27,8 @@ def build_model(time_steps, nout):
     # Load MobileNetV2 model excluding top.
     cnn_model = tf.keras.applications.mobilenet_v2.MobileNetV2(
         include_top=False,
-        input_shape=(224, 224, 3)
+        input_shape=(224, 224, 3),
+        weights='imagenet'
     )
 
     # Allows to retrain the last convolutional layer.
