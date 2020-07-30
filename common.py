@@ -44,59 +44,60 @@ SEED_VALUE = 436
 # codes.
 CODES = ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm')
 
-# The class names or categories for each facial expression.
+# The class names or categories for each facial expression. Key is the directory name,
+# value is the name on file.
 LABELS = {
-    0: 'agree_considered',
-    1: 'agree_continue',
-    2: 'agree_pure',
-    3: 'agree_reluctant',
-    4: 'aha-light_bulb_moment',
-    5: 'annoyed_bothered',
-    6: 'annoyed_rolling-eyes',
-    7: 'arrogant',
-    8: 'bored',
-    9: 'compassion',
-    10: 'confused',
-    11: 'contempt',
-    12: 'I_did_not_hear',
-    13: 'disagree_considered',
-    14: 'disagree_pure',
-    15: 'disagree_reluctant',
-    16: 'disbelief',
-    17: 'disgust',
-    18: 'treudoof_bambi-eyes',
-    19: 'I_dont_care',
-    20: 'I_dont_know',
-    21: 'I_dont_understand',
-    22: 'embarrassment',
-    23: 'fear_oops',
-    24: 'fear_terror',
-    25: 'happy_achievement',
-    26: 'happy_laughing',
-    27: 'happy_satiated',
-    28: 'happy_schadenfreude',
-    29: 'imagine_negative',
-    30: 'imagine_positive',
-    31: 'impressed',
-    32: 'insecurity',
-    33: 'not_convinced',
-    34: 'pain_felt',
-    35: 'pain_seen',
-    36: 'sad',
-    37: 'smiling_yeah-right',
-    38: 'smiling_encouraging',
-    39: 'smiling_endearment',
-    40: 'smiling_flirting',
-    41: 'smiling_triumphant',
-    42: 'smiling_sad-nostalgia',
-    43: 'smiling_sardonic',
-    44: 'smiling_uncertain',
-    45: 'thinking_considering',
-    46: 'thinking_problem-solving',
-    47: 'remember_negative',
-    48: 'remember_positive',
-    49: 'tired',
-    50: 'smiling_winning',
+    'agree_considered': 'agree_considered',
+    'agree_continue': 'agree_continue',
+    'agree_pure': 'agree',
+    'agree_reluctant': 'agree_reluctant',
+    'aha-light_bulb_moment': 'aha',
+    'annoyed_bothered': 'annoyed_bothered',
+    'annoyed_rolling-eyes': 'annoyed-eyeroll',
+    'arrogant': 'arrogant',
+    'bored': 'bored',
+    'compassion': 'compassion',
+    'confused': 'confused',
+    'contempt': 'contempt',
+    'disagree_considered': 'disagree_considered',
+    'disagree_pure': 'disagree',
+    'disagree_reluctant': 'disagree_reluctant',
+    'disbelief': 'disbelief',
+    'disgust': 'disgust',
+    'embarrassment': 'embarrassment',
+    'fear_oops': 'fear_oops',
+    'fear_terror': 'fear_terror',
+    'happy_achievement': 'happy_achievement',
+    'happy_laughing': 'happy_laughing',
+    'happy_satiated': 'happy_satiated',
+    'happy_schadenfreude': 'schadenfreude',
+    'I_did_not_hear': 'dont_hear',
+    'I_dont_care': 'dont_care',
+    'I_dont_know': 'dont_know',
+    'I_dont_understand': 'dont_understand',
+    'imagine_negative': 'imagine-negative',
+    'imagine_positive': 'imagine-positive',
+    'impressed': 'impressed',
+    'insecurity': 'insecurity',
+    'not_convinced': 'not_convinced',
+    'pain_felt': 'pain_felt',
+    'pain_seen': 'pain_seen',
+    'remember_negative': 'remember_negative',
+    'remember_positive': 'remember_positive',
+    'sad': 'sad',
+    'smiling_encouraging': 'smiling_encouraging',
+    'smiling_endearment': 'smiling_endearment',
+    'smiling_flirting': 'smiling_flirting',
+    'smiling_sad-nostalgia': 'smiling_sad-nostalgia',
+    'smiling_sardonic': 'smiling_sardonic',
+    'smiling_triumphant': 'smiling_triumphant',
+    'smiling_uncertain': 'smiling_uncertain',
+    'smiling_winning': 'smiling_winning',
+    'smiling_yeah-right': 'smiling_yeah-right',
+    'thinking_considering': 'considering',
+    'thinking_problem-solving': 'problem-solving',
+    'tired': 'tired',
+    'treudoof_bambi-eyes': 'treudoof',
 }
 
 
@@ -228,12 +229,12 @@ def split_data(time_steps=8, strategy=1) -> None:
         # Collect paths for all PNGs in the MPI directory.
     images_paths = sorted(imutils.paths.list_images(ALL_DATA_PATH))
 
-    for k, v in LABELS.items():
+    for key, value in LABELS.items():
         for code in CODES:
             filtered_images_paths = list(
                 filter(
                     lambda image_path: image_path.split(os.path.sep)[-1].startswith(code)
-                                       and image_path.split(os.path.sep)[-2] == v,
+                                       and image_path.split(os.path.sep)[-2] == key,
                     images_paths
                 )
             )
@@ -270,7 +271,7 @@ def split_data(time_steps=8, strategy=1) -> None:
 
                 # Save the preprocessed image.
                 image = cv2.imread(image_path)
-                path_parts[-1] = f'{code}_{v}_{i:03d}.png'
+                path_parts[-1] = f'{code}_{value}_{i:03d}.png'
                 save_path = os.path.sep.join(path_parts)
                 cv2.imwrite(save_path, image)
                 # print(f'{image_path} -> {save_path}')
@@ -304,12 +305,12 @@ def split_data_48x48(time_steps=8) -> None:
         # Collect paths for all PNGs in the MPI directory.
     images_paths = sorted(imutils.paths.list_images(f'{ALL_DATA_PATH}-48x48'))
 
-    for k, v in LABELS.items():
+    for key, value in LABELS.items():
         for code in CODES:
             filtered_images_paths = list(
                 filter(
                     lambda image_path: image_path.split(os.path.sep)[-1].startswith(code)
-                                       and image_path.split(os.path.sep)[-2] == v,
+                                       and image_path.split(os.path.sep)[-2] == key,
                     images_paths
                 )
             )
@@ -346,7 +347,7 @@ def split_data_48x48(time_steps=8) -> None:
 
                 # Save the preprocessed image.
                 image = cv2.imread(image_path)
-                path_parts[-1] = f'{code}_{v}_{i:03d}.png'
+                path_parts[-1] = f'{code}_{value}_{i:03d}.png'
                 save_path = os.path.sep.join(path_parts)
                 cv2.imwrite(save_path, image)
                 # print(f'{image_path} -> {save_path}')
