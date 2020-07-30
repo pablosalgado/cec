@@ -1,146 +1,16 @@
 import os
+import pathlib
 
 import cv2
 import imutils
+import imutils.paths
+import numpy as np
 from keras_preprocessing.image.affine_transformations import apply_affine_transform, flip_axis, apply_channel_shift, \
     apply_brightness_shift
 
-import common
+HOME = str(pathlib.Path.home())
 
-TRANSFORMATIONS = [
-    # {
-    #     'theta': 0,
-    #     'tx': 0,
-    #     'ty': 0,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': False,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    # {
-    #     'theta': 5,
-    #     'tx': 0,
-    #     'ty': 0,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': False,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    # {
-    #     'theta': -5,
-    #     'tx': 0,
-    #     'ty': 0,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': False,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    # {
-    #     'theta': 0,
-    #     'tx': 0,
-    #     'ty': 0,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': True,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    # {
-    #     'theta': 0,
-    #     'tx': 100,
-    #     'ty': 0,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': False,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    # {
-    #     'theta': 0,
-    #     'tx': -100,
-    #     'ty': 0,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': False,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    # {
-    #     'theta': 0,
-    #     'tx': 0,
-    #     'ty': 100,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': False,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    # {
-    #     'theta': 0,
-    #     'tx': 0,
-    #     'ty': -100,
-    #     'shear': 0,
-    #     'zx': 1,
-    #     'zy': 1,
-    #     'flip_horizontal': False,
-    #     'flip_vertical': False,
-    #     'channel_shift_intensity': None,
-    #     'brightness': None
-    # },
-    {
-        'theta': 0,
-        'tx': 0,
-        'ty': 0,
-        'shear': 0,
-        'zx': 1,
-        'zy': 1,
-        'flip_horizontal': False,
-        'flip_vertical': False,
-        'channel_shift_intensity': None,
-        'brightness': 0.5
-    },
-    {
-        'theta': 0,
-        'tx': 0,
-        'ty': 0,
-        'shear': 0,
-        'zx': 1.5,
-        'zy': 1,
-        'flip_horizontal': False,
-        'flip_vertical': False,
-        'channel_shift_intensity': None,
-        'brightness': None
-    },
-    {
-        'theta': 0,
-        'tx': 0,
-        'ty': 0,
-        'shear': 0,
-        'zx': 1,
-        'zy': 1.5,
-        'flip_horizontal': False,
-        'flip_vertical': False,
-        'channel_shift_intensity': None,
-        'brightness': None
-    },
-]
+np.random.seed(645)
 
 
 def augment_video():
@@ -189,31 +59,60 @@ def augment_video():
     return
 
 
-def create_augment_videos() -> None:
-    images_paths = sorted(imutils.paths.list_images(common.MPI_LARGE_DB_PATH))
+def get_random_transformations():
+    transformations = []
 
-    for code in common.CODES:
-        for key, value in common.LABELS.items():
+    for x in range(20):
+        z = np.random.uniform(.5, 1.1)
+        transformations.append({
+            'theta': np.random.uniform(-5, 5),
+            'tx': np.random.uniform(-50, 50),
+            'ty': np.random.uniform(-50, 50),
+            'shear': np.random.uniform(-5, 5),
+            'zx': z,
+            'zy': z,
+            'flip_horizontal': np.random.uniform(0, 1) > 0.5,
+            'flip_vertical': False,
+            'channel_shift_intensity': None,
+            'brightness': np.random.uniform(0.5, 1.5),
+            'grayscale': np.random.uniform(0, 1) > 0.5,
+        })
+
+    return transformations
+
+
+def create_augment_videos() -> None:
+    images_paths = sorted(
+        imutils.paths.list_images(f'{HOME}/.keras/large-mpi-db')
+    )
+
+    for code in ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm'):
+        for label in ['bored', 'confused', 'contempt']:
             filtered_images_paths = list(
                 filter(
                     lambda image_path: image_path.split(os.path.sep)[-1].startswith(code)
-                                       and image_path.split(os.path.sep)[-2] == key,
+                                       and image_path.split(os.path.sep)[-2] == label,
                     images_paths
                 )
             )
 
-            for i, transformation in enumerate(TRANSFORMATIONS):
-                path = f'{common.HOME}/.keras/datasets/cec-videos-augmented/{key}'
+            for t_count, transformation in enumerate(get_random_transformations()):
+                path = f'{HOME}/.keras/datasets/cec-videos-augmented/{label}'
                 os.makedirs(path, exist_ok=True)
                 out = cv2.VideoWriter(
-                    f'{path}/{code}_{key}_{i:02d}.avi',
+                    f'{path}/{code}_{label}_{t_count:02d}.avi',
                     cv2.VideoWriter_fourcc(*'XVID'),
                     25,
-                    (768, 576)
+                    (224, 224)
                 )
 
-                for image_path in filtered_images_paths:
+                for i_count, image_path in enumerate(filtered_images_paths):
                     x = cv2.imread(image_path)
+                    x = cv2.resize(x, (224, 168))
+                    x = cv2.copyMakeBorder(x, 28, 28, 0, 0, cv2.BORDER_CONSTANT)
+
+                    if i_count == 0:
+                        cv2.imwrite(f'{path}/transformation_oo.png', x)
 
                     x = apply_affine_transform(
                         x,
@@ -228,8 +127,7 @@ def create_augment_videos() -> None:
                     if transformation.get('channel_shift_intensity') is not None:
                         x = apply_channel_shift(
                             x,
-                            transformation['channel_shift_intensity'],
-                            2
+                            transformation['channel_shift_intensity']
                         )
 
                     if transformation.get('flip_horizontal', False):
@@ -240,9 +138,15 @@ def create_augment_videos() -> None:
 
                     if transformation.get('brightness') is not None:
                         x = apply_brightness_shift(x, transformation['brightness'])
-                    #
-                    # x = cv2.cvtColor(x, cv2.COLOR_RGB2BGR)
-                    # cv2.imwrite(f'{path}/transformed.png', x)
+                        x = np.uint8(x)
+
+                    if transformation.get('grayscale', False):
+                        x = cv2.cvtColor(x, cv2.COLOR_RGB2GRAY)
+                        x = np.repeat(x[:, :, np.newaxis], 3, axis=2)
+
+                    if i_count == 0:
+                        cv2.imwrite(f'{path}/transformation_{t_count:02d}.png', x)
+
                     out.write(x)
 
                 out.release()
