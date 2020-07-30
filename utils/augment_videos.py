@@ -13,52 +13,6 @@ HOME = str(pathlib.Path.home())
 np.random.seed(645)
 
 
-def augment_video():
-    cap = cv2.VideoCapture('/home/pablo/.keras/datasets/cec-videos/agree_considered/cawm_agree_considered.avi')
-    out = cv2.VideoWriter(
-        '/home/pablo/.keras/datasets/cec-videos/agree_considered/cawm_agree_considered_1.avi',
-        cv2.VideoWriter_fourcc(*'XVID'),
-        cap.get(cv2.CAP_PROP_FPS),
-        (768, 576)
-    )
-
-    frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    for i in range(frames):
-        cap.read()
-        grabbed, frame = cap.read()
-
-        print(f'{i} -> {grabbed}')
-
-        if not grabbed:
-            continue
-        continue
-
-        if i == 0:
-            cv2.imwrite('/home/pablo/.keras/datasets/cec-videos/agree_considered/original.png', frame)
-
-        # frame = cv2.flip(frame, 0)
-        # frame = cv2.resize(frame, (224, 224))
-        # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        # frame = img_to_array(frame)
-
-        # frame = flip_axis(frame, 1)
-
-        #        frame = apply_affine_transform(frame, -2)
-
-        if i == 0:
-            cv2.imwrite('/home/pablo/.keras/datasets/cec-videos/agree_considered/flip-y.png', frame)
-        # frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-
-        out.write(frame)
-
-    cap.release()
-    out.release()
-
-    cap = cv2.VideoCapture('/home/pablo/.keras/datasets/cec-videos/agree_considered/cawm_agree_considered_1.avi')
-
-    return
-
-
 def get_random_transformations():
     transformations = []
 
