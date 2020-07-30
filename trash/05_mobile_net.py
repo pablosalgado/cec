@@ -4,7 +4,7 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/10/MobileNet.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/05/MobileNet.tar.gz
 
 import os
 
@@ -14,10 +14,9 @@ import common
 import generators
 
 # Parameters
-BATCH_SIZE = 8
-TIME_STEPS = 64
+TIME_STEPS = 16
 EPOCHS = 50
-MDL_PATH = 'models/11/MobileNet'
+MDL_PATH = '../models/05/MobileNet'
 
 os.makedirs(MDL_PATH, exist_ok=True)
 
@@ -47,11 +46,11 @@ def build_model():
     # Load MobileNet model excluding top.
     pre_model = tf.keras.applications.mobilenet.MobileNet(
         include_top=False,
-        input_shape=(48, 48, 3)
+        input_shape=(224, 224, 3)
     )
 
-    # Allows to retrain the two last convolutional layers.
-    for layer in pre_model.layers[:-9]:
+    # Allows to retrain the last convolutional layer.
+    for layer in pre_model.layers[:-3]:
         layer.trainable = False
 
     # Build the new CNN adding a layer to flatten the convolution as required
@@ -67,13 +66,11 @@ def build_model():
     rnn_model = tf.keras.models.Sequential()
 
     # Process n frames, each of 224x244x3
-    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 48, 48, 3)))
+    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 224, 224, 3)))
 
     # Build the classification layer.
-    rnn_model.add(tf.keras.layers.LSTM(128, return_sequences=True))
-    # rnn_model.add(tf.keras.layers.Dense(1024, activation='relu'))
-    rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.LSTM(64))
+    rnn_model.add(tf.keras.layers.Dense(1024, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.Dense(51, activation='softmax'))
 
@@ -88,7 +85,7 @@ def build_model():
 
 def train():
     # Download and split data.
-    common.split_data_48x48(TIME_STEPS)
+    common.split_data(TIME_STEPS)
 
     # Build and compile the model.
     model = build_model()
@@ -119,22 +116,20 @@ def train():
 
     history = model.fit(
         train_idg.flow_from_directory(
-            f'{common.TRAIN_DATA_PATH}-48x48',
-            target_size=(48, 48),
-            batch_size=BATCH_SIZE,
+            common.TRAIN_DATA_PATH,
+            target_size=(224, 224),
+            batch_size=32,
             class_mode='sparse',
             shuffle=False,
-            color_mode='rgb'
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/train'
         ),
         validation_data=validation_idg.flow_from_directory(
-            f'{common.VALIDATION_DATA_PATH}-48x48',
-            target_size=(48, 48),
-            batch_size=BATCH_SIZE,
+            common.VALIDATION_DATA_PATH,
+            target_size=(224, 224),
+            batch_size=32,
             class_mode='sparse',
             shuffle=False,
-            color_mode='rgb'
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/test'
         ),

@@ -14,10 +14,10 @@ import common
 import generators
 
 # Parameters
-BATCH_SIZE = 32
+BATCH_SIZE = 8
 TIME_STEPS = 64
 EPOCHS = 50
-MDL_PATH = 'models/10/MobileNet'
+MDL_PATH = '../models/11/MobileNet'
 
 os.makedirs(MDL_PATH, exist_ok=True)
 
@@ -50,8 +50,8 @@ def build_model():
         input_shape=(48, 48, 3)
     )
 
-    # Allows to retrain the last convolutional layer.
-    for layer in pre_model.layers[:-3]:
+    # Allows to retrain the two last convolutional layers.
+    for layer in pre_model.layers[:-9]:
         layer.trainable = False
 
     # Build the new CNN adding a layer to flatten the convolution as required
@@ -66,12 +66,14 @@ def build_model():
     # Now build the RNN model.
     rnn_model = tf.keras.models.Sequential()
 
-    # Process n frames, each of 48x48x3
+    # Process n frames, each of 224x244x3
     rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 48, 48, 3)))
 
     # Build the classification layer.
+    rnn_model.add(tf.keras.layers.LSTM(128, return_sequences=True))
+    # rnn_model.add(tf.keras.layers.Dense(1024, activation='relu'))
+    rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.LSTM(64))
-    rnn_model.add(tf.keras.layers.Dense(1024, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
     rnn_model.add(tf.keras.layers.Dense(51, activation='softmax'))
 
@@ -86,7 +88,7 @@ def build_model():
 
 def train():
     # Download and split data.
-    common.split_data(TIME_STEPS, 2)
+    common.split_data_48x48(TIME_STEPS)
 
     # Build and compile the model.
     model = build_model()
@@ -117,22 +119,22 @@ def train():
 
     history = model.fit(
         train_idg.flow_from_directory(
-            common.TRAIN_DATA_PATH,
+            f'{common.TRAIN_DATA_PATH}-48x48',
             target_size=(48, 48),
             batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
-            color_mode='rgb',
+            color_mode='rgb'
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/train'
         ),
         validation_data=validation_idg.flow_from_directory(
-            common.VALIDATION_DATA_PATH,
+            f'{common.VALIDATION_DATA_PATH}-48x48',
             target_size=(48, 48),
             batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
-            color_mode='rgb',
+            color_mode='rgb'
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/test'
         ),

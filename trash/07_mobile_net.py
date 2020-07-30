@@ -4,7 +4,7 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/05/MobileNet.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/07/MobileNet.tar.gz
 
 import os
 
@@ -14,9 +14,9 @@ import common
 import generators
 
 # Parameters
-TIME_STEPS = 16
+TIME_STEPS = 32
 EPOCHS = 50
-MDL_PATH = 'models/05/MobileNet'
+MDL_PATH = '../models/07/MobileNet'
 
 os.makedirs(MDL_PATH, exist_ok=True)
 

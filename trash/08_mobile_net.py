@@ -1,10 +1,10 @@
 # -----------------------------------------------------------------------------
-# Trains a model based on ResNet152.
+# Trains a model based on MobileNet.
 #
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/06/ResNet152.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/08/MobileNet.tar.gz
 
 import os
 
@@ -14,9 +14,10 @@ import common
 import generators
 
 # Parameters
-TIME_STEPS = 16
+BATCH_SIZE = 32
+TIME_STEPS = 64
 EPOCHS = 50
-MDL_PATH = 'models/06/ResNet152'
+MDL_PATH = '../models/08/MobileNet'
 
 os.makedirs(MDL_PATH, exist_ok=True)
 
@@ -43,14 +44,14 @@ CALLBACKS = [
 
 
 def build_model():
-    # Load ResNet152 model excluding top.
-    pre_model = tf.keras.applications.ResNet152(
+    # Load MobileNet model excluding top.
+    pre_model = tf.keras.applications.mobilenet.MobileNet(
         include_top=False,
-        input_shape=(224, 224, 3)
+        input_shape=(48, 48, 3)
     )
 
-    # Allows to retrain last convolutional layer.
-    for layer in pre_model.layers[:-4]:
+    # Allows to retrain the last convolutional layer.
+    for layer in pre_model.layers[:-3]:
         layer.trainable = False
 
     # Build the new CNN adding a layer to flatten the convolution as required
@@ -65,8 +66,8 @@ def build_model():
     # Now build the RNN model.
     rnn_model = tf.keras.models.Sequential()
 
-    # Process n frames, each of 224x244x3
-    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 224, 224, 3)))
+    # Process n frames, each of 48x48x3
+    rnn_model.add(tf.keras.layers.TimeDistributed(cnn_model, input_shape=(TIME_STEPS, 48, 48, 3)))
 
     # Build the classification layer.
     rnn_model.add(tf.keras.layers.LSTM(64))
@@ -117,19 +118,21 @@ def train():
     history = model.fit(
         train_idg.flow_from_directory(
             common.TRAIN_DATA_PATH,
-            target_size=(224, 224),
-            batch_size=32,
+            target_size=(48, 48),
+            batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
+            color_mode='rgb',
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/train'
         ),
         validation_data=validation_idg.flow_from_directory(
             common.VALIDATION_DATA_PATH,
-            target_size=(224, 224),
-            batch_size=32,
+            target_size=(48, 48),
+            batch_size=BATCH_SIZE,
             class_mode='sparse',
             shuffle=False,
+            color_mode='rgb',
             # classes=['agree_pure', 'agree_considered'],
             # save_to_dir='./data/test'
         ),

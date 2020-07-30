@@ -1,18 +1,24 @@
 # -----------------------------------------------------------------------------
-# Trains a model based on ResNet50.
+# Trains a model based on DenseNet201.
 #
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/02/ResNet50.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/models/04/ResNet152.tar.gz
 
 import tensorflow as tf
 
 import common
 
 tf.keras.utils.get_file(
-    fname='cec-data.tar.gz',
-    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-data.tar.gz',
+    fname='cec-train.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-train.tar.gz',
+    extract=True
+)
+
+tf.keras.utils.get_file(
+    fname='cec-test.tar.gz',
+    origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-test.tar.gz',
     extract=True
 )
 
@@ -28,7 +34,7 @@ train_idg = tf.keras.preprocessing.image.ImageDataGenerator(
 
 validation_idg = tf.keras.preprocessing.image.ImageDataGenerator()
 
-pre_trained_model = tf.keras.applications.ResNet50(
+pre_trained_model = tf.keras.applications.ResNet152(
     include_top=False,
     input_tensor=tf.keras.layers.Input(shape=(224, 224, 3))
 )
@@ -52,7 +58,7 @@ model.compile(
 
 history = model.fit(
     train_idg.flow_from_directory(
-        common.ALL_DATA_PATH,
+        common.TRAIN_DATA_PATH,
         target_size=(224, 224),
         batch_size=32,
         class_mode='categorical',
@@ -61,9 +67,19 @@ history = model.fit(
         # classes=['agree_pure']
         # save_to_dir='./data/train'
     ),
-    epochs=50
+    epochs=50,
+    validation_data=validation_idg.flow_from_directory(
+        common.TEST_DATA_PATH,
+        target_size=(224, 224),
+        batch_size=32,
+        class_mode='categorical',
+        shuffle=True,
+        seed=common.SEED_VALUE,
+        # classes=['agree_pure']
+        # save_to_dir='./data/test'
+    )
 )
 
-model.save('models/02/ResNet50')
+model.save('models/04/ResNet152')
 
-common.plot_acc_loss(history, 'models/02/ResNet50/plot.png')
+common.plot_acc_loss(history, '../models/04/ResNet152/plot.png')
