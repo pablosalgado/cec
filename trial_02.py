@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Trains a model based on VGG19.
+# Trains a model based on MobileNetV2.
 #
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
@@ -24,15 +24,15 @@ CLASSES = ['bored', 'confused', 'contempt']
 
 
 def build_model(time_steps, nout):
-    # Load VGG19 model excluding top.
-    cnn_model = tf.keras.applications.vgg19.VGG19(
+    # Load MobileNetV2 model excluding top.
+    cnn_model = tf.keras.applications.mobilenet_v2.MobileNetV2(
         include_top=False,
         input_shape=(224, 224, 3),
         weights='imagenet'
     )
 
     # Allows to retrain the last convolutional layer.
-    for layer in cnn_model.layers[:-2]:
+    for layer in cnn_model.layers[:-3]:
         layer.trainable = False
 
     # Build the new CNN adding a layer to flatten the convolution as required
@@ -72,8 +72,8 @@ def build_model(time_steps, nout):
 
 def train():
     tf.keras.utils.get_file(
-        fname='cec-videos.tar.gz',
-        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-videos.tar.gz',
+        fname='cec-videos-augmented.tar.gz',
+        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-videos-augmented.tar.gz',
         extract=True
     )
 
@@ -86,17 +86,17 @@ def train():
             model = build_model(time_steps, len(CLASSES))
 
             data_aug = tf.keras.preprocessing.image.ImageDataGenerator(
-                zoom_range=.1,
-                horizontal_flip=True,
-                rotation_range=8,
-                width_shift_range=.2,
-                height_shift_range=.2,
-                preprocessing_function=tf.keras.applications.vgg19.preprocess_input
+                # zoom_range=.1,
+                # horizontal_flip=True,
+                # rotation_range=8,
+                # width_shift_range=.2,
+                # height_shift_range=.2,
+                preprocessing_function=tf.keras.applications.mobilenet_v2.preprocess_input
             )
 
             train_idg = SlidingFrameGenerator(
                 classes=CLASSES,
-                glob_pattern=common.VIDEOS_PATH,
+                glob_pattern=common.HOME + '/.keras/datasets/cec-videos-augmented/{classname}/*.avi',
                 nb_frames=time_steps,
                 split_val=.2,
                 shuffle=True,
