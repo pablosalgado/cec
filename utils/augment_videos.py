@@ -12,6 +12,61 @@ HOME = str(pathlib.Path.home())
 
 np.random.seed(645)
 
+# LABELS = ['bored', 'confused', 'contempt']
+LABELS = [
+    'agree_considered',
+    'agree_continue',
+    'agree_pure',
+    'agree_reluctant',
+    'aha-light_bulb_moment',
+    'annoyed_bothered',
+    'annoyed_rolling-eyes',
+    'arrogant',
+    # 'bored',
+    'compassion',
+    # 'confused',
+    # 'contempt',
+    'disagree_considered',
+    'disagree_pure',
+    'disagree_reluctant',
+    'disbelief',
+    'disgust',
+    'embarrassment',
+    'fear_oops',
+    'fear_terror',
+    'happy_achievement',
+    'happy_laughing',
+    'happy_satiated',
+    'happy_schadenfreude',
+    'I_did_not_hear',
+    'I_dont_care',
+    'I_dont_know',
+    'I_dont_understand',
+    'imagine_negative',
+    'imagine_positive',
+    'impressed',
+    'insecurity',
+    'not_convinced',
+    'pain_felt',
+    'pain_seen',
+    'remember_negative',
+    'remember_positive',
+    'sad',
+    'smiling_encouraging',
+    'smiling_endearment',
+    'smiling_flirting',
+    'smiling_sad-nostalgia',
+    'smiling_sardonic',
+    'smiling_triumphant',
+    'smiling_uncertain',
+    'smiling_winning',
+    'smiling_yeah-right',
+    'thinking_considering',
+    'thinking_problem-solving',
+    'tired',
+    'treudoof_bambi-eyes',
+]
+
 
 def get_random_transformations():
     transformations = []
@@ -41,7 +96,7 @@ def create_augment_videos() -> None:
     )
 
     for code in ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm'):
-        for label in ['bored', 'confused', 'contempt']:
+        for label in LABELS:
             filtered_images_paths = list(
                 filter(
                     lambda image_path: image_path.split(os.path.sep)[-1].startswith(code)
@@ -52,13 +107,16 @@ def create_augment_videos() -> None:
 
             for t_count, transformation in enumerate(get_random_transformations()):
                 path = f'{HOME}/.keras/datasets/cec-videos-augmented/{label}'
+                video_path = f'{path}/{code}_{label}_{t_count:02d}.avi'
                 os.makedirs(path, exist_ok=True)
                 out = cv2.VideoWriter(
-                    f'{path}/{code}_{label}_{t_count:02d}.avi',
+                    video_path,
                     cv2.VideoWriter_fourcc(*'XVID'),
                     25,
                     (224, 224)
                 )
+
+                print(f'Creating: {video_path}')
 
                 for i_count, image_path in enumerate(filtered_images_paths):
                     x = cv2.imread(image_path)
