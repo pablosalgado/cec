@@ -159,6 +159,8 @@ dmypy.json
 /models/trial-01.tar.gz
 /models/trial-02
 /models/trial-02.tar.gz
+/models/trial-03
+/models/trial-03.tar.gz
 
 /utils/models.csv
 /data/
