@@ -95,7 +95,7 @@ def create_augment_videos() -> None:
         imutils.paths.list_images(f'{HOME}/.keras/large-mpi-db')
     )
 
-    for code in ('islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm'):
+    for code in ['islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm']:
         for label in LABELS:
             filtered_images_paths = list(
                 filter(
@@ -108,6 +108,12 @@ def create_augment_videos() -> None:
             for t_count, transformation in enumerate(get_random_transformations()):
                 path = f'{HOME}/.keras/datasets/cec-videos-augmented/{label}'
                 video_path = f'{path}/{code}_{label}_{t_count:02d}.avi'
+
+                cap = cv2.VideoCapture(video_path)
+                if cap.get(cv2.CAP_PROP_FRAME_COUNT) == len(filtered_images_paths):
+                    print(f'Skipping: {video_path}')
+                    continue
+
                 os.makedirs(path, exist_ok=True)
                 out = cv2.VideoWriter(
                     video_path,
