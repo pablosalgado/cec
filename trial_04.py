@@ -96,7 +96,7 @@ def train():
 
             train_idg = SlidingFrameGenerator(
                 classes=CLASSES,
-                glob_pattern=common.HOME + '/.keras/datasets/cec-videos-augmented/{classname}/*.avi',
+                glob_pattern=common.HOME + '/.keras/datasets/cec-videos-extracted-augmented/{classname}/*.avi',
                 nb_frames=time_steps,
                 split_val=.2,
                 shuffle=True,

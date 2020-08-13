@@ -1,23 +1,22 @@
 # -----------------------------------------------------------------------------
-# Trains a model based on MobileNetV2.
+# Trains a model based on NASNetMobile.
 #
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/trial01.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/trial05.tar.gz
 
 import os
 
 import tensorflow as tf
 from keras_video.sliding import SlidingFrameGenerator
-import keras_video.utils
 
 import common
 
 # Parameters
-TRIAL = '01'
-BATCH_SIZE = [2, 4, 8, 16, 32]
-TIME_STEPS = [6, 12, 24]
+TRIAL = '05'
+BATCH_SIZE = [32]
+TIME_STEPS = [12]
 EPOCHS = 1000
 
 TRL_PATH = f'models/trial-{TRIAL}'
@@ -25,8 +24,8 @@ CLASSES = ['bored', 'confused', 'contempt']
 
 
 def build_model(time_steps, nout):
-    # Load MobileNetV2 model excluding top.
-    cnn_model = tf.keras.applications.mobilenet_v2.MobileNetV2(
+    # Load NASNetMobile model excluding top.
+    cnn_model = tf.keras.applications.nasnet.NASNetMobile(
         include_top=False,
         input_shape=(224, 224, 3),
         weights='imagenet'
@@ -73,8 +72,8 @@ def build_model(time_steps, nout):
 
 def train():
     tf.keras.utils.get_file(
-        fname='cec-videos.tar.gz',
-        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-videos.tar.gz',
+        fname='cec-videos-augmented.tar.gz',
+        origin='https://unir-tfm-cec.s3.us-east-2.amazonaws.com/cec-videos-augmented.tar.gz',
         extract=True
     )
 
@@ -87,17 +86,12 @@ def train():
             model = build_model(time_steps, len(CLASSES))
 
             data_aug = tf.keras.preprocessing.image.ImageDataGenerator(
-                zoom_range=.1,
-                horizontal_flip=True,
-                rotation_range=8,
-                width_shift_range=.2,
-                height_shift_range=.2,
-                preprocessing_function=tf.keras.applications.mobilenet_v2.preprocess_input
+                preprocessing_function=tf.keras.applications.nasnet.preprocess_input
             )
 
             train_idg = SlidingFrameGenerator(
                 classes=CLASSES,
-                glob_pattern=common.VIDEOS_PATH,
+                glob_pattern=common.HOME + '/.keras/datasets/cec-videos-augmented/{classname}/*.avi',
                 nb_frames=time_steps,
                 split_val=.2,
                 shuffle=True,
@@ -107,8 +101,6 @@ def train():
                 transformation=data_aug,
                 use_frame_cache=False
             )
-
-            keras_video.utils.show_sample(train_idg)
 
             validation_idg = train_idg.get_validation_generator()
 
