@@ -10,7 +10,6 @@ import os
 
 import tensorflow as tf
 from keras_video.sliding import SlidingFrameGenerator
-import keras_video.utils
 
 import common
 
@@ -102,8 +101,6 @@ def train():
                 transformation=data_aug,
                 use_frame_cache=False
             )
-
-            keras_video.utils.show_sample(train_idg)
 
             validation_idg = train_idg.get_validation_generator()
 
