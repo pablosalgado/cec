@@ -1,8 +1,10 @@
+import os
+
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-TRIALS = [1, 2, 3]
+TRIALS = [1, 2, 3, 4, 5, 6]
 BATCH_SIZE = [2, 4, 8, 16, 32]
 TIME_STEPS = [6, 12, 24]
 
@@ -11,7 +13,12 @@ data = pd.DataFrame()
 for trial in TRIALS:
     for batch_size in BATCH_SIZE:
         for time_steps in TIME_STEPS:
-            data_n = pd.read_csv(f"../models/trial-0{trial}/{batch_size}/{time_steps}/log.csv")
+            log_file = f"../models/trial-0{trial}/{batch_size}/{time_steps}/log.csv"
+
+            if not os.path.isfile(log_file):
+                continue
+
+            data_n = pd.read_csv(log_file)
 
             data_n.insert(0, 'trial', trial)
             data_n.insert(1, 'batch_size', batch_size)
