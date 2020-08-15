@@ -62,7 +62,7 @@ def build_model(time_steps, nout):
     rnn_model.add(tf.keras.layers.Dense(128, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
 
-    rnn_model.add(tf.keras.layers.LSTM(64, return_sequences=True))
+    rnn_model.add(tf.keras.layers.LSTM(64))
     rnn_model.add(tf.keras.layers.Dense(64, activation='relu'))
     rnn_model.add(tf.keras.layers.Dropout(0.5))
 
