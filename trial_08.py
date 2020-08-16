@@ -4,7 +4,7 @@
 # author: Pablo Salgado
 # contact: pabloasalgado@gmail.com
 #
-# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/trial07.tar.gz
+# https://unir-tfm-cec.s3.us-east-2.amazonaws.com/trial08.tar.gz
 
 import os
 
@@ -14,7 +14,7 @@ from keras_video.sliding import SlidingFrameGenerator
 import common
 
 # Parameters
-TRIAL = '07'
+TRIAL = '08'
 BATCH_SIZE = [32]
 TIME_STEPS = [12]
 EPOCHS = 1000
