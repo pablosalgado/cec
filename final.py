@@ -20,7 +20,7 @@ TIME_STEPS = [12]
 EPOCHS = 1000
 
 TRL_PATH = f'models/trial-{TRIAL}'
-# CLASSES = ['bored', 'confused', 'contempt']
+CLASSES = [k for (k, v) in common.LABELS.items()]
 
 
 def build_model(time_steps, nout):
@@ -90,14 +90,14 @@ def train():
             os.makedirs(path, exist_ok=True)
 
             # Build and compile the model.
-            model = build_model(time_steps, 51)
+            model = build_model(time_steps, len(CLASSES))
 
             data_aug = tf.keras.preprocessing.image.ImageDataGenerator(
                 preprocessing_function=tf.keras.applications.mobilenet.preprocess_input
             )
 
             train_idg = SlidingFrameGenerator(
-                # classes=CLASSES,
+                classes=CLASSES,
                 glob_pattern=common.HOME + '/.keras/datasets/cec-videos-augmented-train/{classname}/*.avi',
                 nb_frames=time_steps,
                 split_val=.2,
@@ -116,7 +116,7 @@ def train():
                 tf.keras.callbacks.ModelCheckpoint(
                     filepath=path + '/ckpts/cp-{epoch:04d}.ckpt',
                     monitor='val_accuracy',
-                    mode='max',
+                    # mode='max',
                     # save_best_only=True,
                     verbose=1,
                 ),
