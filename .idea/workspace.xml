@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/cec.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/51a2625f-8e3c-4de6-a8b0-35aa63c7d97e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/51a2625f-8e3c-4de6-a8b0-35aa63c7d97e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="a5b32270-6d20-47e9-a26a-12f28d8ba1bc" />
+  <component name="ProjectId" id="1d3ZyUMFbEJ2yTPBUEYzuFOkfXN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trash" />
+      <recent name="$APPLICATION_CONFIG_DIR$/scratches" />
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/models/08/MobileNet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/models/10" />
+      <recent name="$PROJECT_DIR$/models/09" />
+      <recent name="$PROJECT_DIR$/models/08" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.final">
+    <configuration name="final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/linear_regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predict_trial_03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict_trial_03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predict_trial_07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict_trial_07.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trial_07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_07.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.final" />
+        <item itemvalue="Python.predict_trial_07" />
+        <item itemvalue="Python.predict_trial_03" />
+        <item itemvalue="Python.linear_regression" />
+        <item itemvalue="Python.trial_07" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="" />
+      <created>1591655991329</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591655991329</updated>
+      <workItem from="1591655992968" duration="4804000" />
+      <workItem from="1591691522761" duration="1300000" />
+      <workItem from="1591737145152" duration="3987000" />
+      <workItem from="1591811612945" duration="2685000" />
+      <workItem from="1591869949781" duration="676000" />
+      <workItem from="1591954689203" duration="1924000" />
+      <workItem from="1592037363044" duration="16000" />
+      <workItem from="1592064564092" duration="766000" />
+      <workItem from="1592478263307" duration="4015000" />
+      <workItem from="1592504942635" duration="912000" />
+      <workItem from="1592518673158" duration="837000" />
+      <workItem from="1592593816898" duration="18879000" />
+      <workItem from="1592613837426" duration="6032000" />
+      <workItem from="1592620886572" duration="4028000" />
+      <workItem from="1592647771410" duration="1977000" />
+      <workItem from="1592650077976" duration="10806000" />
+      <workItem from="1592667865924" duration="30000" />
+      <workItem from="1592667946806" duration="18084000" />
+      <workItem from="1592691798159" duration="128000" />
+      <workItem from="1592692087983" duration="18811000" />
+      <workItem from="1592718288525" duration="40034000" />
+      <workItem from="1592907161285" duration="1554000" />
+      <workItem from="1593003106333" duration="26860000" />
+      <workItem from="1593159092669" duration="6256000" />
+      <workItem from="1593246440531" duration="10777000" />
+      <workItem from="1593268523507" duration="15676000" />
+      <workItem from="1593538247917" duration="2823000" />
+      <workItem from="1593623484551" duration="1073000" />
+      <workItem from="1593693905069" duration="12000" />
+      <workItem from="1595064520069" duration="2584000" />
+      <workItem from="1595067952161" duration="23082000" />
+      <workItem from="1595265674668" duration="9574000" />
+      <workItem from="1595490298650" duration="771000" />
+      <workItem from="1595493438530" duration="6297000" />
+      <workItem from="1595543792347" duration="1786000" />
+      <workItem from="1595579917317" duration="3554000" />
+      <workItem from="1595629939203" duration="11806000" />
+      <workItem from="1595694108130" duration="25449000" />
+      <workItem from="1595787363127" duration="10408000" />
+      <workItem from="1595838220479" duration="3669000" />
+      <workItem from="1595890276996" duration="745000" />
+      <workItem from="1595924566022" duration="599000" />
+      <workItem from="1595974433062" duration="9080000" />
+      <workItem from="1596059602213" duration="9015000" />
+      <workItem from="1596097592868" duration="47357000" />
+      <workItem from="1596366610208" duration="10828000" />
+      <workItem from="1596543419162" duration="852000" />
+      <workItem from="1596975842791" duration="9231000" />
+      <workItem from="1597055364989" duration="1853000" />
+      <workItem from="1597220670287" duration="16323000" />
+      <workItem from="1597317045797" duration="1271000" />
+      <workItem from="1597328618872" duration="3880000" />
+      <workItem from="1597333275393" duration="408000" />
+      <workItem from="1597333697373" duration="2056000" />
+      <workItem from="1597477750359" duration="3503000" />
+      <workItem from="1597481271328" duration="218000" />
+      <workItem from="1597481952890" duration="55347000" />
+      <workItem from="1597761373741" duration="5608000" />
+      <workItem from="1597826382362" duration="3618000" />
+      <workItem from="1597912150289" duration="3913000" />
+      <workItem from="1598083467640" duration="4530000" />
+    </task>
+    <task id="LOCAL-00041" summary="Organize model 08/MobileNet">
+      <created>1592882027788</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1592882027788</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Organize model 08/MobileNet">
+      <created>1593013354819</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1593013354819</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Organize model 09/MobileNet">
+      <created>1593048477256</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1593048477256</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Organize model 10/MobileNet">
+      <created>1593048554871</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1593048554871</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Organize model 10/MobileNet">
+      <created>1593048913278</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1593048913278</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Organize model 09/MobileNet">
+      <created>1593074174649</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1593074174649</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Some fixes">
+      <created>1593279886875</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1593279886875</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing.">
+      <created>1593349098240</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1593349098240</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Some fixes">
+      <created>1593436325335</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1593436325335</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Some fixes">
+      <created>1595235109321</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1595235109322</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Organize model 12/MobileNet">
+      <created>1595241384792</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1595241384792</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Organize model 12/MobileNet">
+      <created>1595498001752</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1595498001754</updated>
+    </task>
+    <task id="LOCAL-00053" summary="trial01">
+      <created>1595699715372</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1595699715373</updated>
+    </task>
+    <task id="LOCAL-00054" summary="trial02">
+      <created>1595700944575</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1595700944575</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Fixes">
+      <created>1595759617467</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1595759617467</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Fixes">
+      <created>1595770690083</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1595770690083</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Fixes">
+      <created>1595770979375</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1595770979375</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fixes">
+      <created>1595783256356</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1595783256356</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Fixes">
+      <created>1595783324277</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1595783324277</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Fixes">
+      <created>1595795938262</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1595795938262</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Video augmentation">
+      <created>1596068571883</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1596068571884</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Video augmentation">
+      <created>1596150689261</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1596150689261</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Trash earlier experiments">
+      <created>1596151171944</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1596151171944</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Video augmentation">
+      <created>1596151189333</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1596151189333</updated>
+    </task>
+    <task id="LOCAL-00065" summary="trial02">
+      <created>1596155792808</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1596155792808</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Video augmentation">
+      <created>1596191824323</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1596191824323</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Face extraction and video augmentation">
+      <created>1596254114694</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1596254114694</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Face extraction and video augmentation">
+      <created>1596277025712</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1596277025712</updated>
+    </task>
+    <task id="LOCAL-00069" summary="trial03">
+      <created>1596277423703</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1596277423703</updated>
+    </task>
+    <task id="LOCAL-00070" summary="trial03">
+      <created>1596378322239</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1596378322239</updated>
+    </task>
+    <task id="LOCAL-00071" summary="trial03">
+      <created>1596378409540</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1596378409540</updated>
+    </task>
+    <task id="LOCAL-00072" summary="trial03">
+      <created>1596444551607</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1596444551607</updated>
+    </task>
+    <task id="LOCAL-00073" summary="trials analysis">
+      <created>1597311498971</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1597311498972</updated>
+    </task>
+    <task id="LOCAL-00074" summary="trial04">
+      <created>1597317104959</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1597317104959</updated>
+    </task>
+    <task id="LOCAL-00075" summary="trial05">
+      <created>1597335151174</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1597335151175</updated>
+    </task>
+    <task id="LOCAL-00076" summary="trial06">
+      <created>1597485156770</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1597485156770</updated>
+    </task>
+    <task id="LOCAL-00077" summary="trial06">
+      <created>1597486329913</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1597486329913</updated>
+    </task>
+    <task id="LOCAL-00078" summary="trials analysis">
+      <created>1597502958118</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1597502958119</updated>
+    </task>
+    <task id="LOCAL-00079" summary="trial07">
+      <created>1597504593730</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1597504593730</updated>
+    </task>
+    <task id="LOCAL-00080" summary="trial07">
+      <created>1597505565851</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1597505565851</updated>
+    </task>
+    <task id="LOCAL-00081" summary="trial07">
+      <created>1597515280918</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1597515280918</updated>
+    </task>
+    <task id="LOCAL-00082" summary="trial07">
+      <created>1597515321614</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1597515321614</updated>
+    </task>
+    <task id="LOCAL-00083" summary="trial07">
+      <created>1597515603559</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1597515603559</updated>
+    </task>
+    <task id="LOCAL-00084" summary="trial08">
+      <created>1597568138752</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1597568138752</updated>
+    </task>
+    <task id="LOCAL-00085" summary="trial08">
+      <created>1597579557640</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1597579557640</updated>
+    </task>
+    <task id="LOCAL-00086" summary="trial09">
+      <created>1597579757712</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1597579757712</updated>
+    </task>
+    <task id="LOCAL-00087" summary="trials analysis">
+      <created>1597677230044</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1597677230044</updated>
+    </task>
+    <task id="LOCAL-00088" summary="some predictions">
+      <created>1597769231707</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1597769231708</updated>
+    </task>
+    <task id="LOCAL-00089" summary="trial10">
+      <created>1597916683119</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1597916683120</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Organize model 05/MobileNet" />
+    <MESSAGE value="Organize model 06/ResNet152" />
+    <MESSAGE value="Organize model 07/MobileNet" />
+    <MESSAGE value="Organize model 08/MobileNet" />
+    <MESSAGE value="Organize model 10/MobileNet" />
+    <MESSAGE value="Organize model 09/MobileNet" />
+    <MESSAGE value="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing." />
+    <MESSAGE value="Some fixes" />
+    <MESSAGE value="Organize model 12/MobileNet" />
+    <MESSAGE value="trial01" />
+    <MESSAGE value="Fixes" />
+    <MESSAGE value="Trash earlier experiments" />
+    <MESSAGE value="trial02" />
+    <MESSAGE value="Video augmentation" />
+    <MESSAGE value="Face extraction and video augmentation" />
+    <MESSAGE value="trial03" />
+    <MESSAGE value="trial04" />
+    <MESSAGE value="trial05" />
+    <MESSAGE value="trial06" />
+    <MESSAGE value="trial07" />
+    <MESSAGE value="trial08" />
+    <MESSAGE value="trial09" />
+    <MESSAGE value="trials analysis" />
+    <MESSAGE value="some predictions" />
+    <MESSAGE value="trial10" />
+    <option name="LAST_COMMIT_MESSAGE" value="trial10" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="591" y="182" width="800" height="713" key="#Plugins" timestamp="1597307173101">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="591" y="182" width="800" height="713" key="#Plugins/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597307173101" />
+    <state x="678" y="224" width="800" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597230774030">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="633" y="1304" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593436219733" />
+    <state x="678" y="224" width="800" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597230774030" />
+    <state x="618" y="341" width="725" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597306054990">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="618" y="341" width="725" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597306054990" />
+    <state x="868" y="297" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595768111487">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="868" y="297" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595768111487" />
+    <state x="792" y="431" width="325" height="218" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1592709261819">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="792" y="431" width="325" height="218" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592709261819" />
+    <state x="1301" y="341" key="#xdebugger.evaluate" timestamp="1595325886698">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="1301" y="341" key="#xdebugger.evaluate/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595325886698" />
+    <state x="731" y="89" width="912" height="906" key="CommitChangelistDialog2" timestamp="1597916682990">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="688" y="1169" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1596378409468" />
+    <state x="731" y="89" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597916682990" />
+    <state width="1851" height="480" key="DebuggerActiveHint" timestamp="1595327183357">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1918" height="480" key="DebuggerActiveHint/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593273150640" />
+    <state width="1851" height="480" key="DebuggerActiveHint/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595327183357" />
+    <state x="419" y="143" width="989" height="812" key="DiffContextDialog" timestamp="1598090259111">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="372" y="1247" width="999" height="811" maximized="true" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597916355509" />
+    <state x="419" y="143" width="989" height="812" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090259111" />
+    <state x="962" y="299" width="424" height="485" key="FileChooserDialogImpl" timestamp="1596151114142">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="927" y="1379" width="424" height="485" key="FileChooserDialogImpl/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593693914908" />
+    <state x="962" y="299" width="424" height="485" key="FileChooserDialogImpl/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1596151114142" />
+    <state width="1354" height="274" key="GridCell.Tab.0.bottom" timestamp="1598090252983">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
+    <state width="1354" height="274" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252983" />
+    <state width="1354" height="274" key="GridCell.Tab.0.center" timestamp="1598090252983">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
+    <state width="1354" height="274" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252983" />
+    <state width="1354" height="274" key="GridCell.Tab.0.left" timestamp="1598090252982">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
+    <state width="1354" height="274" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252982" />
+    <state width="1354" height="274" key="GridCell.Tab.0.right" timestamp="1598090252983">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
+    <state width="1354" height="274" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252983" />
+    <state width="1354" height="274" key="GridCell.Tab.1.bottom" timestamp="1598090252983">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="236" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
+    <state width="1354" height="274" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252983" />
+    <state width="1354" height="274" key="GridCell.Tab.1.center" timestamp="1598090252983">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="236" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
+    <state width="1354" height="274" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252983" />
+    <state width="1354" height="274" key="GridCell.Tab.1.left" timestamp="1598090252983">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="236" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
+    <state width="1354" height="274" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252983" />
+    <state width="1354" height="274" key="GridCell.Tab.1.right" timestamp="1598090252983">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="1354" height="236" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
+    <state width="1354" height="274" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090252983" />
+    <state x="910" y="266" width="406" height="634" key="RollbackChangesDialog" timestamp="1597485135985">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="910" y="266" width="406" height="634" key="RollbackChangesDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597485135985" />
+    <state x="635" y="278" width="1022" height="731" key="SettingsEditor" timestamp="1597482302370">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="589" y="1358" width="1022" height="731" key="SettingsEditor/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227412240" />
+    <state x="635" y="278" width="1022" height="731" key="SettingsEditor/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597482302370" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1592518922526">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592518922526" />
+    <state x="785" y="277" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1597916690038">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="744" y="1357" width="800" height="529" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1596378411172" />
+    <state x="785" y="277" width="800" height="529" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597916690038" />
+    <state width="700" height="500" key="XDebugger.FullValuePopup" timestamp="1597228079946">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state width="726" height="500" key="XDebugger.FullValuePopup/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593272769196" />
+    <state width="700" height="500" key="XDebugger.FullValuePopup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597228079945" />
+    <state x="477" y="165" width="1200" height="795" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597485897616">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="477" y="165" width="1200" height="795" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597485897616" />
+    <state x="731" y="454" width="447" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597479916665">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="731" y="454" width="447" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597479916665" />
+    <state x="663" y="223" width="1027" height="577" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1592660492183">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="663" y="223" width="1027" height="577" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592660492183" />
+    <state x="834" y="244" width="620" height="522" key="find.popup" timestamp="1598090098822">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="795" y="1324" width="812" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593271659886" />
+    <state x="834" y="244" width="620" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598090098822" />
+    <state x="645" y="328" width="619" height="424" key="git4idea.merge.GitPullDialog" timestamp="1592831668224">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="645" y="328" width="619" height="424" key="git4idea.merge.GitPullDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592831668224" />
+    <state x="888" y="319" width="325" height="456" key="refactoring.ChangeSignatureDialog" timestamp="1596191308770">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="888" y="319" width="325" height="456" key="refactoring.ChangeSignatureDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1596191308770" />
+    <state x="781" y="302" width="672" height="678" key="search.everywhere.popup" timestamp="1592848088877">
+      <screen x="67" y="0" width="1853" height="1080" />
+    </state>
+    <state x="781" y="302" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592848088877" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trash/03_dense_net_201.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/split_large_mpi_db.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/preprocess_large_mpi_db.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/08_res_net_152.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trash/05_mobile_net.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/08_res_net_152.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trash/06_res_net_152.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/tensorflow/python/keras/engine/sequential.py</url>
+          <line>240</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/08_res_net_152.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/preprocess_large_mpi_db_48x48.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/generators.py</url>
+          <line>248</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/generators.py</url>
+          <line>221</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common.py</url>
+          <line>210</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/preprocess_large_mpi_db_48x48.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/preprocess_large_mpi_db_48x48.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec-gpu/lib/python3.8/site-packages/keras_video/generator.py</url>
+          <line>190</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec-gpu/lib/python3.8/site-packages/tensorflow/python/keras/engine/training.py</url>
+          <line>801</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec-gpu/lib/python3.8/site-packages/keras_video/generator.py</url>
+          <line>423</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec-gpu/lib/python3.8/site-packages/tensorflow/python/keras/engine/training.py</url>
+          <line>840</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_01.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/keras_video/sliding.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_01.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_01.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/load_trials_mysql.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_02.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_03.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_04.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_05.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_06.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/sklearn/preprocessing/_data.py</url>
+          <line>1699</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/linear_regression.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py</url>
+          <line>672</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/predict_trial_07.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cec$07_res_net_152.coverage" NAME="08_res_net_152 Coverage Results" MODIFIED="1592873772677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$augment_videos.coverage" NAME="augment_videos Coverage Results" MODIFIED="1597001597449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$08_mobile_net_v2.coverage" NAME="09_mobile_net_v2 Coverage Results" MODIFIED="1593018766906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_06.coverage" NAME="trial_06 Coverage Results" MODIFIED="1597483945139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$dense_net_201_1.coverage" NAME="dense_net_201_1 Coverage Results" MODIFIED="1591738217293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$12_mobile_net.coverage" NAME="12_mobile_net Coverage Results" MODIFIED="1595686011962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_03.coverage" NAME="trial_03 Coverage Results" MODIFIED="1597480991822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48_3.coverage" NAME="preprocess_large_mpi_db_48x48_3 Coverage Results" MODIFIED="1593037022190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$07_mobile_net.coverage" NAME="07_mobile_net Coverage Results" MODIFIED="1592873884698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$final.coverage" NAME="final Coverage Results" MODIFIED="1598089842716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$spilt_data.coverage" NAME="spilt_data Coverage Results" MODIFIED="1592689223925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$download_large_mpi_db.coverage" NAME="download_large_mpi_db Coverage Results" MODIFIED="1592597589777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1593082283590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$trial_01.coverage" NAME="trial_01 Coverage Results" MODIFIED="1597001797223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$predict_trial_07.coverage" NAME="predict_trial_07 Coverage Results" MODIFIED="1597768939012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$08_mobile_net.coverage" NAME="08_mobile_net Coverage Results" MODIFIED="1593348727233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$05_mobile_net.coverage" NAME="05_mobile_net Coverage Results" MODIFIED="1592844340707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$TimeDistributedImageDataGenerator.coverage" NAME="TimeDistributedImageDataGenerator Coverage Results" MODIFIED="1592658828131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_04.coverage" NAME="trial_04 Coverage Results" MODIFIED="1597483485256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$load_trials_mysql.coverage" NAME="load_trials_mysql Coverage Results" MODIFIED="1597230693448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$load_trials.coverage" NAME="linear_regression Coverage Results" MODIFIED="1597679239370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48.coverage" NAME="preprocess_large_mpi_db_48x48 Coverage Results" MODIFIED="1595156001185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$prepare_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1592689421763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$res_net_50_1.coverage" NAME="res_net_50_1 Coverage Results" MODIFIED="1591691762583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_07.coverage" NAME="trial_07 Coverage Results" MODIFIED="1597504156353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$augment_video.coverage" NAME="augment_video Coverage Results" MODIFIED="1596017501657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$trial_02.coverage" NAME="trial_02 Coverage Results" MODIFIED="1597480831151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_05.coverage" NAME="trial_05 Coverage Results" MODIFIED="1597483629297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$train_1_res_net_152.coverage" NAME="train_1_res_net_152 Coverage Results" MODIFIED="1592713791067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$res_net_50_2.coverage" NAME="res_net_50_2 Coverage Results" MODIFIED="1591691892293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$rnn_res_net_152.coverage" NAME="train_1_mobile_net Coverage Results" MODIFIED="1592613550606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$borrar.coverage" NAME="plot_csv Coverage Results" MODIFIED="1593436238330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48__1_.coverage" NAME="preprocess_large_mpi_db_48x48 (1) Coverage Results" MODIFIED="1593036628801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$train_1_mobile_net.coverage" NAME="train_1_mobile_net Coverage Results" MODIFIED="1592712183380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$06_res_net_152.coverage" NAME="06_res_net_152 Coverage Results" MODIFIED="1592844539274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$extract_augment_videos.coverage" NAME="extract_augment_videos Coverage Results" MODIFIED="1596975922389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$videos_statistics.coverage" NAME="videos_statistics Coverage Results" MODIFIED="1593080337087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$predict_trial_03.coverage" NAME="predict_trial_03 Coverage Results" MODIFIED="1597745115410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$model_statistics.coverage" NAME="model_statistics Coverage Results" MODIFIED="1593017259304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+  </component>
+</project>
