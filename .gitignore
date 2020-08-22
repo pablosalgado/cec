@@ -128,8 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-.idea/
-
 /models/01/ResNet50
 /models/01/ResNet50.tar.gz
 /models/02/ResNet50
