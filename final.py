@@ -20,7 +20,7 @@ TIME_STEPS = [12]
 EPOCHS = 1000
 
 TRL_PATH = f'models/trial-{TRIAL}'
-CLASSES = [k for (k, v) in common.LABELS.items()]
+CLASSES = ['agree_considered', 'agree_continue', 'agree_pure', 'agree_reluctant', 'aha-light_bulb_moment', 'annoyed_bothered', 'annoyed_rolling-eyes', 'arrogant', 'bored', 'compassion', 'confused', 'contempt', 'disagree_considered', 'disagree_pure', 'disagree_reluctant', 'disbelief', 'disgust', 'embarrassment', 'fear_oops', 'fear_terror', 'happy_achievement', 'happy_laughing', 'happy_satiated', 'happy_schadenfreude', 'I_did_not_hear', 'I_dont_care', 'I_dont_know', 'I_dont_understand', 'imagine_negative', 'imagine_positive', 'impressed', 'insecurity', 'not_convinced', 'pain_felt', 'pain_seen', 'remember_negative', 'remember_positive', 'sad', 'smiling_encouraging', 'smiling_endearment', 'smiling_flirting', 'smiling_sad-nostalgia', 'smiling_sardonic', 'smiling_triumphant', 'smiling_uncertain', 'smiling_winning', 'smiling_yeah-right', 'thinking_considering', 'thinking_problem-solving', 'tired', 'treudoof_bambi-eyes']
 
 
 def build_model(time_steps, nout):
