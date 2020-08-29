@@ -5,10 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="">
+    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final.py" beforeDir="false" afterPath="$PROJECT_DIR$/final.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/plot_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/plot_csv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <recent name="$PROJECT_DIR$/models/08" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.final">
+  <component name="RunManager" selected="Python.trial_01">
     <configuration name="final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="plot_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,7 +101,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/linear_regression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/plot_csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +154,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trial_07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="trial_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,7 +167,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_07.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.trial_01" />
+        <item itemvalue="Python.plot_csv" />
         <item itemvalue="Python.final" />
         <item itemvalue="Python.predict_trial_07" />
         <item itemvalue="Python.predict_trial_03" />
-        <item itemvalue="Python.linear_regression" />
-        <item itemvalue="Python.trial_07" />
       </list>
     </recent_temporary>
   </component>
@@ -258,13 +259,14 @@
       <workItem from="1597912150289" duration="3913000" />
       <workItem from="1598083467640" duration="6902000" />
       <workItem from="1598118281351" duration="2848000" />
-    </task>
-    <task id="LOCAL-00044" summary="Organize model 10/MobileNet">
-      <created>1593048554871</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1593048554871</updated>
+      <workItem from="1598133145656" duration="48000" />
+      <workItem from="1598144139716" duration="16671000" />
+      <workItem from="1598343924689" duration="1892000" />
+      <workItem from="1598347937889" duration="1607000" />
+      <workItem from="1598391703207" duration="1997000" />
+      <workItem from="1598431116574" duration="3620000" />
+      <workItem from="1598521672825" duration="2560000" />
+      <workItem from="1598688628823" duration="714000" />
     </task>
     <task id="LOCAL-00045" summary="Organize model 10/MobileNet">
       <created>1593048913278</created>
@@ -602,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598102685586</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="final">
+      <created>1598133181973</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1598133181974</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,66 +723,66 @@
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state x="1301" y="341" key="#xdebugger.evaluate/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595325886698" />
-    <state x="731" y="89" width="912" height="906" key="CommitChangelistDialog2" timestamp="1598102685537">
-      <screen x="67" y="0" width="1853" height="1080" />
+    <state x="688" y="1169" width="912" height="906" key="CommitChangelistDialog2" timestamp="1598361937982">
+      <screen x="0" y="1080" width="1920" height="1080" />
     </state>
-    <state x="688" y="1169" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1596378409468" />
-    <state x="731" y="89" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598102685537" />
+    <state x="688" y="1169" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598361937982" />
+    <state x="731" y="89" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598133181839" />
     <state width="1851" height="480" key="DebuggerActiveHint" timestamp="1595327183357">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state width="1918" height="480" key="DebuggerActiveHint/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593273150640" />
     <state width="1851" height="480" key="DebuggerActiveHint/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595327183357" />
-    <state x="419" y="143" width="989" height="812" maximized="true" key="DiffContextDialog" timestamp="1598129763666">
-      <screen x="67" y="0" width="1853" height="1080" />
+    <state x="372" y="1247" width="989" height="812" maximized="true" key="DiffContextDialog" timestamp="1598711807569">
+      <screen x="0" y="1080" width="1920" height="1080" />
     </state>
-    <state x="372" y="1247" width="999" height="811" maximized="true" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597916355509" />
-    <state x="419" y="143" width="989" height="812" maximized="true" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598129763666" />
+    <state x="372" y="1247" width="989" height="812" maximized="true" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598711807569" />
+    <state x="372" y="1247" width="989" height="812" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598522332740" />
     <state x="962" y="299" width="424" height="485" key="FileChooserDialogImpl" timestamp="1596151114142">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state x="927" y="1379" width="424" height="485" key="FileChooserDialogImpl/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593693914908" />
     <state x="962" y="299" width="424" height="485" key="FileChooserDialogImpl/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1596151114142" />
-    <state width="1354" height="274" key="GridCell.Tab.0.bottom" timestamp="1598131117518">
+    <state width="1354" height="245" key="GridCell.Tab.0.bottom" timestamp="1598534409341">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="222" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
-    <state width="1354" height="274" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117518" />
-    <state width="1354" height="274" key="GridCell.Tab.0.center" timestamp="1598131117518">
+    <state width="1354" height="245" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521944619" />
+    <state width="1354" height="245" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409341" />
+    <state width="1354" height="245" key="GridCell.Tab.0.center" timestamp="1598534409341">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="222" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
-    <state width="1354" height="274" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117518" />
-    <state width="1354" height="274" key="GridCell.Tab.0.left" timestamp="1598131117517">
+    <state width="1354" height="245" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521944619" />
+    <state width="1354" height="245" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409341" />
+    <state width="1354" height="245" key="GridCell.Tab.0.left" timestamp="1598534409341">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="222" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
-    <state width="1354" height="274" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117517" />
-    <state width="1354" height="274" key="GridCell.Tab.0.right" timestamp="1598131117518">
+    <state width="1354" height="245" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521944618" />
+    <state width="1354" height="245" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409341" />
+    <state width="1354" height="245" key="GridCell.Tab.0.right" timestamp="1598534409341">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="222" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597657139839" />
-    <state width="1354" height="274" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117518" />
-    <state width="1354" height="274" key="GridCell.Tab.1.bottom" timestamp="1598131117518">
+    <state width="1354" height="245" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521944619" />
+    <state width="1354" height="245" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409341" />
+    <state width="1354" height="290" key="GridCell.Tab.1.bottom" timestamp="1598534409331">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="236" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
-    <state width="1354" height="274" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117518" />
-    <state width="1354" height="274" key="GridCell.Tab.1.center" timestamp="1598131117518">
+    <state width="1354" height="290" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
+    <state width="1354" height="290" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409331" />
+    <state width="1354" height="290" key="GridCell.Tab.1.center" timestamp="1598534409331">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="236" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
-    <state width="1354" height="274" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117518" />
-    <state width="1354" height="274" key="GridCell.Tab.1.left" timestamp="1598131117518">
+    <state width="1354" height="290" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
+    <state width="1354" height="290" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409331" />
+    <state width="1354" height="290" key="GridCell.Tab.1.left" timestamp="1598534409331">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="236" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
-    <state width="1354" height="274" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117518" />
-    <state width="1354" height="274" key="GridCell.Tab.1.right" timestamp="1598131117518">
+    <state width="1354" height="290" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
+    <state width="1354" height="290" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409331" />
+    <state width="1354" height="290" key="GridCell.Tab.1.right" timestamp="1598534409331">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
-    <state width="1354" height="236" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227923254" />
-    <state width="1354" height="274" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598131117518" />
+    <state width="1354" height="290" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
+    <state width="1354" height="290" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598534409331" />
     <state x="910" y="266" width="406" height="634" key="RollbackChangesDialog" timestamp="1597485135985">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
@@ -787,16 +796,16 @@
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592518922526" />
-    <state x="785" y="277" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1598102715013">
+    <state x="785" y="277" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1598133183664">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state x="744" y="1357" width="800" height="529" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1596378411172" />
-    <state x="785" y="277" width="800" height="529" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598102715013" />
-    <state width="700" height="500" key="XDebugger.FullValuePopup" timestamp="1597228079946">
+    <state x="785" y="277" width="800" height="529" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598133183664" />
+    <state width="700" height="500" key="XDebugger.FullValuePopup" timestamp="1598191513389">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state width="726" height="500" key="XDebugger.FullValuePopup/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593272769196" />
-    <state width="700" height="500" key="XDebugger.FullValuePopup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597228079945" />
+    <state width="700" height="500" key="XDebugger.FullValuePopup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598191513389" />
     <state x="477" y="165" width="1200" height="795" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597485897616">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
@@ -809,11 +818,11 @@
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state x="663" y="223" width="1027" height="577" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592660492183" />
-    <state x="834" y="244" width="620" height="522" key="find.popup" timestamp="1598102375487">
-      <screen x="67" y="0" width="1853" height="1080" />
+    <state x="795" y="1324" width="812" height="522" key="find.popup" timestamp="1598193028135">
+      <screen x="0" y="1080" width="1920" height="1080" />
     </state>
-    <state x="795" y="1324" width="812" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593271659886" />
-    <state x="834" y="244" width="620" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598102375487" />
+    <state x="795" y="1324" width="812" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598193028135" />
+    <state x="834" y="244" width="620" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598180123655" />
     <state x="645" y="328" width="619" height="424" key="git4idea.merge.GitPullDialog" timestamp="1592831668224">
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
@@ -932,23 +941,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/trial_01.py</url>
-          <line>141</line>
+          <line>165</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/keras_video/sliding.py</url>
           <line>68</line>
           <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/trial_01.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/trial_01.py</url>
-          <line>112</line>
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils/load_trials_mysql.py</url>
@@ -1002,13 +1001,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final.py</url>
-          <line>140</line>
+          <line>144</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final.py</url>
-          <line>114</line>
+          <line>118</line>
           <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="'groups' in kwargs" language="Python" />
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py</url>
+          <line>293</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/tensorflow/python/training/checkpoint_management.py</url>
+          <line>276</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1019,11 +1034,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="classes" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cec$07_res_net_152.coverage" NAME="08_res_net_152 Coverage Results" MODIFIED="1592873772677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1036,12 +1046,12 @@
     <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48_3.coverage" NAME="preprocess_large_mpi_db_48x48_3 Coverage Results" MODIFIED="1593037022190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$07_mobile_net.coverage" NAME="07_mobile_net Coverage Results" MODIFIED="1592873884698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$final.coverage" NAME="final Coverage Results" MODIFIED="1598129886039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$final.coverage" NAME="final Coverage Results" MODIFIED="1598196508348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$spilt_data.coverage" NAME="spilt_data Coverage Results" MODIFIED="1592689223925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$download_large_mpi_db.coverage" NAME="download_large_mpi_db Coverage Results" MODIFIED="1592597589777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1593082283590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$trial_01.coverage" NAME="trial_01 Coverage Results" MODIFIED="1597001797223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_01.coverage" NAME="trial_01 Coverage Results" MODIFIED="1598523029031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$predict_trial_07.coverage" NAME="predict_trial_07 Coverage Results" MODIFIED="1597768939012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$08_mobile_net.coverage" NAME="08_mobile_net Coverage Results" MODIFIED="1593348727233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$05_mobile_net.coverage" NAME="05_mobile_net Coverage Results" MODIFIED="1592844340707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1056,6 +1066,7 @@
     <SUITE FILE_PATH="coverage/cec$augment_video.coverage" NAME="augment_video Coverage Results" MODIFIED="1596017501657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$trial_02.coverage" NAME="trial_02 Coverage Results" MODIFIED="1597480831151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$trial_05.coverage" NAME="trial_05 Coverage Results" MODIFIED="1597483629297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$plot_csv.coverage" NAME="plot_csv Coverage Results" MODIFIED="1598521838483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$train_1_res_net_152.coverage" NAME="train_1_res_net_152 Coverage Results" MODIFIED="1592713791067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$res_net_50_2.coverage" NAME="res_net_50_2 Coverage Results" MODIFIED="1591691892293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$rnn_res_net_152.coverage" NAME="train_1_mobile_net Coverage Results" MODIFIED="1592613550606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
