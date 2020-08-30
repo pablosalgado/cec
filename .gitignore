@@ -179,5 +179,6 @@ dmypy.json
 /utils/models.csv
 /data/
 /utils/load_trials.sql
-/utils/cec-trials.csv
-/utils/cec-trials.xlsx
+*.csv
+*.xlsx
+*.ods

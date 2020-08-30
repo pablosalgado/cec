@@ -8,6 +8,7 @@
 
 import os
 
+import pandas
 import tensorflow as tf
 from keras_video.sliding import SlidingFrameGenerator
 
@@ -77,6 +78,9 @@ def train():
         extract=True
     )
 
+    data = pandas.DataFrame(None, columns=['trial', 'batch_size', 'time_steps', 'cycle', 'files', 'sequences'])
+    data['trial'] = TRIAL
+
     for batch_size in BATCH_SIZE:
         for time_steps in TIME_STEPS:
             path = TRL_PATH + f'/{batch_size}/{time_steps}'
@@ -108,6 +112,26 @@ def train():
             )
 
             validation_idg = train_idg.get_validation_generator()
+
+            row = {
+                'trial': TRIAL,
+                'batch_size': batch_size,
+                'cycle': 'training',
+                'time_steps': time_steps,
+                'files': train_idg.files_count,
+                'sequences': len(train_idg.vid_info)
+            }
+            data = data.append(row, ignore_index=True)
+
+            row = {
+                'trial': TRIAL,
+                'batch_size': batch_size,
+                'cycle': 'validation',
+                'time_steps': time_steps,
+                'files': validation_idg.files_count,
+                'sequences': len(validation_idg.vid_info)
+            }
+            data = data.append(row, ignore_index=True)
 
             # Configure callbacks
             callbacks = [
@@ -144,6 +168,8 @@ def train():
             )
 
             common.plot_acc_loss(history, path + '/plot.png')
+
+    data.to_csv('trial_02.csv')
 
 
 if __name__ == '__main__':
