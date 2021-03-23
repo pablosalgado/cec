@@ -15,6 +15,14 @@ from keras_video.sliding import SlidingFrameGenerator
 
 import common
 
+# Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080
+# SUPER GPU cards.
+config = tf.compat.v1.ConfigProto()
+config.gpu_options.allow_growth = True
+sess = tf.compat.v1.Session(config=config)
+tf.compat.v1.keras.backend.set_session(sess)
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+
 # Parameters
 TRIAL = '01'
 BATCH_SIZE = [2, 4, 8, 16, 32]
@@ -154,10 +162,12 @@ def train():
                 tf.keras.callbacks.CSVLogger(
                     filename=path + '/log.csv'
                 ),
-                tf.keras.callbacks.TensorBoard(
-                    log_dir=path + '/tb',
-                    histogram_freq=1
-                ),
+                # Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2
+                # GeForce RTX 2080 SUPER GPU cards.
+                # tf.keras.callbacks.TensorBoard(
+                #     log_dir=path + '/tb',
+                #     histogram_freq=1
+                # ),
                 tf.keras.callbacks.ReduceLROnPlateau(
                     verbose=1
                 ),

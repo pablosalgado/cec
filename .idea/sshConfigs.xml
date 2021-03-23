@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="atcbiosimul.ugr.es" id="9859ffd3-5f0d-4ef5-b107-2811bb0c6306" port="22" nameFormat="DESCRIPTIVE" username="psalgado" />
+    </configs>
+  </component>
+</project>

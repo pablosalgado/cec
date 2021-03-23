@@ -5,14 +5,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="evaluation">
-      <change afterPath="$PROJECT_DIR$/evaluate_trial_07.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cec.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cec.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final.py" beforeDir="false" afterPath="$PROJECT_DIR$/final.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict_trial_03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict_trial_07.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +39,16 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils/models.csv" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,7 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,29 +74,7 @@
       <recent name="$PROJECT_DIR$/models/08/MobileNet" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.evaluate_trial_final">
-    <configuration name="evaluate_trial_07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cec" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_trial_07.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.trial_03">
     <configuration name="evaluate_trial_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,28 +119,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trial_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cec" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="trial_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,13 +141,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="trial_03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trial_10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_10.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.evaluate_trial_final" />
-        <item itemvalue="Python.evaluate_trial_07" />
-        <item itemvalue="Python.final" />
+        <item itemvalue="Python.trial_03" />
+        <item itemvalue="Python.trial_10" />
         <item itemvalue="Python.trial_02" />
-        <item itemvalue="Python.trial_01" />
+        <item itemvalue="Python.final" />
+        <item itemvalue="Python.evaluate_trial_final" />
       </list>
     </recent_temporary>
   </component>
@@ -270,21 +276,34 @@
       <workItem from="1598431116574" duration="3620000" />
       <workItem from="1598521672825" duration="2560000" />
       <workItem from="1598688628823" duration="714000" />
-      <workItem from="1598726521097" duration="4713000" />
-    </task>
-    <task id="LOCAL-00046" summary="Organize model 09/MobileNet">
-      <created>1593074174649</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1593074174649</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Some fixes">
-      <created>1593279886875</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1593279886875</updated>
+      <workItem from="1598726521097" duration="11470000" />
+      <workItem from="1598954503097" duration="2084000" />
+      <workItem from="1598997833503" duration="1232000" />
+      <workItem from="1599037493856" duration="599000" />
+      <workItem from="1599294637878" duration="6519000" />
+      <workItem from="1599553863395" duration="2382000" />
+      <workItem from="1600705787455" duration="223000" />
+      <workItem from="1604833954283" duration="614000" />
+      <workItem from="1608106500219" duration="4669000" />
+      <workItem from="1608201674750" duration="1118000" />
+      <workItem from="1608293947679" duration="1268000" />
+      <workItem from="1608384214263" duration="5060000" />
+      <workItem from="1610355796215" duration="172000" />
+      <workItem from="1610728890174" duration="2499000" />
+      <workItem from="1611045909225" duration="3059000" />
+      <workItem from="1611220394884" duration="5037000" />
+      <workItem from="1611419110191" duration="320000" />
+      <workItem from="1611420860380" duration="3160000" />
+      <workItem from="1612359532220" duration="5000" />
+      <workItem from="1614248983326" duration="678000" />
+      <workItem from="1614941299231" duration="198000" />
+      <workItem from="1615224994489" duration="35000" />
+      <workItem from="1615651556083" duration="848000" />
+      <workItem from="1616232195618" duration="2545000" />
+      <workItem from="1616404197331" duration="3154000" />
+      <workItem from="1616487300303" duration="4390000" />
+      <workItem from="1616492204307" duration="172000" />
+      <workItem from="1616492945893" duration="852000" />
     </task>
     <task id="LOCAL-00048" summary="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing.">
       <created>1593349098240</created>
@@ -615,7 +634,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598711829885</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="evaluation">
+      <created>1598779721086</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1598779721086</updated>
+    </task>
+    <task id="LOCAL-00096" summary="trial10">
+      <created>1598998425392</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1598998425393</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +707,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Organize model 07/MobileNet" />
     <MESSAGE value="Organize model 08/MobileNet" />
     <MESSAGE value="Organize model 10/MobileNet" />
     <MESSAGE value="Organize model 09/MobileNet" />
@@ -696,149 +728,11 @@
     <MESSAGE value="trial09" />
     <MESSAGE value="trials analysis" />
     <MESSAGE value="some predictions" />
-    <MESSAGE value="trial10" />
     <MESSAGE value="final" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="591" y="182" width="800" height="713" key="#Plugins" timestamp="1597307173101">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="591" y="182" width="800" height="713" key="#Plugins/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597307173101" />
-    <state x="678" y="224" width="800" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597230774030">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="633" y="1304" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593436219733" />
-    <state x="678" y="224" width="800" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597230774030" />
-    <state x="618" y="341" width="725" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597306054990">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="618" y="341" width="725" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597306054990" />
-    <state x="868" y="297" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595768111487">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="868" y="297" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595768111487" />
-    <state x="792" y="431" width="325" height="218" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1592709261819">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="792" y="431" width="325" height="218" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592709261819" />
-    <state x="1301" y="341" key="#xdebugger.evaluate" timestamp="1595325886698">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="1301" y="341" key="#xdebugger.evaluate/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595325886698" />
-    <state x="731" y="89" width="912" height="906" key="CommitChangelistDialog2" timestamp="1598779375471">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="688" y="1169" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598711829780" />
-    <state x="731" y="89" width="912" height="906" key="CommitChangelistDialog2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598779375471" />
-    <state width="1851" height="480" key="DebuggerActiveHint" timestamp="1595327183357">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1918" height="480" key="DebuggerActiveHint/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593273150640" />
-    <state width="1851" height="480" key="DebuggerActiveHint/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1595327183357" />
-    <state x="310" y="111" width="989" height="812" key="DiffContextDialog" timestamp="1598779479593">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="461" y="147" width="979" height="813" maximized="true" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598714538479" />
-    <state x="310" y="111" width="989" height="812" key="DiffContextDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598779479593" />
-    <state x="962" y="299" width="424" height="485" key="FileChooserDialogImpl" timestamp="1596151114142">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="927" y="1379" width="424" height="485" key="FileChooserDialogImpl/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593693914908" />
-    <state x="962" y="299" width="424" height="485" key="FileChooserDialogImpl/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1596151114142" />
-    <state width="1874" height="261" key="GridCell.Tab.0.bottom" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="245" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598717720536" />
-    <state width="1874" height="261" key="GridCell.Tab.0.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state width="1874" height="261" key="GridCell.Tab.0.center" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="245" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598717720536" />
-    <state width="1874" height="261" key="GridCell.Tab.0.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state width="1874" height="261" key="GridCell.Tab.0.left" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="245" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598717720535" />
-    <state width="1874" height="261" key="GridCell.Tab.0.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state width="1874" height="261" key="GridCell.Tab.0.right" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="245" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598717720536" />
-    <state width="1874" height="261" key="GridCell.Tab.0.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state width="1874" height="261" key="GridCell.Tab.1.bottom" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="290" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
-    <state width="1874" height="261" key="GridCell.Tab.1.bottom/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state width="1874" height="261" key="GridCell.Tab.1.center" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="290" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
-    <state width="1874" height="261" key="GridCell.Tab.1.center/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state width="1874" height="261" key="GridCell.Tab.1.left" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="290" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
-    <state width="1874" height="261" key="GridCell.Tab.1.left/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state width="1874" height="261" key="GridCell.Tab.1.right" timestamp="1598778994392">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="1354" height="290" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598521874141" />
-    <state width="1874" height="261" key="GridCell.Tab.1.right/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778994392" />
-    <state x="910" y="266" width="406" height="634" key="RollbackChangesDialog" timestamp="1597485135985">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="910" y="266" width="406" height="634" key="RollbackChangesDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597485135985" />
-    <state x="635" y="278" width="1022" height="731" key="SettingsEditor" timestamp="1597482302370">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="589" y="1358" width="1022" height="731" key="SettingsEditor/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1597227412240" />
-    <state x="635" y="278" width="1022" height="731" key="SettingsEditor/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597482302370" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1592518922526">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592518922526" />
-    <state x="744" y="1357" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1598711831494">
-      <screen x="0" y="1080" width="1920" height="1080" />
-    </state>
-    <state x="744" y="1357" width="800" height="529" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598711831494" />
-    <state x="785" y="277" width="800" height="529" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598133183664" />
-    <state width="700" height="500" key="XDebugger.FullValuePopup" timestamp="1598191513389">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state width="726" height="500" key="XDebugger.FullValuePopup/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1593272769196" />
-    <state width="700" height="500" key="XDebugger.FullValuePopup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598191513389" />
-    <state x="477" y="165" width="1200" height="795" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597485897616">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="477" y="165" width="1200" height="795" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597485897616" />
-    <state x="731" y="454" width="447" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597479916665">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="731" y="454" width="447" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1597479916665" />
-    <state x="663" y="223" width="1027" height="577" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1592660492183">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="663" y="223" width="1027" height="577" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592660492183" />
-    <state x="834" y="244" width="620" height="522" key="find.popup" timestamp="1598722645784">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="795" y="1324" width="812" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@0.1080.1920.1080" timestamp="1598193028135" />
-    <state x="834" y="244" width="620" height="522" key="find.popup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598722645784" />
-    <state x="645" y="328" width="619" height="424" key="git4idea.merge.GitPullDialog" timestamp="1592831668224">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="645" y="328" width="619" height="424" key="git4idea.merge.GitPullDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1592831668224" />
-    <state x="888" y="319" width="325" height="456" key="refactoring.ChangeSignatureDialog" timestamp="1596191308770">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="888" y="319" width="325" height="456" key="refactoring.ChangeSignatureDialog/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1596191308770" />
-    <state x="781" y="302" width="672" height="678" key="search.everywhere.popup" timestamp="1598778977837">
-      <screen x="67" y="0" width="1853" height="1080" />
-    </state>
-    <state x="781" y="302" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/67.0.1853.1080@67.0.1853.1080" timestamp="1598778977837" />
+    <MESSAGE value="evaluation" />
+    <MESSAGE value="trial10" />
+    <option name="LAST_COMMIT_MESSAGE" value="trial10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -945,7 +839,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/trial_01.py</url>
-          <line>165</line>
+          <line>175</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -960,7 +854,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/trial_02.py</url>
-          <line>114</line>
+          <line>113</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1000,7 +894,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final.py</url>
-          <line>143</line>
+          <line>138</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1016,8 +910,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final.py</url>
-          <line>103</line>
+          <line>98</line>
           <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_10.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trial_03.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="134" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1030,48 +934,49 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cec$predict_trial_final.coverage" NAME="evaluate_trial_final Coverage Results" MODIFIED="1598784154233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$dense_net_201_1.coverage" NAME="dense_net_201_1 Coverage Results" MODIFIED="1591738217293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$train_1_mobile_net.coverage" NAME="train_1_mobile_net Coverage Results" MODIFIED="1592712183380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$08_mobile_net_v2.coverage" NAME="09_mobile_net_v2 Coverage Results" MODIFIED="1593018766906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$final.coverage" NAME="final Coverage Results" MODIFIED="1598714392600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$load_trials_mysql.coverage" NAME="load_trials_mysql Coverage Results" MODIFIED="1597230693448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$spilt_data.coverage" NAME="spilt_data Coverage Results" MODIFIED="1592689223925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$augment_video.coverage" NAME="augment_video Coverage Results" MODIFIED="1596017501657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$08_mobile_net.coverage" NAME="08_mobile_net Coverage Results" MODIFIED="1593348727233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_01.coverage" NAME="trial_01 Coverage Results" MODIFIED="1598523029031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$train_1_res_net_152.coverage" NAME="train_1_res_net_152 Coverage Results" MODIFIED="1592713791067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$06_res_net_152.coverage" NAME="06_res_net_152 Coverage Results" MODIFIED="1592844539274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$07_res_net_152.coverage" NAME="08_res_net_152 Coverage Results" MODIFIED="1592873772677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$augment_videos.coverage" NAME="augment_videos Coverage Results" MODIFIED="1597001597449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$predict_trial_final.coverage" NAME="predict_trial_final Coverage Results" MODIFIED="1598775924022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$08_mobile_net_v2.coverage" NAME="09_mobile_net_v2 Coverage Results" MODIFIED="1593018766906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$trial_06.coverage" NAME="trial_06 Coverage Results" MODIFIED="1597483945139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$dense_net_201_1.coverage" NAME="dense_net_201_1 Coverage Results" MODIFIED="1591738217293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$12_mobile_net.coverage" NAME="12_mobile_net Coverage Results" MODIFIED="1595686011962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$trial_03.coverage" NAME="trial_03 Coverage Results" MODIFIED="1597480991822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48_3.coverage" NAME="preprocess_large_mpi_db_48x48_3 Coverage Results" MODIFIED="1593037022190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$07_mobile_net.coverage" NAME="07_mobile_net Coverage Results" MODIFIED="1592873884698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$final.coverage" NAME="final Coverage Results" MODIFIED="1598714392600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$spilt_data.coverage" NAME="spilt_data Coverage Results" MODIFIED="1592689223925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$download_large_mpi_db.coverage" NAME="download_large_mpi_db Coverage Results" MODIFIED="1592597589777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1593082283590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$trial_01.coverage" NAME="trial_01 Coverage Results" MODIFIED="1598523029031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$predict_trial_07.coverage" NAME="predict_trial_07 Coverage Results" MODIFIED="1598775139106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$08_mobile_net.coverage" NAME="08_mobile_net Coverage Results" MODIFIED="1593348727233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$05_mobile_net.coverage" NAME="05_mobile_net Coverage Results" MODIFIED="1592844340707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$TimeDistributedImageDataGenerator.coverage" NAME="TimeDistributedImageDataGenerator Coverage Results" MODIFIED="1592658828131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$trial_04.coverage" NAME="trial_04 Coverage Results" MODIFIED="1597483485256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$load_trials_mysql.coverage" NAME="load_trials_mysql Coverage Results" MODIFIED="1597230693448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$load_trials.coverage" NAME="linear_regression Coverage Results" MODIFIED="1597679239370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48.coverage" NAME="preprocess_large_mpi_db_48x48 Coverage Results" MODIFIED="1595156001185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$prepare_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1592689421763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$res_net_50_1.coverage" NAME="res_net_50_1 Coverage Results" MODIFIED="1591691762583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_10.coverage" NAME="trial_10 Coverage Results" MODIFIED="1598998287959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$07_mobile_net.coverage" NAME="07_mobile_net Coverage Results" MODIFIED="1592873884698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$extract_augment_videos.coverage" NAME="extract_augment_videos Coverage Results" MODIFIED="1596975922389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$prepare_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1592689421763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$res_net_50_2.coverage" NAME="res_net_50_2 Coverage Results" MODIFIED="1591691892293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_04.coverage" NAME="trial_04 Coverage Results" MODIFIED="1597483485256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$predict_trial_07.coverage" NAME="predict_trial_07 Coverage Results" MODIFIED="1598775139106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$load_trials.coverage" NAME="linear_regression Coverage Results" MODIFIED="1597679239370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$05_mobile_net.coverage" NAME="05_mobile_net Coverage Results" MODIFIED="1592844340707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$trial_07.coverage" NAME="trial_07 Coverage Results" MODIFIED="1597504156353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$augment_video.coverage" NAME="augment_video Coverage Results" MODIFIED="1596017501657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$videos_statistics.coverage" NAME="videos_statistics Coverage Results" MODIFIED="1593080337087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48_3.coverage" NAME="preprocess_large_mpi_db_48x48_3 Coverage Results" MODIFIED="1593037022190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$12_mobile_net.coverage" NAME="12_mobile_net Coverage Results" MODIFIED="1595686011962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$trial_05.coverage" NAME="trial_05 Coverage Results" MODIFIED="1597483629297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48.coverage" NAME="preprocess_large_mpi_db_48x48 Coverage Results" MODIFIED="1595156001185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$trial_02.coverage" NAME="trial_02 Coverage Results" MODIFIED="1598712123160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$plot_csv.coverage" NAME="plot_csv Coverage Results" MODIFIED="1598521838483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$train_1_res_net_152.coverage" NAME="train_1_res_net_152 Coverage Results" MODIFIED="1592713791067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$res_net_50_2.coverage" NAME="res_net_50_2 Coverage Results" MODIFIED="1591691892293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1593082283590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48__1_.coverage" NAME="preprocess_large_mpi_db_48x48 (1) Coverage Results" MODIFIED="1593036628801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$trial_06.coverage" NAME="trial_06 Coverage Results" MODIFIED="1597483945139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$download_large_mpi_db.coverage" NAME="download_large_mpi_db Coverage Results" MODIFIED="1592597589777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$rnn_res_net_152.coverage" NAME="train_1_mobile_net Coverage Results" MODIFIED="1592613550606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$borrar.coverage" NAME="plot_csv Coverage Results" MODIFIED="1593436238330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48__1_.coverage" NAME="preprocess_large_mpi_db_48x48 (1) Coverage Results" MODIFIED="1593036628801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$train_1_mobile_net.coverage" NAME="train_1_mobile_net Coverage Results" MODIFIED="1592712183380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$06_res_net_152.coverage" NAME="06_res_net_152 Coverage Results" MODIFIED="1592844539274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cec$extract_augment_videos.coverage" NAME="extract_augment_videos Coverage Results" MODIFIED="1596975922389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$videos_statistics.coverage" NAME="videos_statistics Coverage Results" MODIFIED="1593080337087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$predict_trial_03.coverage" NAME="predict_trial_03 Coverage Results" MODIFIED="1597745115410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$model_statistics.coverage" NAME="model_statistics Coverage Results" MODIFIED="1593017259304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$trial_03.coverage" NAME="trial_03 Coverage Results" MODIFIED="1616407515163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$TimeDistributedImageDataGenerator.coverage" NAME="TimeDistributedImageDataGenerator Coverage Results" MODIFIED="1592658828131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$predict_trial_03.coverage" NAME="predict_trial_03 Coverage Results" MODIFIED="1597745115410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f274d954-9a38-404e-9ce6-ef4a460cafec" name="ATCBIOSIMUL" url="http://atcbiosimul.ugr.es">
+        <fileTransfer rootFolder="/home/psalgado/cec" accessType="SFTP" host="atcbiosimul.ugr.es" port="22" sshConfigId="9859ffd3-5f0d-4ef5-b107-2811bb0c6306" sshConfig="psalgado@atcbiosimul.ugr.es:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

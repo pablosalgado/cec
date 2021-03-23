@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="ATCBIOSIMUL" remoteFilesAllowedToDisappearOnAutoupload="false" compareModeInSync="TEXT">
+    <serverData>
+      <paths name="ATCBIOSIMUL">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/models" />
+            <excludedPath path="/__pycache__" />
+            <excludedPath local="true" path="$PROJECT_DIR$/utils/cec-trials.csv" />
+            <excludedPath local="true" path="$PROJECT_DIR$/utils/load_trials.sql" />
+            <excludedPath local="true" path="$PROJECT_DIR$/utils/models.csv" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
