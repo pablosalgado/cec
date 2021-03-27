@@ -5,14 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cec.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cec.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards">
+      <change afterPath="$PROJECT_DIR$/paper01_trial_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,7 @@
   <component name="JupyterTrust" id="a5b32270-6d20-47e9-a26a-12f28d8ba1bc" />
   <component name="ProjectId" id="1d3ZyUMFbEJ2yTPBUEYzuFOkfXN" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -48,7 +44,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils/models.csv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,29 +70,7 @@
       <recent name="$PROJECT_DIR$/models/08/MobileNet" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.trial_03">
-    <configuration name="evaluate_trial_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cec" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_trial_final.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.paper01_trial_01">
     <configuration name="final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,6 +85,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="paper01_trial_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paper01_trial_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.paper01_trial_01" />
         <item itemvalue="Python.trial_03" />
         <item itemvalue="Python.trial_10" />
         <item itemvalue="Python.trial_02" />
         <item itemvalue="Python.final" />
-        <item itemvalue="Python.evaluate_trial_final" />
       </list>
     </recent_temporary>
   </component>
@@ -303,14 +299,10 @@
       <workItem from="1616404197331" duration="3154000" />
       <workItem from="1616487300303" duration="4390000" />
       <workItem from="1616492204307" duration="172000" />
-      <workItem from="1616492945893" duration="852000" />
-    </task>
-    <task id="LOCAL-00048" summary="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing.">
-      <created>1593349098240</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1593349098240</updated>
+      <workItem from="1616492945893" duration="2619000" />
+      <workItem from="1616572918746" duration="9000000" />
+      <workItem from="1616662248096" duration="8040000" />
+      <workItem from="1616775103732" duration="1370000" />
     </task>
     <task id="LOCAL-00049" summary="Some fixes">
       <created>1593436325335</created>
@@ -648,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598998425393</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards">
+      <created>1616493974246</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1616493974247</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +706,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Organize model 08/MobileNet" />
     <MESSAGE value="Organize model 10/MobileNet" />
     <MESSAGE value="Organize model 09/MobileNet" />
     <MESSAGE value="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing." />
@@ -732,7 +730,8 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="evaluation" />
     <MESSAGE value="trial10" />
-    <option name="LAST_COMMIT_MESSAGE" value="trial10" />
+    <MESSAGE value="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -923,6 +922,11 @@
           <line>79</line>
           <option name="timeStamp" value="134" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/paper01_trial_01.py</url>
+          <line>198</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -971,6 +975,7 @@
     <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$trial_06.coverage" NAME="trial_06 Coverage Results" MODIFIED="1597483945139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$paper01_trial_01.coverage" NAME="paper01_trial_01 Coverage Results" MODIFIED="1616663275529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$download_large_mpi_db.coverage" NAME="download_large_mpi_db Coverage Results" MODIFIED="1592597589777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$rnn_res_net_152.coverage" NAME="train_1_mobile_net Coverage Results" MODIFIED="1592613550606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$borrar.coverage" NAME="plot_csv Coverage Results" MODIFIED="1593436238330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
