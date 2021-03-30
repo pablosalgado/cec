@@ -5,9 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="paper 01 trial 01">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="confusion matrix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confusion_matrix_trial_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrix_trial_final.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,14 +315,7 @@
       <workItem from="1616835239773" duration="14182000" />
       <workItem from="1616926538248" duration="385000" />
       <workItem from="1617006211000" duration="4230000" />
-      <workItem from="1617091077385" duration="7518000" />
-    </task>
-    <task id="LOCAL-00051" summary="Organize model 12/MobileNet">
-      <created>1595241384792</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1595241384792</updated>
+      <workItem from="1617091077385" duration="9184000" />
     </task>
     <task id="LOCAL-00052" summary="Organize model 12/MobileNet">
       <created>1595498001752</created>
@@ -660,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617091239244</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="confusion matrix">
+      <created>1617098630180</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1617098630180</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -719,7 +719,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Organize model 09/MobileNet" />
     <MESSAGE value="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing." />
     <MESSAGE value="Some fixes" />
     <MESSAGE value="Organize model 12/MobileNet" />
@@ -744,7 +743,8 @@
     <MESSAGE value="trial10" />
     <MESSAGE value="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards" />
     <MESSAGE value="paper 01 trial 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="paper 01 trial 01" />
+    <MESSAGE value="confusion matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="confusion matrix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -960,11 +960,6 @@
           <line>66</line>
           <option name="timeStamp" value="149" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/confusion_matrix_trial_final.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1018,7 +1013,7 @@
     <SUITE FILE_PATH="coverage/cec$plot_csv.coverage" NAME="plot_csv Coverage Results" MODIFIED="1598521838483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$evaluate_trial_final.coverage" NAME="evaluate_trial_final Coverage Results" MODIFIED="1616862723113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1593082283590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$confusion_matrix_trial_final.coverage" NAME="confusion_matrix_trial_final Coverage Results" MODIFIED="1617097683808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$confusion_matrix_trial_final.coverage" NAME="confusion_matrix_trial_final Coverage Results" MODIFIED="1617099475260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48__1_.coverage" NAME="preprocess_large_mpi_db_48x48 (1) Coverage Results" MODIFIED="1593036628801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

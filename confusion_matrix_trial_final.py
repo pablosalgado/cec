@@ -3,13 +3,23 @@ import numpy as np
 import tensorflow as tf
 from keras_video.sliding import SlidingFrameGenerator
 import common
+from sklearn.metrics import classification_report
 
 tf.config.experimental_run_functions_eagerly(True)
 model = tf.keras.models.load_model('./models/trial-final/32/12/ckpts/cp-0034.ckpt')
 # model.summary()
 
 TIME_STEPS = 12
-CLASSES = ['I_did_not_hear', 'I_dont_care', 'I_dont_know', 'I_dont_understand', 'agree_considered', 'agree_continue', 'agree_pure', 'agree_reluctant', 'aha-light_bulb_moment', 'annoyed_bothered', 'annoyed_rolling-eyes', 'arrogant', 'bored', 'compassion', 'confused', 'contempt', 'disagree_considered', 'disagree_pure', 'disagree_reluctant', 'disbelief', 'disgust', 'embarrassment', 'fear_oops', 'fear_terror', 'happy_achievement', 'happy_laughing', 'happy_satiated', 'happy_schadenfreude', 'imagine_negative', 'imagine_positive', 'impressed', 'insecurity', 'not_convinced', 'pain_felt', 'pain_seen', 'remember_negative', 'remember_positive', 'sad', 'smiling_encouraging', 'smiling_endearment', 'smiling_flirting', 'smiling_sad-nostalgia', 'smiling_sardonic', 'smiling_triumphant', 'smiling_uncertain', 'smiling_winning', 'smiling_yeah-right', 'thinking_considering', 'thinking_problem-solving', 'tired', 'treudoof_bambi-eyes']
+CLASSES = ['I_did_not_hear', 'I_dont_care', 'I_dont_know', 'I_dont_understand', 'agree_considered', 'agree_continue',
+           'agree_pure', 'agree_reluctant', 'aha-light_bulb_moment', 'annoyed_bothered', 'annoyed_rolling-eyes',
+           'arrogant', 'bored', 'compassion', 'confused', 'contempt', 'disagree_considered', 'disagree_pure',
+           'disagree_reluctant', 'disbelief', 'disgust', 'embarrassment', 'fear_oops', 'fear_terror',
+           'happy_achievement', 'happy_laughing', 'happy_satiated', 'happy_schadenfreude', 'imagine_negative',
+           'imagine_positive', 'impressed', 'insecurity', 'not_convinced', 'pain_felt', 'pain_seen',
+           'remember_negative', 'remember_positive', 'sad', 'smiling_encouraging', 'smiling_endearment',
+           'smiling_flirting', 'smiling_sad-nostalgia', 'smiling_sardonic', 'smiling_triumphant', 'smiling_uncertain',
+           'smiling_winning', 'smiling_yeah-right', 'thinking_considering', 'thinking_problem-solving', 'tired',
+           'treudoof_bambi-eyes']
 
 tf.keras.utils.get_file(
     fname='cec-videos-test.tar.gz',
@@ -49,4 +59,7 @@ p = [p.argmax() for p in predictions]
 # Build and save the confusion matrix.
 c = tf.math.confusion_matrix(l, predictions=p)
 np.savetxt('confusion_matrix.csv', c.numpy(), delimiter=',')
-print(c)
+
+
+print('\nClassification Report\n')
+print(classification_report(l, p, target_names=CLASSES))
