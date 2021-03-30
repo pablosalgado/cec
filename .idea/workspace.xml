@@ -5,8 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards">
-      <change afterPath="$PROJECT_DIR$/paper01_trial_01.py" afterDir="false" />
+    <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="paper 01 trial 01">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +70,14 @@
       <recent name="$PROJECT_DIR$/models/08/MobileNet" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.paper01_trial_01">
-    <configuration name="final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.confusion_matrix_trial_final">
+    <configuration name="confusion_matrix_trial_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -84,7 +85,30 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/confusion_matrix_trial_final.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="evaluate_trial_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="-1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_trial_final.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trial_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="paper01_trial_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,7 +152,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paper01_trial_02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,35 +183,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trial_10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cec" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial_10.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.evaluate_trial_final" />
+      <item itemvalue="Python.paper01_trial_01" />
+      <item itemvalue="Python.paper01_trial_02" />
+      <item itemvalue="Python.trial_03" />
+      <item itemvalue="Python.confusion_matrix_trial_final" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.confusion_matrix_trial_final" />
+        <item itemvalue="Python.evaluate_trial_final" />
+        <item itemvalue="Python.paper01_trial_02" />
         <item itemvalue="Python.paper01_trial_01" />
         <item itemvalue="Python.trial_03" />
-        <item itemvalue="Python.trial_10" />
-        <item itemvalue="Python.trial_02" />
-        <item itemvalue="Python.final" />
       </list>
     </recent_temporary>
   </component>
@@ -303,20 +312,10 @@
       <workItem from="1616572918746" duration="9000000" />
       <workItem from="1616662248096" duration="8040000" />
       <workItem from="1616775103732" duration="1370000" />
-    </task>
-    <task id="LOCAL-00049" summary="Some fixes">
-      <created>1593436325335</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1593436325335</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Some fixes">
-      <created>1595235109321</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1595235109322</updated>
+      <workItem from="1616835239773" duration="14182000" />
+      <workItem from="1616926538248" duration="385000" />
+      <workItem from="1617006211000" duration="4230000" />
+      <workItem from="1617091077385" duration="7518000" />
     </task>
     <task id="LOCAL-00051" summary="Organize model 12/MobileNet">
       <created>1595241384792</created>
@@ -647,7 +646,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616493974247</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="paper 01 trial 01">
+      <created>1616835300303</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1616835300303</updated>
+    </task>
+    <task id="LOCAL-00099" summary="paper 01 trial 01">
+      <created>1617091239244</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1617091239244</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +719,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Organize model 10/MobileNet" />
     <MESSAGE value="Organize model 09/MobileNet" />
     <MESSAGE value="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing." />
     <MESSAGE value="Some fixes" />
@@ -731,7 +743,8 @@
     <MESSAGE value="evaluation" />
     <MESSAGE value="trial10" />
     <MESSAGE value="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards" />
+    <MESSAGE value="paper 01 trial 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="paper 01 trial 01" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -841,11 +854,6 @@
           <line>175</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/keras_video/sliding.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils/load_trials_mysql.py</url>
           <line>26</line>
@@ -927,6 +935,36 @@
           <line>198</line>
           <option name="timeStamp" value="135" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/paper01_trial_02.py</url>
+          <line>198</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluate_trial_final.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/keras_video/generator.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/paper01_trial_02.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/cec/lib/python3.8/site-packages/keras_video/sliding.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/confusion_matrix_trial_final.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -936,6 +974,13 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="x.vid_info" language="Python" />
+        <watch expression="p[0].argmax()" language="Python" />
+        <watch expression="c.numpy()" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cec$predict_trial_final.coverage" NAME="evaluate_trial_final Coverage Results" MODIFIED="1598784154233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -960,6 +1005,7 @@
     <SUITE FILE_PATH="coverage/cec$res_net_50_2.coverage" NAME="res_net_50_2 Coverage Results" MODIFIED="1591691892293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$trial_04.coverage" NAME="trial_04 Coverage Results" MODIFIED="1597483485256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$predict_trial_07.coverage" NAME="predict_trial_07 Coverage Results" MODIFIED="1598775139106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$paper01_trial_02.coverage" NAME="paper01_trial_02 Coverage Results" MODIFIED="1616835366140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$load_trials.coverage" NAME="linear_regression Coverage Results" MODIFIED="1597679239370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$05_mobile_net.coverage" NAME="05_mobile_net Coverage Results" MODIFIED="1592844340707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$trial_07.coverage" NAME="trial_07 Coverage Results" MODIFIED="1597504156353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -970,7 +1016,9 @@
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48.coverage" NAME="preprocess_large_mpi_db_48x48 Coverage Results" MODIFIED="1595156001185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$trial_02.coverage" NAME="trial_02 Coverage Results" MODIFIED="1598712123160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$plot_csv.coverage" NAME="plot_csv Coverage Results" MODIFIED="1598521838483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$evaluate_trial_final.coverage" NAME="evaluate_trial_final Coverage Results" MODIFIED="1616862723113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1593082283590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/cec$confusion_matrix_trial_final.coverage" NAME="confusion_matrix_trial_final Coverage Results" MODIFIED="1617097683808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48__1_.coverage" NAME="preprocess_large_mpi_db_48x48 (1) Coverage Results" MODIFIED="1593036628801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
