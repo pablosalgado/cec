@@ -315,14 +315,7 @@
       <workItem from="1616835239773" duration="14182000" />
       <workItem from="1616926538248" duration="385000" />
       <workItem from="1617006211000" duration="4230000" />
-      <workItem from="1617091077385" duration="9184000" />
-    </task>
-    <task id="LOCAL-00052" summary="Organize model 12/MobileNet">
-      <created>1595498001752</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1595498001754</updated>
+      <workItem from="1617091077385" duration="10011000" />
     </task>
     <task id="LOCAL-00053" summary="trial01">
       <created>1595699715372</created>
@@ -660,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617098630180</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="confusion matrix">
+      <created>1617100515473</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1617100515473</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

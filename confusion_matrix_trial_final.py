@@ -6,10 +6,12 @@ import common
 from sklearn.metrics import classification_report
 
 tf.config.experimental_run_functions_eagerly(True)
+# noinspection SpellCheckingInspection
 model = tf.keras.models.load_model('./models/trial-final/32/12/ckpts/cp-0034.ckpt')
 # model.summary()
 
 TIME_STEPS = 12
+# noinspection SpellCheckingInspection
 CLASSES = ['I_did_not_hear', 'I_dont_care', 'I_dont_know', 'I_dont_understand', 'agree_considered', 'agree_continue',
            'agree_pure', 'agree_reluctant', 'aha-light_bulb_moment', 'annoyed_bothered', 'annoyed_rolling-eyes',
            'arrogant', 'bored', 'compassion', 'confused', 'contempt', 'disagree_considered', 'disagree_pure',
@@ -44,22 +46,18 @@ x = SlidingFrameGenerator(
     use_frame_cache=False
 )
 
-# Extract the actual label for each generated sequence.
-a = [pathlib.PurePath(vi['name']).parts[-2] for vi in x.vid_info]
-
-# Get the index of each label in the CLASSES list
-l = [CLASSES.index(c) for c in a]
+# Extracts the actual label for each generated sequence and gets the index of each label in the CLASSES list
+labels = [CLASSES.index(c) for c in [pathlib.PurePath(vi['name']).parts[-2] for vi in x.vid_info]]
 
 # Make predictions
-predictions = model.predict(x, verbose=1)
+p = model.predict(x, verbose=1)
 
 # Get the index of each prediction in the CLASSES list
-p = [p.argmax() for p in predictions]
+predictions = [prediction.argmax() for prediction in p]
 
 # Build and save the confusion matrix.
-c = tf.math.confusion_matrix(l, predictions=p)
+c = tf.math.confusion_matrix(labels, predictions=predictions)
 np.savetxt('confusion_matrix.csv', c.numpy(), delimiter=',')
 
-
 print('\nClassification Report\n')
-print(classification_report(l, p, target_names=CLASSES))
+print(classification_report(labels, predictions, target_names=CLASSES))
