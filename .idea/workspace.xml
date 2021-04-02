@@ -6,8 +6,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="confusion matrix">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confusion_matrix_trial_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrix_trial_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final.py" beforeDir="false" afterPath="$PROJECT_DIR$/final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper01_trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper01_trial_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper01_trial_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper01_trial_02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_03.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_05.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_05.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_06.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_06.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_07.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_07.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_08.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_08.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_09.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_09.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial_10.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/download_large_mpi_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_large_mpi_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +77,10 @@
       <recent name="$PROJECT_DIR$/models/08" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/trash" />
       <recent name="$APPLICATION_CONFIG_DIR$/scratches" />
       <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/models/08/MobileNet" />
     </key>
   </component>
@@ -315,14 +329,8 @@
       <workItem from="1616835239773" duration="14182000" />
       <workItem from="1616926538248" duration="385000" />
       <workItem from="1617006211000" duration="4230000" />
-      <workItem from="1617091077385" duration="10011000" />
-    </task>
-    <task id="LOCAL-00053" summary="trial01">
-      <created>1595699715372</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1595699715373</updated>
+      <workItem from="1617091077385" duration="11001000" />
+      <workItem from="1617290315947" duration="14086000" />
     </task>
     <task id="LOCAL-00054" summary="trial02">
       <created>1595700944575</created>
@@ -660,19 +668,26 @@
       <option name="project" value="LOCAL" />
       <updated>1617100515473</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="confusion matrix">
+      <created>1617101461305</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1617101461305</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -1013,7 +1028,7 @@
     <SUITE FILE_PATH="coverage/cec$plot_csv.coverage" NAME="plot_csv Coverage Results" MODIFIED="1598521838483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$evaluate_trial_final.coverage" NAME="evaluate_trial_final Coverage Results" MODIFIED="1616862723113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db.coverage" NAME="preprocess_large_mpi_db Coverage Results" MODIFIED="1593082283590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/cec$confusion_matrix_trial_final.coverage" NAME="confusion_matrix_trial_final Coverage Results" MODIFIED="1617099475260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cec$confusion_matrix_trial_final.coverage" NAME="confusion_matrix_trial_final Coverage Results" MODIFIED="1617300059172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$preprocess_large_mpi_db_48x48__1_.coverage" NAME="preprocess_large_mpi_db_48x48 (1) Coverage Results" MODIFIED="1593036628801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cec$delete_videos.coverage" NAME="delete_videos Coverage Results" MODIFIED="1592670387872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cec$10_mobile_net.coverage" NAME="10_mobile_net Coverage Results" MODIFIED="1593348803474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

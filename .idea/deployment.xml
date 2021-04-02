@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ATCBIOSIMUL" remoteFilesAllowedToDisappearOnAutoupload="false" compareModeInSync="TIMESTAMP">
+  <component name="PublishConfigData" serverName="ATCBIOSIMUL" remoteFilesAllowedToDisappearOnAutoupload="false" compareModeInSync="TEXT">
     <serverData>
       <paths name="ATCBIOSIMUL">
         <serverdata>
