@@ -170,10 +170,10 @@ def train():
                 # Configure callbacks
                 callbacks = [
                     tf.keras.callbacks.ModelCheckpoint(
-                        filepath=path + '/ckpts/cp-{epoch:04d}.ckpt',
+                        filepath=path + '/model',
                         monitor='val_accuracy',
-                        # mode='max',
-                        # save_best_only=True,
+                        mode='max',
+                        save_best_only=True,
                         verbose=1,
                     ),
                     tf.keras.callbacks.EarlyStopping(

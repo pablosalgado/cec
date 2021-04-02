@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="confusion matrix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/augment_videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/augment_videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper_01_trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper_01_trial_01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,14 +316,7 @@
       <workItem from="1616926538248" duration="385000" />
       <workItem from="1617006211000" duration="4230000" />
       <workItem from="1617091077385" duration="11001000" />
-      <workItem from="1617290315947" duration="16791000" />
-    </task>
-    <task id="LOCAL-00056" summary="Fixes">
-      <created>1595770690083</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1595770690083</updated>
+      <workItem from="1617290315947" duration="20109000" />
     </task>
     <task id="LOCAL-00057" summary="Fixes">
       <created>1595770979375</created>
@@ -661,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617357549597</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="code comments">
+      <created>1617359986863</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1617359986863</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -720,7 +720,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Some fixes" />
     <MESSAGE value="Organize model 12/MobileNet" />
     <MESSAGE value="trial01" />
     <MESSAGE value="Fixes" />
@@ -745,7 +744,8 @@
     <MESSAGE value="paper 01 trial 01" />
     <MESSAGE value="confusion matrix" />
     <MESSAGE value="Organize files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organize files" />
+    <MESSAGE value="code comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="code comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
