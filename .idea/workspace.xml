@@ -6,22 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="confusion matrix">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final.py" beforeDir="false" afterPath="$PROJECT_DIR$/final.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper01_trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper01_trial_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper01_trial_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper01_trial_02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_03.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_05.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_05.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_06.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_06.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_07.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_07.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_08.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_08.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_09.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_09.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trial_10.py" beforeDir="false" afterPath="$PROJECT_DIR$/trial_10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/download_large_mpi_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_large_mpi_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper01_trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper_01_trial_01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="paper01_trial_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="paper_01_trial_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,7 +129,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paper01_trial_01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paper_01_trial_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="paper01_trial_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="paper_01_trial_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,7 +151,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paper01_trial_02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paper_01_trial_02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,17 +184,17 @@
     </configuration>
     <list>
       <item itemvalue="Python.evaluate_trial_final" />
-      <item itemvalue="Python.paper01_trial_01" />
-      <item itemvalue="Python.paper01_trial_02" />
       <item itemvalue="Python.trial_03" />
       <item itemvalue="Python.confusion_matrix_trial_final" />
+      <item itemvalue="Python.paper_01_trial_01" />
+      <item itemvalue="Python.paper_01_trial_02" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.confusion_matrix_trial_final" />
         <item itemvalue="Python.evaluate_trial_final" />
-        <item itemvalue="Python.paper01_trial_02" />
-        <item itemvalue="Python.paper01_trial_01" />
+        <item itemvalue="Python.paper_01_trial_02" />
+        <item itemvalue="Python.paper_01_trial_01" />
         <item itemvalue="Python.trial_03" />
       </list>
     </recent_temporary>
@@ -330,14 +315,7 @@
       <workItem from="1616926538248" duration="385000" />
       <workItem from="1617006211000" duration="4230000" />
       <workItem from="1617091077385" duration="11001000" />
-      <workItem from="1617290315947" duration="14086000" />
-    </task>
-    <task id="LOCAL-00054" summary="trial02">
-      <created>1595700944575</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1595700944575</updated>
+      <workItem from="1617290315947" duration="14393000" />
     </task>
     <task id="LOCAL-00055" summary="Fixes">
       <created>1595759617467</created>
@@ -675,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617101461305</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Organize files">
+      <created>1617357260007</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1617357260007</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -734,7 +719,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add a second strategy to split dataset in 50%, 40% and 10% for training, validation and testing." />
     <MESSAGE value="Some fixes" />
     <MESSAGE value="Organize model 12/MobileNet" />
     <MESSAGE value="trial01" />
@@ -759,7 +743,8 @@
     <MESSAGE value="Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080 SUPER GPU cards" />
     <MESSAGE value="paper 01 trial 01" />
     <MESSAGE value="confusion matrix" />
-    <option name="LAST_COMMIT_MESSAGE" value="confusion matrix" />
+    <MESSAGE value="Organize files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organize files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -946,7 +931,7 @@
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/paper01_trial_01.py</url>
+          <url>file://$PROJECT_DIR$/paper_01_trial_01.py</url>
           <line>198</line>
           <option name="timeStamp" value="135" />
         </line-breakpoint>
