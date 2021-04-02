@@ -6,7 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd429b4-3ff1-4fec-897d-aad9e6550ee0" name="Default Changelist" comment="confusion matrix">
-      <change beforePath="$PROJECT_DIR$/paper01_trial_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper_01_trial_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/augment_videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/augment_videos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,14 +316,7 @@
       <workItem from="1616926538248" duration="385000" />
       <workItem from="1617006211000" duration="4230000" />
       <workItem from="1617091077385" duration="11001000" />
-      <workItem from="1617290315947" duration="14393000" />
-    </task>
-    <task id="LOCAL-00055" summary="Fixes">
-      <created>1595759617467</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1595759617467</updated>
+      <workItem from="1617290315947" duration="16791000" />
     </task>
     <task id="LOCAL-00056" summary="Fixes">
       <created>1595770690083</created>
@@ -660,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617357260007</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Organize files">
+      <created>1617357549597</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1617357549597</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -936,7 +937,7 @@
           <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/paper01_trial_02.py</url>
+          <url>file://$PROJECT_DIR$/paper_01_trial_02.py</url>
           <line>198</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
@@ -951,7 +952,7 @@
           <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/paper01_trial_02.py</url>
+          <url>file://$PROJECT_DIR$/paper_01_trial_02.py</url>
           <line>147</line>
           <option name="timeStamp" value="147" />
         </line-breakpoint>

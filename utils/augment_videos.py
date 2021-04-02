@@ -97,6 +97,7 @@ def create_augment_videos() -> None:
 
     for code in ['islf', 'kabf', 'lekf', 'milf', 'silf', 'cawm', 'chsm', 'jakm', 'juhm', 'mamm']:
         for label in LABELS:
+            # Gets paths for all PNGs that composes the video for the current actor/actress and label.
             filtered_images_paths = list(
                 filter(
                     lambda image_path: image_path.split(os.path.sep)[-1].startswith(code)
@@ -105,15 +106,19 @@ def create_augment_videos() -> None:
                 )
             )
 
+            # Applies 20 transformations
             for t_count, transformation in enumerate(get_random_transformations()):
+                # Video output path
                 path = f'{HOME}/.keras/datasets/cec-videos-augmented/{label}'
                 video_path = f'{path}/{code}_{label}_{t_count:02d}.avi'
 
+                # Checks if video has been already created
                 cap = cv2.VideoCapture(video_path)
                 if cap.get(cv2.CAP_PROP_FRAME_COUNT) == len(filtered_images_paths):
                     print(f'Skipping: {video_path}')
                     continue
 
+                # Creates output dir and video output stream
                 os.makedirs(path, exist_ok=True)
                 out = cv2.VideoWriter(
                     video_path,
@@ -124,14 +129,20 @@ def create_augment_videos() -> None:
 
                 print(f'Creating: {video_path}')
 
+                # Applies current transformation to all frames (PNGs)
                 for i_count, image_path in enumerate(filtered_images_paths):
+                    # Loads next frame (PNG)
                     x = cv2.imread(image_path)
+                    # Resizes frame keeping aspect ratio
                     x = cv2.resize(x, (224, 168))
+                    # Adds a border to fill the frame to the output size of 224x224
                     x = cv2.copyMakeBorder(x, 28, 28, 0, 0, cv2.BORDER_CONSTANT)
 
+                    # Saves the original resized PNG for future reference
                     if i_count == 0:
                         cv2.imwrite(f'{path}/transformation_oo.png', x)
 
+                    # Actually applies the transformation to the frame
                     x = apply_affine_transform(
                         x,
                         transformation.get('theta', 0),
@@ -165,6 +176,7 @@ def create_augment_videos() -> None:
                     if i_count == 0:
                         cv2.imwrite(f'{path}/transformation_{t_count:02d}.png', x)
 
+                    # Writes the frame to the video output stream.
                     out.write(x)
 
                 out.release()
