@@ -6,6 +6,7 @@
 #
 import os
 import pathlib
+import random as rnd
 
 import cv2
 import dlib
@@ -351,3 +352,42 @@ def split_data_48x48(time_steps=8) -> None:
                 save_path = os.path.sep.join(path_parts)
                 cv2.imwrite(save_path, image)
                 # print(f'{image_path} -> {save_path}')
+
+
+def save_sample(filename, g, index=0, random=False, row_width=22, row_height=5):
+    """ Displays a batch using matplotlib.
+
+    params:
+
+    - g: keras video generator
+    - index: integer index of batch to see (overriden if random is True)
+    - random: boolean, if True, take a random batch from the generator
+    - row_width: integer to give the figure height
+    - row_height: integer that represents one line of image, it is multiplied by \
+    the number of sample in batch.
+    """
+    total = len(g)
+    if random:
+        sample = rnd.randint(0, total)
+    else:
+        sample = index
+
+    assert index < len(g)
+    sample = g[sample]
+    sequences = sample[0]
+    labels = sample[1]
+
+    rows = len(sequences)
+    index = 1
+    plt.figure(figsize=(row_width, row_height * rows))
+    for batchid, sequence in enumerate(sequences):
+        classid = np.argmax(labels[batchid])
+        classname = g.classes[classid]
+        cols = len(sequence)
+        for image in sequence:
+            plt.subplot(rows, cols, index)
+            plt.title(classname)
+            plt.imshow(image)
+            plt.axis('off')
+            index += 1
+    plt.savefig(filename)

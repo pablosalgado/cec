@@ -6,14 +6,15 @@
 #
 # https://unir-tfm-cec.s3.us-east-2.amazonaws.com/trial-final.tar.gz
 
+import glob
 import os
+import shutil
+
 import pandas
 import tensorflow as tf
-import keras_video.utils
 from keras_video.sliding import SlidingFrameGenerator
+
 import common
-import glob
-import shutil
 
 # Avoids the CUPTI_ERROR_INSUFFICIENT_PRIVILEGES running in the ATCBIOSIMUL server at UGR with 2 GeForce RTX 2080
 # SUPER GPU cards.
@@ -100,7 +101,7 @@ def build_model(time_steps, nout):
 def train():
     dataset = 'cec-videos-augmented';
 
-    data = pandas.DataFrame(None, columns=['trial', 'batch_size', 'time_steps', 'cycle', 'files', 'sequences'])
+    data = pandas.DataFrame(None, columns=['trial', 'cycle', 'code', 'batch_size', 'time_steps', 'files', 'sequences'])
     data['trial'] = TRIAL
 
     # for code in ['islf']:
@@ -143,14 +144,15 @@ def train():
                     use_frame_cache=False
                 )
 
-                # keras_video.utils.show_sample(train_idg)
+                common.save_sample(f'{path}/sample.png', train_idg)
 
                 validation_idg = train_idg.get_validation_generator()
 
                 row = {
-                    'trial': TRIAL,
-                    'batch_size': batch_size,
+                    'trial': f'paper_01_trial_{TRIAL}',
                     'cycle': 'training',
+                    'code': code,
+                    'batch_size': batch_size,
                     'time_steps': time_steps,
                     'files': train_idg.files_count,
                     'sequences': len(train_idg.vid_info)
@@ -158,9 +160,10 @@ def train():
                 data = data.append(row, ignore_index=True)
 
                 row = {
-                    'trial': TRIAL,
-                    'batch_size': batch_size,
+                    'trial': f'paper_01_trial_{TRIAL}',
                     'cycle': 'validation',
+                    'code': code,
+                    'batch_size': batch_size,
                     'time_steps': time_steps,
                     'files': validation_idg.files_count,
                     'sequences': len(validation_idg.vid_info)
@@ -196,16 +199,16 @@ def train():
                     ),
                 ]
 
-                history = model.fit(
-                    train_idg,
-                    validation_data=validation_idg,
-                    callbacks=callbacks,
-                    epochs=EPOCHS,
-                )
+                # history = model.fit(
+                #     train_idg,
+                #     validation_data=validation_idg,
+                #     callbacks=callbacks,
+                #     epochs=EPOCHS,
+                # )
+                #
+                # common.plot_acc_loss(history, path + '/plot.png')
 
-                common.plot_acc_loss(history, path + '/plot.png')
-
-    data.to_csv('trial_final.csv')
+    data.to_csv(TRL_PATH + '/sequences.csv')
 
 
 if __name__ == '__main__':

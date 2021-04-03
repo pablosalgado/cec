@@ -57,7 +57,7 @@ predictions = [prediction.argmax() for prediction in p]
 
 # Build and save the confusion matrix.
 c = tf.math.confusion_matrix(labels, predictions=predictions)
-np.savetxt('confusion_matrix.csv', c.numpy(), delimiter=',')
+np.savetxt('cfm_trial_final.csv', c.numpy(), delimiter=',')
 
 print('\nClassification Report\n')
 print(classification_report(labels, predictions, target_names=CLASSES))
